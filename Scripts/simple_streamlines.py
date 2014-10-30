@@ -4,26 +4,27 @@ from sympy.abc import x, y
 import numpy as np
 import matplotlib.pyplot as plt
 import sympy.mpmath as mpmath
+from streamplot import streamplot
 #======================
 #--- Configuration ---#
 #======================
 show_streamfunction = False #   #Display the function that's going to be plotted in a "popup"
 output_file_name = "Temp"   #Name the file
 xlim=(-2,2)                      #Bounds on the display x-axis
-ylim=(0,2)                      #Bounds on the display y-axis
-is_complex_potential = True      #True if the functions given are w. False if they're Psi
-arrow_size=1
+ylim=(-2,2)                      #Bounds on the display y-axis
+is_complex_potential = False      #True if the functions given are w. False if they're Psi
+arrow_size=2
 
-density_factor = 4.5             #More or less streamlines
-thickness_factor =0.8            #Streamline thickness
-constant_thickness = True        #False if thickness based on velocity (sometimes causes error).
+density_factor = 2.0             #More or less streamlines
+thickness_factor =1.0            #Streamline thickness
+constant_thickness = False        #False if thickness based on velocity (sometimes causes error).
 
 def mapping(z):
    return z
 
 #List of implicit functions to plot
 function_list = [
-"1.0/2.0*a*z**2",
+"ln(r)",
 ]
 
 #======================
@@ -119,14 +120,10 @@ def plot_streamlines(ax, u, v, xlim=(-1, 1), ylim=(-1, 1)):
        lw = 2.0
     print "Plotting..."
     ax_thick = 0.75 * (abs(xlim[0]) + abs(xlim[1]))
-    ax.streamplot(X, Y, uu, vv, density=density_factor*density, color=colors[COUNTER-1], linewidth=lw, arrowsize=arrow_size, minlength=0.2)
+
+    ax.streamplot(X, Y, uu, vv, density=density_factor*density, color=colors[COUNTER-1], linewidth=lw, arrowsize=arrow_size, minlength=0.1)
     ax.axvline(x=0, color='k',  linewidth=ax_thick+1)
-    #ax.axvline(x=c, color='red',  linewidth=ax_thick, label="z=c")
-    #ax.text(c, -0.10, "$z=c$", size=40, color='red')
     ax.axhline(y=0, color='k',  linewidth=ax_thick+1)
-    #circ = plt.Circle((0,0), radius=a, color='b', fill=False, linewidth=8.0)
-    #ax.add_artist(circ)
-#
 
 def format_axes(ax):
     ax.set_aspect('equal')
