@@ -8,24 +8,25 @@ from streamplot import streamplot
 #======================
 #--- Configuration ---#
 #======================
-show_streamfunction = False #   #Display the function that's going to be plotted in a "popup"
-output_file_name = "Temp"   #Name the file
-xlim=(-2,2)                      #Bounds on the display x-axis
-ylim=(-2,2)                      #Bounds on the display y-axis
-is_complex_potential = False      #True if the functions given are w. False if they're Psi
+show_streamfunction = False # #Display the function that's going to be plotted in a "popup"
+output_file_name = "Temp"     #Name the file
+xlim=(-2,2)                   #Bounds on the display x-axis
+ylim=(-2,2)                   #Bounds on the display y-axis
+is_complex_potential = False  #True if the functions given are w. False if they're Psi
 arrow_size=2
 
 density_factor = 2.0             #More or less streamlines
 thickness_factor =1.0            #Streamline thickness
 constant_thickness = False        #False if thickness based on velocity (sometimes causes error).
 
-def mapping(z):
-   return z
 
 #List of implicit functions to plot
 function_list = [
 "ln(r)",
 ]
+
+def mapping(z):
+   return z #mapping, `return z' will result in no mapping.
 
 #======================
 #---   Constants   ---#
@@ -42,9 +43,6 @@ n=3
 c = 1.01
 S=1.0
 gg = 3.0
-
-def zz(t):
-   return 1.0 + 1.0*sympy.I
 
 #Map commonly used functions to the sympy equivalent
 def exp(x):
@@ -63,7 +61,9 @@ def sqrt(x):
    return sympy.sqrt(x)
 def frac(x,y):
    return float(x) / float(y)
-#Calculate the base density dynamically based on limits
+
+#Calculate the base density dynamically based on the field of view
+#density=sqrt(width*height)/3 : just a formula that gives decent results, nothing physical
 density = math.sqrt(float(abs(xlim[0] - xlim[1])) * float(abs(ylim[0]-ylim[1]))) / 3.0
 x0, x1 = xlim
 y0, y1 = ylim
@@ -71,30 +71,37 @@ y0, y1 = ylim
 scale = 3.0
 colors=['k','r','g','b']
 
-def stream_function(function,U=1, R=1):
+def stream_function(function): #takes a string as a function and converts it to symbols.
    #takes a function string and returns a symbolic function. 
+   # r is defined symbolically as sqrt(x**2+y**2)
    r = sympy.sqrt(x**2 + y**2)
+   # theta is the arctan of y/x
    theta = sympy.atan2(y, x)
+   #define both capital and lowercase i as the imaginary unit
    I = i = sympy.I
+   #define z as a complex number
    z = sympy.Symbol('z', complex=True)
-   z = x + sympy.I*y
+   #define z as x+iy
+   z = x + i*y
+   #Run z through the mapping, allow piecewise (beta)
    z = sympy.piecewise_fold(mapping(z))
    return eval(function)
 
-def velocity_field(psi):
+def velocity_field(psi): #takes a symbolic funciton and returns two lambda functions
+#to evaluate the derivatives in both the x and y directions.
     if show_streamfunction:
         sympy.preview(psi)
     global w
     if is_complex_potential:
-       print "Assuming complex potential given"
+       print "Complex potential, w(z) given"
+       #define u, v symbolically as the imaginary part of the derivatives
        u = sympy.lambdify((x, y), sympy.im(psi.diff(y)), 'numpy')
        v = sympy.lambdify((x, y), -sympy.im(psi.diff(x)), 'numpy')
     else:
-       print "Assuming stream function given"
+       #define u,v as the derivatives 
+       print "Stream function, psi given"
        u = sympy.lambdify((x, y), psi.diff(y), 'numpy')
        v = sympy.lambdify((x, y), -psi.diff(x), 'numpy')
-   # u = np.vectorize(u)
-   # v = np.vectorize(v)
     return u, v
 
 COUNTER=0
@@ -103,11 +110,9 @@ def plot_streamlines(ax, u, v, xlim=(-1, 1), ylim=(-1, 1)):
     COUNTER+=1
     plt.xlim([x0,x1])
     plt.ylim([y0,y1])
-#    plt.xlim([c,c+1])
-#    plt.ylim([0.25,0.75])
-    Y, X =  np.ogrid[y0-0.25*abs(y0):y1 + 0.25*abs(y1):1000j, x0 - 0.25 * abs(x0):x1 + 0.25 * abs(x1):1000j]
-    uu = u(X, Y)
-    vv = v(X, Y)
+    Y,X = np.ogrid[y0-0.25*abs(y0):y1 + 0.25*abs(y1):2000j, x0 - 0.25 * abs(x0):x1 + 0.25 * abs(x1):2000j]
+    uu = u(X, Y) #Evaluate the derivative at each point.
+    vv = v(X, Y) #Evaluate the derivative at each point.
     if not constant_thickness:
        lw = np.sqrt(uu**2 + vv**2)
        lw = lw * thickness_factor
