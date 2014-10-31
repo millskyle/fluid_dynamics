@@ -1,0 +1,16 @@
+To install, do
+
+   python setup.py build
+   sudo python setup.py install
+
+Then include in the plotting script by 
+
+   import lic_internal
+
+
+
+
+
+
+
+
