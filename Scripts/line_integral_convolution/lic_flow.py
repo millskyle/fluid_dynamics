@@ -12,11 +12,11 @@ from matplotlib.colors import LinearSegmentedColormap
 #======================
 show_streamfunction = False # #Display the function that's going to be plotted in a "popup"
 output_file_name = "Temp"     #Name the file
-xlim=(-2,2)                   #Bounds on the display x-axis
-ylim=(-2,2)                   #Bounds on the display y-axis
+xlim=(0.0001,2.0)                   #Bounds on the display x-axis
+ylim=(-2, 0.0001)                   #Bounds on the display y-axis
 is_complex_potential = True  #True if the functions given are w. False if they're Psi
 arrow_size=2
-size=1500
+size=500
 density_factor = 1.0             #More or less streamlines
 thickness_factor =1.0            #Streamline thickness
 constant_thickness = False        #False if thickness based on velocity (sometimes causes error).
@@ -24,7 +24,7 @@ constant_thickness = False        #False if thickness based on velocity (sometim
 
 #List of implicit functions to plot
 function_list = [
-"(z)**8",
+"i*ln( (z + 1./2 + 1.3*i) / (z-1./2 + 1.3*i) )",
 #"z**2 - 2*0.2*z",
 ]
 
@@ -149,7 +149,7 @@ def plot_streamlines(u, v, xlim=(-1, 1), ylim=(-1, 1)):
     dpi=1200
 #    plt.clf()
     plt.axis('off')
-    kernel = np.arange(60).astype(np.float32)
+    kernel = np.arange(31).astype(np.float32)
 
     squ = np.reshape(uu, (size,size)).astype(np.float32) * 100
     sqv = np.reshape(vv, (size,size)).astype(np.float32) * 100
@@ -159,8 +159,20 @@ def plot_streamlines(u, v, xlim=(-1, 1), ylim=(-1, 1)):
 
     image = lic_internal.line_integral_convolution(vectors, texture, kernel)
     #plt.figimage(image,cmap=plt.cm.Greys)
+
     plt.figimage(image,cmap=cmap)
-    velocity = np.dot
+    velocity = np.linalg.norm(vectors, axis=2)
+    np.putmask(velocity, velocity>=3*np.mean(velocity), 3*np.mean(velocity))
+#    np.putmask(velocity, velocity<=0.1*np.mean(velocity), 0.1*np.mean(velocity))
+    velocity = np.sqrt(velocity)
+
+
+    print np.max(velocity)
+    print np.min(velocity)
+    print np.mean(velocity)
+
+
+    plt.figimage(velocity, cmap=plt.cm.YlOrRd, alpha=0.6)
     plt.gcf().set_size_inches((size/float(dpi),size/float(dpi)))
     plt.savefig("flow-image.png",dpi=dpi)
 
