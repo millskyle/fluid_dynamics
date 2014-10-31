@@ -12,19 +12,19 @@ from matplotlib.colors import LinearSegmentedColormap
 #======================
 show_streamfunction = False # #Display the function that's going to be plotted in a "popup"
 output_file_name = "Temp"     #Name the file
-xlim=(0.0001,2.0)                   #Bounds on the display x-axis
-ylim=(-2, 0.0001)                   #Bounds on the display y-axis
+xlim=(-2,2.0)                   #Bounds on the display x-axis
+ylim=(-2, 2.0)                   #Bounds on the display y-axis
 is_complex_potential = True  #True if the functions given are w. False if they're Psi
 arrow_size=2
-size=500
+size=1500
 density_factor = 1.0             #More or less streamlines
 thickness_factor =1.0            #Streamline thickness
 constant_thickness = False        #False if thickness based on velocity (sometimes causes error).
-
+kernel_density = 100 #"Smearing Strength"
 
 #List of implicit functions to plot
 function_list = [
-"i*ln( (z + 1./2 + 1.3*i) / (z-1./2 + 1.3*i) )",
+"i*ln( (z + 1./2 ) / (z-1./2 ) )",
 #"z**2 - 2*0.2*z",
 ]
 
@@ -111,45 +111,19 @@ COUNTER=0
 def plot_streamlines(u, v, xlim=(-1, 1), ylim=(-1, 1)):
     global COUNTER
     COUNTER+=1
-    #plt.xlim([x0,x1])
-    #plt.ylim([y0,y1])
+    #define a grid on which to calculate
     Y,X = np.ogrid[y0 - 0.25 * abs(y0):y1 + 0.25 * abs(y1):size*1j,
                    x0 - 0.25 * abs(x0):x1 + 0.25 * abs(x1):size*1j]
-    uu = u(X, Y) #Evaluate the derivative at each point.
-    vv = v(X, Y) #Evaluate the derivative at each point.
-    if not constant_thickness:
-       lw = np.sqrt(uu**2 + vv**2)
-       lw = lw * thickness_factor
-       tooHigh = lw > 5 #If the width is calculated to be higher than this number,
-       lw[tooHigh] = 5 #we want to make it equal to this number
-       tooLow = lw < 1.25
-       lw[tooLow] = 1.25
-       #lw = 2.0 * thickness_factor
-    else:
-       lw = 2.0
+    uu = u(X, Y) #Evaluate the horizontal derivative at each grid point.
+    vv = v(X, Y) #Evaluate the vertical derivative at each grid point.
+
     print "Plotting..."
     ax_thick = 0.75 * (abs(xlim[0]) + abs(xlim[1]))
-    sss="""
-    plt.streamplot(X,
-         Y,
-         uu,
-         vv,
-         density=density_factor*density,
-#         color=colors[COUNTER-1],
-         color=lw,
-         cmap=plt.cm.Greys, #autumn,
-         linewidth=lw, #np.sqrt(uu**2+vv**2),
-         arrowsize=arrow_size,
-         minlength=0.1
-      )
-    """
-#    plt.axvline(x=0, color='k',  linewidth=ax_thick+1)
-#    plt.axhline(y=0, color='k',  linewidth=ax_thick+1)
     cmap = LinearSegmentedColormap.from_list('name', ['black', 'white', 'black','white'])
     dpi=1200
 #    plt.clf()
     plt.axis('off')
-    kernel = np.arange(31).astype(np.float32)
+    kernel = np.arange(kernel_density).astype(np.float32)
 
     squ = np.reshape(uu, (size,size)).astype(np.float32) * 100
     sqv = np.reshape(vv, (size,size)).astype(np.float32) * 100
@@ -162,15 +136,9 @@ def plot_streamlines(u, v, xlim=(-1, 1), ylim=(-1, 1)):
 
     plt.figimage(image,cmap=cmap)
     velocity = np.linalg.norm(vectors, axis=2)
-    np.putmask(velocity, velocity>=3*np.mean(velocity), 3*np.mean(velocity))
+    np.putmask(velocity, velocity>=20*np.mean(velocity), 20*np.mean(velocity))
 #    np.putmask(velocity, velocity<=0.1*np.mean(velocity), 0.1*np.mean(velocity))
     velocity = np.sqrt(velocity)
-
-
-    print np.max(velocity)
-    print np.min(velocity)
-    print np.mean(velocity)
-
 
     plt.figimage(velocity, cmap=plt.cm.YlOrRd, alpha=0.6)
     plt.gcf().set_size_inches((size/float(dpi),size/float(dpi)))
