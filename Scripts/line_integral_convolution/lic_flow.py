@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import lic_internal
 import sympy.mpmath as mpmath
 import pylab as plt
+import scipy.ndimage
 from matplotlib.colors import LinearSegmentedColormap
 #======================
 #--- Configuration ---#
@@ -16,21 +17,30 @@ xlim=(-2,2.0)                   #Bounds on the display x-axis
 ylim=(-2, 2.0)                   #Bounds on the display y-axis
 is_complex_potential = True  #True if the functions given are w. False if they're Psi
 arrow_size=2
-size=500
-density_factor = 1.0             #More or less streamlines
+size=100
+res = 1.0
+cubic = 2
 thickness_factor =1.0            #Streamline thickness
 constant_thickness = False        #False if thickness based on velocity (sometimes causes error).
 kernel_density = 100 #"Smearing Strength"
+branch_cuts=True
+
 
 #List of implicit functions to plot
 function_list = [
-" z*exp(-i*aa) + (a**2 / z)*exp(i*aa) - (i*gg/(2*pi))*ln(z)   ",
+" U*(z*exp(-i*aa) + (a**2 / z)*exp(i*aa)) - (i*gg/(2*pi))*ln(z)   ",
 #"z**2 - 2*0.2*z",
 ]
 
 
 def mapping(z):
-   return 1./2.*z + sympy.sqrt( 1/4.*z**2 - c**2)
+#   return z
+   return  (sympy.Piecewise(
+     (1./2.*z + sympy.sqrt( 1/4.*z**2 - c**2), sympy.re(z) > 0),
+     (1./2.*z + -sympy.sqrt(1/4.*z**2 - c**2), sympy.re(z) <=0),
+     (1./2.*z + sympy.sqrt( 1/4.*z**2 - c**2), True) )
+   )
+   #return z
         #mapping, `return z' will result in no mapping.
 
 #======================
@@ -40,14 +50,15 @@ def mapping(z):
 pi = math.pi
 U = 2.0
 d = 0.7
-aa = -pi/8
+aa = -pi/7
 a = 1.0
 A = 1.0
 l = 1.0
+ll = 0.25
 n=3
 c = 0.5
 S=1.0
-gg = 3.0
+gg = -4*pi*U*a*math.sin(aa)
 
 #Map commonly used functions to the sympy equivalent
 def exp(x):
@@ -89,11 +100,10 @@ def stream_function(function): #takes a string as a function and converts it to 
    #define z as x+iy
    z = x + i*y
    #Run z through the mapping, allow piecewise (beta)
-   z = sympy.piecewise_fold(mapping(z))
-#   z = mapping(z)
+   z = mapping(z+1)
    return eval(function)
 
-def velocity_field(psi): #takes a symbolic funciton and returns two lambda functions
+def velocity_field(psi): #takes a symbolic function and returns two lambda functions
 #to evaluate the derivatives in both the x and y directions.
     if show_streamfunction:
         sympy.preview(psi)
@@ -108,42 +118,53 @@ def velocity_field(psi): #takes a symbolic funciton and returns two lambda funct
        print "Stream function, psi given"
        u = sympy.lambdify((x, y), psi.diff(y), 'numpy')
        v = sympy.lambdify((x, y), -psi.diff(x), 'numpy')
-    return u, v
+    if (branch_cuts):
+       return np.vectorize(u), np.vectorize(v)
+    else:
+       return u,v
 
 COUNTER=0
 def plot_streamlines(u, v, xlim=(-1, 1), ylim=(-1, 1)):
     global COUNTER
     COUNTER+=1
     #define a grid on which to calculate
-    Y,X = np.ogrid[y0 - 0.25 * abs(y0):y1 + 0.25 * abs(y1):size*1j,
-                   x0 - 0.25 * abs(x0):x1 + 0.25 * abs(x1):size*1j]
+    Y,X = np.ogrid[y0 - 0.25 * abs(y0):y1 + 0.25 * abs(y1):res*size*1j,
+                   x0 - 0.25 * abs(x0):x1 + 0.25 * abs(x1):res*size*1j]
     uu = u(X, Y) #Evaluate the horizontal derivative at each grid point.
     vv = v(X, Y) #Evaluate the vertical derivative at each grid point.
 
     print "Plotting..."
     ax_thick = 0.75 * (abs(xlim[0]) + abs(xlim[1]))
-    cmap = LinearSegmentedColormap.from_list('name', ['black', 'white', 'black','white'])
-    dpi=1200
-#    plt.clf()
+    cmap = LinearSegmentedColormap.from_list('name', ['black','white','black','white'])
+    dpi=size
     plt.axis('off')
     kernel = np.arange(kernel_density).astype(np.float32)
 
-    squ = np.reshape(uu, (size,size)).astype(np.float32) * 100
-    sqv = np.reshape(vv, (size,size)).astype(np.float32) * 100
+    squ = np.reshape(uu, (int(res*size),int(res*size))).astype(np.float32)
+    sqv = np.reshape(vv, (int(res*size),int(res*size))).astype(np.float32)
 
     vectors=np.dstack((squ,sqv)).astype(np.float32)
-    texture = np.random.rand(size,size).astype(np.float32)
+    texture = np.random.rand(size/cubic,size/cubic).astype(np.float32)
+    texture = scipy.ndimage.zoom(texture, cubic, order=1)
 
     image = lic_internal.line_integral_convolution(vectors, texture, kernel)
-    #plt.figimage(image,cmap=plt.cm.Greys)
 
     plt.figimage(image,cmap=cmap)
     velocity = np.linalg.norm(vectors, axis=2)
-    np.putmask(velocity, velocity>=20*np.mean(velocity), 20*np.mean(velocity))
+#    np.putmask(velocity, velocity>=5*np.mean(velocity), 5*np.mean(velocity))
 #    np.putmask(velocity, velocity<=0.1*np.mean(velocity), 0.1*np.mean(velocity))
+
     velocity = np.sqrt(velocity)
 
-    plt.figimage(velocity, cmap=plt.cm.YlOrRd, alpha=0.6)
+    theCM = plt.cm.get_cmap('Blues')
+    theCM._init()
+#    alphas = np.linspace(0,1.0,theCM.N)
+#    alphas[:10] = 0
+#    print theCM.N
+#    print np.shape(theCM._lut)
+#    theCM._lut[:-3,-1] = alphas
+
+    plt.figimage(velocity, cmap=theCM, alpha=0.5)
     plt.gcf().set_size_inches((size/float(dpi),size/float(dpi)))
     plt.savefig("flow-image.png",dpi=dpi)
 
