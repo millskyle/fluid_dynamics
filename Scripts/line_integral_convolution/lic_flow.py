@@ -16,7 +16,7 @@ xlim=(-2,2.0)                   #Bounds on the display x-axis
 ylim=(-2, 2.0)                   #Bounds on the display y-axis
 is_complex_potential = True  #True if the functions given are w. False if they're Psi
 arrow_size=2
-size=1500
+size=500
 density_factor = 1.0             #More or less streamlines
 thickness_factor =1.0            #Streamline thickness
 constant_thickness = False        #False if thickness based on velocity (sometimes causes error).
@@ -24,12 +24,14 @@ kernel_density = 100 #"Smearing Strength"
 
 #List of implicit functions to plot
 function_list = [
-"i*ln( (z + 1./2 ) / (z-1./2 ) )",
+" z*exp(-i*aa) + (a**2 / z)*exp(i*aa) - (i*gg/(2*pi))*ln(z)   ",
 #"z**2 - 2*0.2*z",
 ]
 
+
 def mapping(z):
-   return z #mapping, `return z' will result in no mapping.
+   return 1./2.*z + sympy.sqrt( 1/4.*z**2 - c**2)
+        #mapping, `return z' will result in no mapping.
 
 #======================
 #---   Constants   ---#
@@ -38,12 +40,12 @@ def mapping(z):
 pi = math.pi
 U = 2.0
 d = 0.7
-aa = -pi/4
+aa = -pi/8
 a = 1.0
 A = 1.0
 l = 1.0
 n=3
-c = 1.01
+c = 0.5
 S=1.0
 gg = 3.0
 
@@ -88,6 +90,7 @@ def stream_function(function): #takes a string as a function and converts it to 
    z = x + i*y
    #Run z through the mapping, allow piecewise (beta)
    z = sympy.piecewise_fold(mapping(z))
+#   z = mapping(z)
    return eval(function)
 
 def velocity_field(psi): #takes a symbolic funciton and returns two lambda functions
