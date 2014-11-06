@@ -1,0 +1,74 @@
+%% Creator: Inkscape inkscape 0.48.4, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'ch5twoboundariesplot.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{540.0009987bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.66666543)%
+    \put(0,0){\includegraphics[width=\unitlength]{ch5twoboundariesplot.pdf}}%
+    \put(0.1242423,0.03939954){\makebox(0,0)[lb]{\smash{0}}}%
+    \put(0.89266866,0.03934456){\makebox(0,0)[lb]{\smash{U}}}%
+    \put(0.42927137,0.01102943){\makebox(0,0)[lb]{\smash{Flowspeed,}}}%
+    \put(0.54104857,0.01102943){\makebox(0,0)[lb]{\smash{u}}}%
+    \put(0.55327077,0.01102943){\makebox(0,0)[lb]{\smash{(}}}%
+    \put(0.56215964,0.01102943){\makebox(0,0)[lb]{\smash{y}}}%
+    \put(0.57282659,0.01102943){\makebox(0,0)[lb]{\smash{,}}}%
+    \put(0.58060435,0.01102943){\makebox(0,0)[lb]{\smash{t}}}%
+    \put(0.58860419,0.01102943){\makebox(0,0)[lb]{\smash{)}}}%
+    \put(0.10096064,0.06243267){\makebox(0,0)[lb]{\smash{0}}}%
+    \put(0.08417321,0.32901736){\makebox(0,0)[lb]{\smash{h}}}%
+    \put(0.09372905,0.32901736){\makebox(0,0)[lb]{\smash{/}}}%
+    \put(0.10195168,0.32901736){\makebox(0,0)[lb]{\smash{2}}}%
+    \put(0.10162688,0.59582983){\makebox(0,0)[lb]{\smash{h}}}%
+    \put(0.06457816,0.28587982){\rotatebox{90}{\makebox(0,0)[lb]{\smash{y}}}}%
+    \put(0.06457816,0.30210231){\rotatebox{90}{\makebox(0,0)[lb]{\smash{position}}}}%
+    \put(0.71825099,0.52149797){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$t=h^2 / 100\pi\nu$}}}%
+    \put(0.71825099,0.48890544){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$t=h^2 / 10\pi\nu$}}}%
+    \put(0.71825099,0.45551416){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$t=h^2 / \pi\nu$}}}%
+    \put(0.71825099,0.42398662){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$t\to\infty$}}}%
+  \end{picture}%
+\endgroup%

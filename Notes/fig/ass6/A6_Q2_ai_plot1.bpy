@@ -1,0 +1,52 @@
+from scipy.integrate import quad
+import numpy as np
+import matplotlib.pyplot as plt
+from math import * #import math
+from mpltools.style import use as uuu
+from mpmath import besseljzero
+uuu('ggplot')
+
+a=100.0
+nu=1.0
+nmax=100
+resolution=100.0
+U=1.0
+v=1.0
+
+y_max=10.0 #/sqrt(10)
+
+spi = sqrt(3.14159)
+def u(y,t):
+   eta = y/sqrt(v*t)
+   return float(U*(1.0-1/sqrt(pi)*float(quad(lambda x: exp(-x**2/4.0),0,eta)[0])))
+
+fig = plt.figure(num=None, figsize=(7.0,5), dpi=300)
+ax = fig.add_subplot(1,1,1)
+
+box = ax.get_position()
+ax.set_position([box.x0, box.y0, box.width * 0.9, box.height])
+
+ax.axis([0,y_max,0,1.05])
+ax.set_yticks([1,0.8,0.6,0.4,0.2,0])
+ax.set_yticklabels(["$U$","","","","","0"])
+ax.set_xticks([i*y_max/5 for i in range(6)])
+ax.set_xticklabels(["0","","","","","$10$"])
+
+mesh = [i/resolution for i in xrange(int(y_max*resolution))]
+
+ax.plot([x for x in mesh],[u(i,1) for i in mesh], label="$t=1$", linewidth=2.0)
+ax.plot([x for x in mesh],[u(i,10) for i in mesh], label="$t=10$", linewidth=2.0)
+
+
+
+
+plt.ylabel('Flow speed, $u(y)$')
+plt.xlabel("Distance from boundary, $y$")
+ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
+
+fig.savefig("A6_Q2_ai_plot1.eps")
+fig.savefig("A6_Q2_ai_plot1.png")
+
+
+
+

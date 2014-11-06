@@ -1,0 +1,447 @@
+\includeonly{}
+
+
+\ProvidesPackage{fluiddynamics}
+
+
+\usepackage{amsmath}
+\usepackage{kyle}
+\usepackage[total={6in,9in},top=0.75in, includefoot]{geometry}
+%\usepackage[total={6in,9in},top=0.75in, left=1.25in, right=1.25in, includefoot]{geometry} %Even L/R Margins
+\usepackage{newtxtext,newtxmath}
+\usepackage{enumerate,letltxmacro}
+\usepackage{ntheorem}
+\usepackage{graphicx}
+\usepackage[toc,page]{appendix}
+\usepackage{framed}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{epsfig}
+\usepackage{changepage}
+\usepackage[makeroom]{cancel}
+\usepackage{bm}
+\usepackage{xcolor}
+%\usepackage[export]{adjustbox}
+\usepackage{mdframed}
+\usepackage{epstopdf}
+\usepackage{xspace}
+\usepackage{collect}
+\raggedbottom
+\LetLtxMacro\itemold\item
+\renewcommand{\item}{\itemindent0.5cm\itemold}
+\let\vecarrow\vec
+\renewcommand{\vec}[1]{\ensuremath{\mathbf{#1}}}
+\usepackage{lipsum}
+\usepackage{framed}
+\newcommand{\Equations}[2]{Eqs. \ref{#1} \& \ref{#2}}
+
+
+\newcommand{\inkscapeimage}[2]{
+\begin{figure}
+	\centering
+	\def\svgwidth{#2\columnwidth}
+	\includesvg{#1}
+	\caption{}
+	\label{#1}
+\end{figure}
+}
+
+
+
+\newcommand{\numeq}[2]{
+
+\begin{equation}\label{#2}
+#1
+\end{equation}
+}
+
+\newcommand{\unnumeq}[1]{
+
+\begin{equation*}
+#1
+\end{equation*}
+}
+
+\newcommand{\comma}{,\ \ }
+
+
+\newcommand{\xaxis}{\ensuremath{x}-axis\xspace}
+\newcommand{\yaxis}{\ensuremath{y}-axis\xspace}
+\newcommand{\zaxis}{\ensuremath{z}-axis\xspace}
+
+
+
+
+\DeclareFontFamily{U}{matha}{\hyphenchar\font45}
+\DeclareFontShape{U}{matha}{m}{n}{
+      <5> <6> <7> <8> <9> <10> gen * matha
+      <10.95> matha10 <12> <14.4> <17.28> <20.74> <24.88> matha12
+      }{}
+\DeclareSymbolFont{matha}{U}{matha}{m}{n}
+
+% Define a subset character from that font (from mathabx.dcl)
+% to completely replace the \subset character, you can replace
+% \varsubset with \subset
+
+\DeclareMathSymbol{\varnu}{3}{matha}{"50}
+
+
+
+\newcommand{\abs}[1]{\left|#1\right|}
+
+\renewcommand{\e}[1]{e^{#1}}
+\renewcommand{\l}{\lambda}
+
+
+
+\newcommand{\qualification}[2]{\qquad (\mathrm{#1}\ #2)}
+
+
+
+
+
+\usepackage{color}
+\definecolor{MyGray}{rgb}{0.96,0.97,0.98}
+\definecolor{BlueGray}{rgb}{0.96,0.97, 1.0}
+\makeatletter\newenvironment{graybox}{%
+   \begin{lrbox}{\@tempboxa}\begin{minipage}{\columnwidth}}{\end{minipage}\end{lrbox}%
+   \colorbox{MyGray}{\usebox{\@tempboxa}}
+}\makeatother
+
+\renewcommand{\Re}[1]{\mathrm{Re}\left(#1\right)}
+\renewcommand{\Im}[1]{\mathrm{Im}\left(#1\right)}
+
+
+
+
+
+%\newcommand{\insertfigure44}[2]{
+%\begin{figure}[H]
+%\centering
+%	\makebox[\textwidth][c]{\includegraphics[width=#2\textwidth]{#1}}
+%\caption{}
+%\label{#1}
+%\end{figure}
+%}
+
+
+
+
+
+\newcommand{\doublefigure}[4]{
+\begin{figure}[!ht]
+\centering
+	\begin{subfigure}[b]{#2\textwidth}
+		\includegraphics[width=\textwidth]{#1}
+		\caption{}
+		\label{#1}
+	\end{subfigure}
+	\qquad
+	\begin{subfigure}[b]{#4\textwidth}
+		\includegraphics[width=\textwidth]{#3}
+		\caption{}
+		\label{#3}
+	\end{subfigure}
+\caption{}
+\end{figure}
+}
+
+
+\newcommand{\twofigure}[3]{
+\begin{figure}[!ht]
+\centering
+	\begin{subfigure}[b]{#1\textwidth}
+		\includegraphics[width=\textwidth]{#2}
+		\caption{}
+		\label{#2}
+	\end{subfigure}
+	\quad
+	\begin{subfigure}[b]{#1\textwidth}
+		\includegraphics[width=\textwidth]{#3}
+		\caption{}
+		\label{#3}
+	\end{subfigure}
+\caption{}
+\end{figure}
+}
+
+
+\newcommand{\threefigure}[4]{
+\begin{figure}[!ht]
+\centering
+	\begin{subfigure}[b]{#1\textwidth}
+		\includegraphics[width=\textwidth]{#2}
+		\caption{}
+		\label{#2}
+	\end{subfigure}
+	\quad
+	\begin{subfigure}[b]{#1\textwidth}
+		\includegraphics[width=\textwidth]{#3}
+		\caption{}
+		\label{#3}
+	\end{subfigure}
+	\quad
+	\begin{subfigure}[b]{#1\textwidth}
+		\includegraphics[width=\textwidth]{#4}
+		\caption{}
+		\label{#4}
+	\end{subfigure}
+\caption{}
+\end{figure}
+}
+
+
+
+\newcommand{\fourfigure}[5]{
+\begin{figure}[!ht]
+\centering
+	\begin{subfigure}[b]{#1\textwidth}
+		\includegraphics[width=\textwidth]{#2}
+		\caption{}
+		\label{#2}
+	\end{subfigure}
+	\quad
+	\begin{subfigure}[b]{#1\textwidth}
+		\includegraphics[width=\textwidth]{#3}
+		\caption{}
+		\label{#3}
+	\end{subfigure}
+	\quad
+	\begin{subfigure}[b]{#1\textwidth}
+		\includegraphics[width=\textwidth]{#4}
+		\caption{}
+		\label{#4}
+	\end{subfigure}
+	\quad
+	\begin{subfigure}[b]{#1\textwidth}
+		\includegraphics[width=\textwidth]{#5}
+		\caption{}
+		\label{#5}
+	\end{subfigure}
+\caption{}
+\end{figure}
+}
+
+\newcommand{\fivefigure}[6]{
+\begin{figure}[!ht]
+\centering
+	\begin{subfigure}[b]{#1\textwidth}
+		\includegraphics[width=\textwidth]{#2}
+		\caption{}
+		\label{#2}
+	\end{subfigure}
+	\quad
+	\begin{subfigure}[b]{#1\textwidth}
+		\includegraphics[width=\textwidth]{#3}
+		\caption{}
+		\label{#3}
+	\end{subfigure}
+	\quad
+	\begin{subfigure}[b]{#1\textwidth}
+		\includegraphics[width=\textwidth]{#4}
+		\caption{}
+		\label{#4}
+	\end{subfigure}
+	\quad
+	\begin{subfigure}[b]{#1\textwidth}
+		\includegraphics[width=\textwidth]{#5}
+		\caption{}
+		\label{#5}
+	\end{subfigure}
+	\quad
+	\begin{subfigure}[b]{#1\textwidth}
+		\includegraphics[width=\textwidth]{#6}
+		\caption{}
+		\label{#6}
+	\end{subfigure}
+\caption{}
+\end{figure}
+}
+
+
+
+
+\newcommand{\gvec}[1]{\ensuremath{\boldsymbol #1} }
+\newcommand{\cross}{\times}
+\renewcommand{\dot}{\cdot}
+\newcommand{\khat}{\boldsymbol{\hat{\textbf{k}}}\xspace}
+\newcommand{\ihat}{\boldsymbol{\hat{\textbf{i}}}\xspace}
+\newcommand{\jhat}{\boldsymbol{\hat{\textbf{j}}}\xspace}
+\newcommand{\nhat}{\ensuremath{\boldsymbol{\hat{\textbf{n}}}}\xspace}
+\newcommand{\rhat}{\ensuremath{\boldsymbol{\hat{\textbf{r}}}}\xspace}
+\newcommand{\zhat}{\ensuremath{\boldsymbol{\hat{\textbf{z}}}}\xspace}
+\newcommand{\xhat}{\ensuremath{\boldsymbol{\hat{\textbf{x}}}}\xspace}
+\newcommand{\thetahat}{\ensuremath{\boldsymbol{\hat{\theta}}}\xspace}
+
+\newcommand{\Nabla}{\resizebox{0.85em}{0.65em}{\ensuremath{\nabla}}}
+%\newcommand{\Nu}{\resizebox{.75em}{0.5em}{\ensuremath{\nu}}}
+%\renewcommand*\nu{\includegraphics[width=0.5em]{custom_symbols/nu.eps}}
+
+\renewcommand{\div}{\Nabla \cdot}
+\newcommand{\curl}[1]{\Nabla \cross #1}
+\newcommand{\grad}{\Nabla\!}
+\newcommand{\laplacian}{\grad\ ^2 }
+\newcommand{\vecu}{\vec u\xspace}
+
+
+
+%\renewcommand*{\nu}{%
+%  \text{% change size in subscripts or superscripts
+%    \includegraphics[
+%      height=1.5ex,% adjust to suit
+%      valign=M,% center vertically
+%      raise=\fontdimen22\textfont2,% but raise it to the formula axis
+%    ]{custom_symbols/nu.eps}}
+%}
+
+
+\theoremstyle{break}
+\theoremstyle{nonumberplain}
+\theoremheaderfont{\bfseries}
+\newmdtheoremenv[%
+outerlinewidth=2,%
+leftmargin=40,%
+rightmargin=40,%
+backgroundcolor=blue!5,%
+%outerlinecolor=blue!20,%
+linecolor=blue!30,%
+innertopmargin=\topskip,%
+splittopskip = 1.5\topskip,%
+splitbottomskip=0.5\topskip,%
+ntheorem=true,%
+skipabove=0.75\baselineskip,%
+skipbelow=1.5\baselineskip,%
+]{myExample}{}[section]
+
+\newcommand{\squeeze}[1]{\scalebox{0.9}{#1}}
+\newcommand{\lnp}[1]{\ln\left(  #1  \right)}
+
+\theoremstyle{break}
+\theoremstyle{nonumberplain}
+\setlength\theoremindent{0cm}
+\theoremheaderfont{\bfseries}
+\newmdtheoremenv[%
+outerlinewidth=4,%
+leftmargin=40,%
+rightmargin=40,%
+backgroundcolor=green!8,%
+linecolor=black,%
+linewidth=2.0,%
+innertopmargin=\topskip,%
+splittopskip = 1.5\topskip,%
+splitbottomskip=0.5\topskip,%
+ntheorem=true,%
+skipabove=0.75\baselineskip,%
+skipbelow=0.75\baselineskip,%
+]{myProblem}{}[section]
+
+
+\newcommand{\Example}[3]{
+	\begin{myExample}\normalfont\belowdisplayskip=6pt
+		\refstepcounter{example}\label{#1}
+		\noindent \textsf{\textbf{\!\!\!\!\!\!\!\!\!\!\!\! Example \thechapter.\theexample}}
+
+		\vspace{1em}
+		\noindent#2 
+	\end{myExample}	
+		\vspace{0.5em}
+		\noindent\textbf{Solution:} #3
+
+\rule{\textwidth}{0.5pt}
+
+	\vspace{1em}
+}
+
+\newcommand{\startAssignment}{}
+\newcommand{\stopAssignment}{}
+
+\newcommand{\triplecomponentvector}[3]{\left(#1\right)\ihat + \left(#2\right)\jhat + \left(#3\right)\khat}
+
+%----------------------
+\definecollection{solutions}
+
+\newcommand\addsolution[2]{%
+  \collect{solutions}
+   {\section{Problem #1.#2}\label{09234758awfdkhj#1.#2.solution}\begin{addProblem}{#1.#2}\end{addProblem}}
+    {}
+    {}{}%
+}
+
+\newenvironment{answer}[1]
+  {\edef\x{\noexpand\addsolution{\thechapter}{\theproblem}}\x}
+  {\endcollect}
+
+
+\newenvironment{addProblem}[1]
+  {\begin{myProblem}\normalfont
+	\noindent\hyperref[#1_question]{\textsf{\textbf{\!\!\!\!\!\!\!\!\!\!\!\! Problem #1}\ \ }}}
+  {\end{myProblem}}
+
+
+\newcommand{\Problem}[2]{\stepcounter{problem}
+	\begin{minipage}{\textwidth}\begin{addProblem}{\thechapter.\theproblem}\label{\thechapter.\theproblem_question}
+	#1 
+    \end{addProblem}{\hfill\footnotesize{\hyperref[09234758awfdkhj\thechapter.\theproblem.solution]{$_{\mathrm{(solution)}}$}}}\end{minipage}
+	\begin{answer}{}
+
+	\ #2\ 
+\clearpage
+	\end{answer}
+}
+
+%----------------------
+\definecollection{equationappendix}
+
+\newcommand\coleq[3]{
+\begin{collect}{equationappendix}{}{}{}{}
+	#2 (Eq. \ref{#3})
+	\begin{equation*}
+	#1
+	\end{equation*}
+\end{collect}
+}
+
+
+\newcommand{\volumeint}{\int_{\mathcal V}}
+\newcommand{\surfaceint}{\int_{\mathcal S}}
+\DeclareMathAlphabet{\mathsfit}{\encodingdefault}{\sfdefault}{m}{sl}
+\SetMathAlphabet{\mathsfit}{bold}{\encodingdefault}{\sfdefault}{bx}{}
+\newcommand{\tens}[1]{\bm{\mathsfit{#1}}}
+\newcommand{\tensor}[1]{\bm{\mathsfit{#1}}}
+
+\newcommand{\curlArray}[6]{\left| \begin{array}{ccc}
+\ihat & \jhat & \khat \\
+^{\partial}\! /\! _{{\partial #1}} & ^{\partial}\! /\! _{{\partial #2}} & ^{\partial}\! /\! _{{\partial #3}} \\
+#4 & #5 & #6 \\
+\end{array}\right |}
+
+\newcommand{\cylindricalcurlArray}[3]{\left| \begin{array}{ccc}
+\rhat & r\thetahat & \zhat \\
+^{\partial}\! /\! _{{\partial r}} & ^{\partial}\! /\! _{{\partial \theta}} & ^{\partial}\! /\! _{{\partial z}} \\
+#1 & #2 & #3 \\
+\end{array}\right |}
+
+\newcommand{\crossArray}[9]{\left| \begin{array}{ccc}
+#1 & #2 & #3 \\
+#4 & #5 & #6 \\
+#7 & #8 & #9 \\
+\end{array}\right |}
+
+\newcommand{\threebythree}[9]{\left( \begin{array}{ccc}
+#1 & #2 & #3 \\
+#4 & #5 & #6 \\
+#7 & #8 & #9 \\
+\end{array}\right )}
+
+
+
+\newcommand{\boxedeq}[1]{\begin{empheq}[box={\mybox[5pt][5pt]}]{equation}#1
+\end{empheq}}
+
+
+\newcommand{\substar}{_{\!_\star}}
+
+\newcommand{\del}{\Nabla}
+
+
+

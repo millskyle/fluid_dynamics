@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:ns0="http://www.iki.fi/pav/software/textext/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg3936"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   width="773.375"
+   height="596.6625"
+   xml:space="preserve"
+   sodipodi:docname="mapped_aerofoil.svg"><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     id="namedview3938"
+     showgrid="false"
+     inkscape:zoom="1.582134"
+     inkscape:cx="289.37286"
+     inkscape:cy="396.79006"
+     inkscape:window-x="-8"
+     inkscape:window-y="5"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g7944" /><metadata
+     id="metadata3942"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs3940"><marker
+       style="overflow:visible"
+       id="TriangleOutL"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="TriangleOutL"><path
+         transform="scale(0.8)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         id="path5465" /></marker><marker
+       style="overflow:visible"
+       id="TriangleOutM"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM"><path
+         transform="scale(0.4)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         id="path5468" /></marker><marker
+       style="overflow:visible;"
+       id="Arrow2Lend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"><path
+         transform="scale(1.1) rotate(180) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         id="path5344" /></marker><clipPath
+       id="clipPath3952"
+       clipPathUnits="userSpaceOnUse"><path
+         id="path3954"
+         d="m 0,0 6186.96,0 0,4773 L 0,4773 0,0 z" /></clipPath><marker
+       style="overflow:visible"
+       id="TriangleOutME"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="TriangleOutME"><path
+         transform="scale(0.4)"
+         style="stroke:#37c871;stroke-width:1.0pt;fill:#37c871;fill-rule:evenodd"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         id="path6506" /></marker><marker
+       style="overflow:visible"
+       id="TriangleOutM3"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM3"><path
+         transform="scale(0.4)"
+         style="stroke:#37c871;stroke-width:1.0pt;fill:#37c871;fill-rule:evenodd"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         id="path6509" /></marker><marker
+       style="overflow:visible"
+       id="TriangleInSJ"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleInSJ"><path
+         inkscape:connector-curvature="0"
+         transform="scale(-0.2,-0.2)"
+         style="fill:#4d4d4d;fill-rule:evenodd;stroke:#4d4d4d;stroke-width:1pt"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         id="path6346" /></marker></defs><g
+     transform="matrix(1.25,0,0,-1.25,0,596.6625)"
+     inkscape:label="ink_ext_XXXXXX"
+     inkscape:groupmode="layer"
+     id="g3944">
+
+
+
+
+
+
+
+<g
+   id="g7901"
+   transform="translate(212.8,0)"><path
+     transform="matrix(0.8,0,0,-0.8,-281.39136,485.42143)"
+     d="m 353.97038,247.83182 c 0,50.47753 -40.92013,91.39765 -91.39766,91.39765 -50.47753,0 -91.39765,-40.92012 -91.39765,-91.39765 0,-50.47753 40.92012,-91.39765 91.39765,-91.39765 50.47753,0 91.39766,40.92012 91.39766,91.39765 z"
+     sodipodi:ry="91.397652"
+     sodipodi:rx="91.397652"
+     sodipodi:cy="247.83182"
+     sodipodi:cx="262.57272"
+     id="path4633-9"
+     style="fill:#d7eef4;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;fill-opacity:1"
+     sodipodi:type="arc" /><g
+     id="g7944"
+     transform="translate(0,0.48272567)"><path
+       sodipodi:nodetypes="czc"
+       inkscape:connector-curvature="0"
+       id="path4633"
+       d="m 267.22016,286.21357 c -40.68413,-8.78373 -176.12859,-47.05254 -176.18881,0.18962 -0.0602,47.24216 135.57504,9.62666 176.18881,-0.18962 z"
+       style="fill:#d7eef4;stroke:#000000;stroke-width:1.60000002000000000;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;fill-opacity:1" /><path
+       sodipodi:type="arc"
+       style="fill:#000000;stroke:none"
+       id="path4637"
+       sodipodi:cx="110.95094"
+       sodipodi:cy="239.3401"
+       sodipodi:rx="4.916255"
+       sodipodi:ry="4.916255"
+       d="m 115.8672,239.3401 a 4.916255,4.916255 0 1 1 -9.83251,0 4.916255,4.916255 0 1 1 9.83251,0 z"
+       transform="matrix(0.49090908,0,0,-0.49090908,66.204543,403.70971)" /><path
+       sodipodi:type="arc"
+       style="fill:#000000;stroke:none"
+       id="path4643"
+       sodipodi:cx="110.95094"
+       sodipodi:cy="239.3401"
+       sodipodi:rx="4.916255"
+       sodipodi:ry="4.916255"
+       d="m 115.8672,239.3401 a 4.916255,4.916255 0 1 1 -9.83251,0 4.916255,4.916255 0 1 1 9.83251,0 z"
+       transform="matrix(0.49090908,0,0,-0.49090908,212.31018,403.70971)" /><g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="g4966"
+       transform="translate(89.87955,-269.19379)"
+       xml:space="preserve"
+       stroke-miterlimit="10.433"
+       font-style="normal"
+       font-variant="normal"
+       font-weight="normal"
+       font-stretch="normal"
+       font-size-adjust="none"
+       letter-spacing="normal"
+       word-spacing="normal"
+       ns0:text="$a$"
+       ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty">
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 184.85,549.13 -0.02,-0.01 -0.01,-0.02 -0.01,-0.01 -0.02,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.02 -0.01,-0.01 -0.01,0 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 0,-0.01 -0.01,0 -0.01,-0.01 -0.01,-0.01 -0.02,-0.02 -0.01,-0.01 -0.01,-0.02 -0.02,-0.01 -0.01,-0.01 -0.01,-0.02 c -0.3,-0.31 -0.43,-0.41 -0.52,-0.41 -0.08,0 -0.14,0.06 -0.14,0.13 0,0.2 0.42,1.9 0.89,3.61 0.03,0.1 0.04,0.12 0.05,0.21 l -0.06,0.03 -0.61,-0.07 -0.03,-0.03 -0.11,-0.48 c -0.08,0.37 -0.37,0.58 -0.8,0.58 l 0.06,-0.22 c 0.34,-0.02 0.56,-0.26 0.56,-0.61 0,-0.83 -0.5,-2 -1.18,-2.74 -0.24,-0.27 -0.58,-0.44 -0.87,-0.44 -0.35,0 -0.58,0.29 -0.58,0.75 0,0.54 0.38,1.56 0.81,2.18 0.4,0.57 0.86,0.89 1.26,0.86 h 0 l -0.06,0.22 c -1.31,0 -2.84,-1.82 -2.84,-3.39 0,-0.69 0.38,-1.1 1.01,-1.1 0.7,0 1.13,0.33 2,1.56 -0.2,-0.78 -0.23,-0.91 -0.23,-1.15 0,-0.28 0.12,-0.4 0.4,-0.4 0.4,0 0.65,0.19 1.38,1.09 z"
+   id="path4968" />
+</g><g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty"
+       ns0:text="$-a$"
+       word-spacing="normal"
+       letter-spacing="normal"
+       font-size-adjust="none"
+       font-stretch="normal"
+       font-weight="normal"
+       font-variant="normal"
+       font-style="normal"
+       stroke-miterlimit="10.433"
+       xml:space="preserve"
+       transform="translate(-68.63873,-271.286)"
+       id="g7851">
+<polygon
+   id="polygon7853"
+   points="185.91,550.87 180.82,550.87 180.82,550.31 185.91,550.31 "
+   style="fill:#000000;stroke-width:0" />
+<path
+   id="path7855"
+   d="m 191.58,549.13 -0.01,-0.01 -0.02,-0.02 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 -0.02,-0.01 -0.01,-0.02 -0.01,-0.01 -0.01,0 -0.01,-0.01 0,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,0 0,-0.01 -0.02,-0.01 -0.01,-0.02 -0.02,-0.01 -0.01,-0.02 -0.01,-0.01 -0.01,-0.01 -0.02,-0.02 c -0.3,-0.31 -0.43,-0.41 -0.51,-0.41 -0.08,0 -0.14,0.06 -0.14,0.13 0,0.2 0.41,1.9 0.88,3.61 0.03,0.1 0.04,0.12 0.06,0.21 l -0.07,0.03 -0.61,-0.07 -0.03,-0.03 -0.11,-0.48 c -0.07,0.37 -0.36,0.58 -0.79,0.58 l 0.06,-0.22 c 0.34,-0.02 0.56,-0.26 0.56,-0.61 0,-0.83 -0.5,-2 -1.19,-2.74 -0.24,-0.27 -0.58,-0.44 -0.86,-0.44 -0.35,0 -0.58,0.29 -0.58,0.75 0,0.54 0.38,1.56 0.8,2.18 0.4,0.57 0.87,0.89 1.27,0.86 h 0 l -0.06,0.22 c -1.32,0 -2.85,-1.82 -2.85,-3.39 0,-0.69 0.38,-1.1 1.02,-1.1 0.69,0 1.12,0.33 2,1.56 -0.2,-0.78 -0.23,-0.91 -0.23,-1.15 0,-0.28 0.12,-0.4 0.4,-0.4 0.39,0 0.64,0.19 1.38,1.09 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+</g></g><path
+     style="fill:none;stroke:#000000;stroke-width:1.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     d="m -38.540557,379.81862 0,-185.74019"
+     id="path4022"
+     inkscape:connector-curvature="0" /><path
+     inkscape:connector-curvature="0"
+     id="path4532"
+     d="m 54.151013,286.94853 -248.774173,0"
+     style="fill:none;stroke:#000000;stroke-width:1.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" /><g
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     id="content-1"
+     transform="translate(-219.23434,-164.19507)"
+     xml:space="preserve"
+     stroke-miterlimit="10.433"
+     font-style="normal"
+     font-variant="normal"
+     font-weight="normal"
+     font-stretch="normal"
+     font-size-adjust="none"
+     letter-spacing="normal"
+     word-spacing="normal"
+     ns0:text="$iy$"
+     ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty">
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 182.01,549.17 -0.02,-0.03 -0.02,-0.03 -0.02,-0.02 -0.02,-0.03 -0.02,-0.02 -0.02,-0.03 -0.01,-0.02 -0.02,-0.02 -0.02,-0.02 -0.01,-0.02 -0.01,-0.01 -0.02,-0.02 -0.01,-0.02 -0.01,-0.01 -0.02,-0.02 -0.01,-0.01 -0.01,-0.02 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.02 -0.02,-0.02 -0.01,-0.02 -0.02,-0.02 -0.02,-0.02 -0.02,-0.02 c -0.17,-0.17 -0.32,-0.26 -0.41,-0.26 -0.08,0 -0.15,0.07 -0.15,0.14 0,0.1 0.03,0.25 0.09,0.44 0,0.03 0.03,0.1 0.05,0.18 v 0.02 l 0.01,0.02 0.88,3.2 -0.03,0.02 c -1,-0.19 -1.2,-0.22 -1.59,-0.25 v -0.16 c 0.53,-0.01 0.62,-0.04 0.62,-0.24 0,-0.08 -0.03,-0.24 -0.08,-0.43 l -0.48,-1.76 c -0.16,-0.58 -0.22,-0.89 -0.22,-1.09 0,-0.36 0.16,-0.56 0.46,-0.56 0.45,0 0.82,0.3 1.39,1.13 z"
+   id="path4580-7" />
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 181.93,554.53 -0.03,0 -0.02,0 -0.02,0 -0.03,-0.01 -0.02,0 -0.02,-0.01 -0.03,-0.01 -0.02,-0.01 -0.02,-0.01 -0.02,-0.01 -0.02,-0.01 -0.02,-0.01 -0.01,-0.02 -0.02,-0.01 -0.02,-0.02 -0.01,-0.02 -0.02,-0.02 -0.01,-0.01 -0.02,-0.02 -0.01,-0.03 -0.01,-0.02 -0.01,-0.02 -0.01,-0.02 -0.01,-0.02 -0.01,-0.03 -0.01,-0.02 0,-0.03 -0.01,-0.02 0,-0.03 -0.01,-0.03 0,-0.03 0,-0.02 c 0,-0.32 0.19,-0.53 0.48,-0.53 0.26,0 0.49,0.23 0.49,0.51 0,0.29 -0.23,0.54 -0.5,0.54 z"
+   id="path4582-4" />
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 187.71,551.87 -0.01,0.03 0,0.03 0,0.02 -0.01,0.03 0,0.03 -0.01,0.02 -0.01,0.03 -0.01,0.02 -0.01,0.03 -0.01,0.02 -0.01,0.02 -0.02,0.03 -0.01,0.02 -0.02,0.02 -0.02,0.02 -0.02,0.02 -0.02,0.01 -0.02,0.02 -0.02,0.02 -0.02,0.01 -0.02,0.02 -0.02,0.01 -0.03,0.01 -0.02,0.01 -0.03,0.01 -0.02,0.01 -0.03,0.01 -0.02,0.01 -0.03,0 -0.03,0.01 -0.02,0 -0.03,0 c -0.23,0 -0.39,-0.15 -0.39,-0.37 0,-0.16 0.08,-0.26 0.28,-0.39 0.19,-0.11 0.26,-0.2 0.26,-0.33 0,-0.4 -0.36,-1.17 -1.22,-2.58 l -0.19,1.16 c -0.16,0.88 -0.71,2.51 -0.86,2.51 H 185 l -0.09,-0.01 -0.98,-0.17 -0.31,-0.06 v -0.17 c 0.12,0.03 0.2,0.04 0.31,0.04 0.39,0 0.57,-0.15 0.76,-0.64 0.27,-0.67 0.82,-2.9 0.82,-3.29 0,-0.11 -0.04,-0.23 -0.1,-0.35 -0.08,-0.13 -0.53,-0.72 -0.71,-0.91 -0.23,-0.24 -0.35,-0.32 -0.48,-0.32 -0.07,0 -0.13,0.03 -0.24,0.11 -0.14,0.12 -0.24,0.17 -0.36,0.17 -0.22,0 -0.39,-0.17 -0.39,-0.39 0,-0.26 0.21,-0.44 0.51,-0.44 0.56,0 1.64,1.14 2.66,2.85 0.84,1.37 1.31,2.46 1.31,3.03 z"
+   id="path4584-0" />
+</g><path
+     transform="matrix(0.49090908,0,0,-0.49090908,-198.91813,404.46249)"
+     d="m 115.8672,239.3401 c 0,2.71518 -2.20108,4.91626 -4.91626,4.91626 -2.71517,0 -4.91625,-2.20108 -4.91625,-4.91626 0,-2.71517 2.20108,-4.91625 4.91625,-4.91625 2.71518,0 4.91626,2.20108 4.91626,4.91625 z"
+     sodipodi:ry="4.916255"
+     sodipodi:rx="4.916255"
+     sodipodi:cy="239.3401"
+     sodipodi:cx="110.95094"
+     id="path4637-4"
+     style="fill:#000000;stroke:none"
+     sodipodi:type="arc" /><path
+     sodipodi:type="arc"
+     style="fill:#000000;stroke:none"
+     id="path4639"
+     sodipodi:cx="110.95094"
+     sodipodi:cy="239.3401"
+     sodipodi:rx="4.916255"
+     sodipodi:ry="4.916255"
+     d="m 115.8672,239.3401 c 0,2.71518 -2.20108,4.91626 -4.91626,4.91626 -2.71517,0 -4.91625,-2.20108 -4.91625,-4.91626 0,-2.71517 2.20108,-4.91625 4.91625,-4.91625 2.71518,0 4.91626,2.20108 4.91626,4.91625 z"
+     transform="matrix(0.49090908,0,0,-0.49090908,-125.31814,404.46249)" /><path
+     transform="matrix(0.49090908,0,0,-0.49090908,-52.812507,404.46249)"
+     d="m 115.8672,239.3401 c 0,2.71518 -2.20108,4.91626 -4.91626,4.91626 -2.71517,0 -4.91625,-2.20108 -4.91625,-4.91626 0,-2.71517 2.20108,-4.91625 4.91625,-4.91625 2.71518,0 4.91626,2.20108 4.91626,4.91625 z"
+     sodipodi:ry="4.916255"
+     sodipodi:rx="4.916255"
+     sodipodi:cy="239.3401"
+     sodipodi:cx="110.95094"
+     id="path4643-8"
+     style="fill:#000000;stroke:none"
+     sodipodi:type="arc" /><g
+     ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty"
+     ns0:text="$-(a+2\\lambda)$"
+     word-spacing="normal"
+     letter-spacing="normal"
+     font-size-adjust="none"
+     font-stretch="normal"
+     font-weight="normal"
+     font-variant="normal"
+     font-style="normal"
+     stroke-miterlimit="10.433"
+     xml:space="preserve"
+     transform="translate(-369.15843,-270.89077)"
+     id="g4698"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0">
+<polygon
+   id="polygon4700"
+   points="180.82,550.87 180.82,550.31 185.91,550.31 185.91,550.87 "
+   style="fill:#000000;stroke-width:0" />
+<path
+   id="path4702"
+   d="m 190.07,554.75 -0.07,-0.04 -0.07,-0.04 -0.06,-0.05 -0.06,-0.04 -0.06,-0.04 -0.05,-0.04 -0.06,-0.03 -0.05,-0.04 -0.05,-0.04 -0.05,-0.03 -0.05,-0.04 -0.04,-0.03 -0.05,-0.04 -0.04,-0.03 -0.08,-0.07 -0.08,-0.07 -0.07,-0.07 -0.07,-0.07 -0.07,-0.07 -0.07,-0.07 -0.07,-0.08 -0.07,-0.08 -0.07,-0.08 c -0.7,-0.86 -1.05,-1.86 -1.05,-3.02 0,-1.26 0.37,-2.24 1.24,-3.25 0.41,-0.47 0.67,-0.69 1.19,-1.01 l 0.12,0.16 c -0.8,0.62 -1.08,0.97 -1.35,1.72 -0.23,0.66 -0.34,1.42 -0.34,2.41 0,1.04 0.13,1.86 0.39,2.47 0.28,0.62 0.58,0.98 1.3,1.55 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+<path
+   id="path4704"
+   d="m 195.49,549.13 -0.01,-0.01 -0.01,-0.02 -0.01,-0.01 -0.02,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.02 -0.01,-0.01 -0.01,0 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 0,-0.01 -0.01,0 -0.01,-0.01 -0.01,-0.01 -0.02,-0.02 -0.01,-0.01 -0.01,-0.02 -0.02,-0.01 -0.01,-0.01 -0.01,-0.02 c -0.3,-0.31 -0.43,-0.41 -0.52,-0.41 -0.08,0 -0.14,0.06 -0.14,0.13 0,0.2 0.42,1.9 0.89,3.61 0.03,0.1 0.04,0.12 0.06,0.21 l -0.07,0.03 -0.61,-0.07 -0.03,-0.03 -0.11,-0.48 c -0.08,0.37 -0.37,0.58 -0.8,0.58 l 0.06,-0.22 c 0.34,-0.02 0.56,-0.26 0.56,-0.61 0,-0.83 -0.5,-2 -1.18,-2.74 -0.24,-0.27 -0.58,-0.44 -0.87,-0.44 -0.35,0 -0.58,0.29 -0.58,0.75 0,0.54 0.38,1.56 0.81,2.18 0.4,0.57 0.86,0.89 1.26,0.86 h 0 l -0.06,0.22 c -1.31,0 -2.84,-1.82 -2.84,-3.39 0,-0.69 0.38,-1.1 1.01,-1.1 0.7,0 1.13,0.33 2,1.56 -0.2,-0.78 -0.23,-0.91 -0.23,-1.15 0,-0.28 0.12,-0.4 0.4,-0.4 0.4,0 0.65,0.19 1.39,1.09 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+<polygon
+   id="polygon4706"
+   points="201.79,548.04 201.79,550.31 204.05,550.31 204.05,550.87 201.79,550.87 201.79,553.11 201.23,553.11 201.23,550.87 198.96,550.87 198.96,550.31 201.23,550.31 201.23,548.04 "
+   style="fill:#000000;stroke-width:0" />
+<path
+   id="path4708"
+   d="m 211.62,549.4 -0.13,0.05 c -0.37,-0.57 -0.5,-0.66 -0.95,-0.66 h -2.37 l 1.67,1.75 c 0.88,0.92 1.27,1.68 1.27,2.45 0,1 -0.8,1.76 -1.84,1.76 -0.55,0 -1.06,-0.22 -1.43,-0.61 -0.32,-0.34 -0.47,-0.66 -0.64,-1.36 l 0.21,-0.05 c 0.4,0.97 0.76,1.29 1.44,1.29 0.84,0 1.41,-0.57 1.41,-1.4 0,-0.78 -0.46,-1.7 -1.3,-2.59 l -1.77,-1.87 v -0.12 h 3.88 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+<path
+   id="path4710"
+   d="m 217.49,548.76 -0.01,0.02 c -0.14,0 -0.31,-0.34 -0.73,-0.34 -1.88,0 1.54,6.1 -1.38,6.1 h -0.11 c -0.18,0 -0.6,-0.14 -0.73,-0.26 -0.01,-0.01 0.07,-0.1 0.08,-0.1 0.05,0.04 0.27,0.12 0.47,0.12 0.96,0 0.71,-1.58 0.71,-1.84 0,-0.03 0,-0.05 -0.02,-0.09 -0.19,-0.93 -3.13,-3.53 -3.37,-4.33 h 1 c 0,0.1 0.01,0.2 0.03,0.3 0.28,1.28 2.24,3.2 2.24,3.21 h 0.01 c -0.06,-0.51 -0.96,-3.62 0.66,-3.62 0.44,0 1.13,0.71 1.15,0.83 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+<path
+   id="path4712"
+   d="m 218.63,546.28 0.07,0.04 0.06,0.05 0.06,0.04 0.07,0.04 0.05,0.04 0.06,0.04 0.05,0.03 0.06,0.04 0.05,0.04 0.05,0.03 0.04,0.04 0.05,0.04 0.04,0.03 0.05,0.03 0.08,0.07 0.08,0.07 0.07,0.07 0.07,0.07 0.07,0.07 0.07,0.07 0.07,0.08 0.06,0.08 0.07,0.08 c 0.71,0.87 1.06,1.86 1.06,3.02 0,1.27 -0.37,2.24 -1.25,3.25 -0.41,0.48 -0.66,0.69 -1.18,1.01 l -0.12,-0.16 c 0.8,-0.62 1.06,-0.97 1.34,-1.71 0.24,-0.67 0.35,-1.43 0.35,-2.42 0,-1.03 -0.13,-1.86 -0.4,-2.46 -0.28,-0.63 -0.57,-0.99 -1.29,-1.56 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+</g><g
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     id="g4834"
+     transform="translate(-258.1691,-272.07795)"
+     xml:space="preserve"
+     stroke-miterlimit="10.433"
+     font-style="normal"
+     font-variant="normal"
+     font-weight="normal"
+     font-stretch="normal"
+     font-size-adjust="none"
+     letter-spacing="normal"
+     word-spacing="normal"
+     ns0:text="$-\\lambda$"
+     ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty">
+<polygon
+   style="fill:#000000;stroke-width:0"
+   points="180.82,550.87 180.82,550.31 185.91,550.31 185.91,550.87 "
+   id="polygon4836" />
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 192.35,548.76 -0.01,0.02 c -0.14,0 -0.31,-0.34 -0.73,-0.34 -1.88,0 1.54,6.1 -1.38,6.1 h -0.11 c -0.18,0 -0.6,-0.14 -0.73,-0.26 -0.01,-0.01 0.07,-0.1 0.08,-0.1 0.05,0.04 0.27,0.12 0.47,0.12 0.96,0 0.71,-1.58 0.71,-1.84 0,-0.03 0,-0.05 -0.02,-0.09 -0.19,-0.93 -3.13,-3.53 -3.37,-4.33 h 1 c 0,0.1 0.01,0.2 0.03,0.3 0.28,1.28 2.24,3.2 2.24,3.21 h 0.01 c -0.06,-0.51 -0.96,-3.62 0.66,-3.62 0.44,0 1.13,0.71 1.15,0.83 z"
+   id="path4838" />
+</g><g
+     ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty"
+     ns0:text="$a$"
+     word-spacing="normal"
+     letter-spacing="normal"
+     font-size-adjust="none"
+     font-stretch="normal"
+     font-weight="normal"
+     font-variant="normal"
+     font-style="normal"
+     stroke-miterlimit="10.433"
+     xml:space="preserve"
+     transform="translate(-175.24313,-268.44101)"
+     id="g4966-8"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0">
+<path
+   id="path4968-2"
+   d="m 184.85,549.13 -0.02,-0.01 -0.01,-0.02 -0.01,-0.01 -0.02,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.02 -0.01,-0.01 -0.01,0 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 0,-0.01 -0.01,0 -0.01,-0.01 -0.01,-0.01 -0.02,-0.02 -0.01,-0.01 -0.01,-0.02 -0.02,-0.01 -0.01,-0.01 -0.01,-0.02 c -0.3,-0.31 -0.43,-0.41 -0.52,-0.41 -0.08,0 -0.14,0.06 -0.14,0.13 0,0.2 0.42,1.9 0.89,3.61 0.03,0.1 0.04,0.12 0.05,0.21 l -0.06,0.03 -0.61,-0.07 -0.03,-0.03 -0.11,-0.48 c -0.08,0.37 -0.37,0.58 -0.8,0.58 l 0.06,-0.22 c 0.34,-0.02 0.56,-0.26 0.56,-0.61 0,-0.83 -0.5,-2 -1.18,-2.74 -0.24,-0.27 -0.58,-0.44 -0.87,-0.44 -0.35,0 -0.58,0.29 -0.58,0.75 0,0.54 0.38,1.56 0.81,2.18 0.4,0.57 0.86,0.89 1.26,0.86 h 0 l -0.06,0.22 c -1.31,0 -2.84,-1.82 -2.84,-3.39 0,-0.69 0.38,-1.1 1.01,-1.1 0.7,0 1.13,0.33 2,1.56 -0.2,-0.78 -0.23,-0.91 -0.23,-1.15 0,-0.28 0.12,-0.4 0.4,-0.4 0.4,0 0.65,0.19 1.38,1.09 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+</g><g
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     id="g5100-4"
+     transform="translate(-123.4144,-263.38455)"
+     xml:space="preserve"
+     stroke-miterlimit="10.433"
+     font-style="normal"
+     font-variant="normal"
+     font-weight="normal"
+     font-stretch="normal"
+     font-size-adjust="none"
+     letter-spacing="normal"
+     word-spacing="normal"
+     ns0:text="$x$"
+     ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty">
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 184.55,549.14 -0.02,-0.02 -0.01,-0.01 -0.01,-0.02 -0.02,-0.01 -0.01,-0.02 -0.01,-0.01 -0.02,-0.02 -0.01,-0.01 -0.01,-0.02 -0.01,-0.01 -0.02,-0.02 -0.01,-0.02 -0.01,-0.01 0,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 0,-0.01 -0.01,-0.01 -0.01,-0.01 c -0.23,-0.3 -0.35,-0.4 -0.46,-0.4 -0.15,0 -0.24,0.13 -0.31,0.41 -0.02,0.08 -0.03,0.14 -0.04,0.17 -0.25,1 -0.36,1.46 -0.36,1.61 0.44,0.76 0.8,1.2 0.98,1.2 0.06,0 0.14,-0.03 0.24,-0.08 0.12,-0.07 0.19,-0.09 0.27,-0.09 0.21,0 0.34,0.15 0.34,0.36 0,0.21 -0.16,0.37 -0.4,0.37 -0.44,0 -0.82,-0.36 -1.5,-1.42 l -0.11,0.54 c -0.14,0.68 -0.25,0.88 -0.52,0.88 -0.22,0 -0.56,-0.09 -1.17,-0.29 l -0.11,-0.04 0.05,-0.15 c 0.37,0.09 0.46,0.11 0.55,0.11 0.25,0 0.31,-0.09 0.45,-0.69 l 0.29,-1.22 -0.82,-1.16 c -0.2,-0.3 -0.4,-0.48 -0.5,-0.48 -0.07,0 -0.16,0.03 -0.26,0.09 -0.13,0.07 -0.24,0.1 -0.32,0.1 -0.19,0 -0.34,-0.15 -0.34,-0.35 0,-0.25 0.2,-0.41 0.5,-0.41 0.31,0 0.43,0.09 0.92,0.69 0.27,0.32 0.48,0.59 0.9,1.16 l 0.3,-1.19 c 0.12,-0.5 0.25,-0.66 0.57,-0.66 0.38,0 0.64,0.24 1.22,1.13 z"
+   id="path5102-5" />
+</g><path
+     sodipodi:nodetypes="cc"
+     inkscape:connector-curvature="0"
+     id="path5170"
+     d="m -63.926327,294.1751 c 2.52874,-1.96841 3.35088,-3.56637 3.35088,-7.01912"
+     style="fill:none;stroke:#000000;stroke-width:0.40000001;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" /><g
+     ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty"
+     ns0:text="$\\gamma$"
+     word-spacing="normal"
+     letter-spacing="normal"
+     font-size-adjust="none"
+     font-stretch="normal"
+     font-weight="normal"
+     font-variant="normal"
+     font-style="normal"
+     stroke-miterlimit="10.433"
+     xml:space="preserve"
+     transform="translate(-238.92124,-255.38213)"
+     id="g5245"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0">
+<path
+   id="path5247"
+   d="m 185.42,552.4 -0.72,-0.14 c -0.46,-1.07 -1,-2.13 -1.7,-3.07 0.04,0.97 0.11,3.23 -1.31,3.23 -0.67,0 -1.52,-0.9 -1.52,-1.48 0,-0.03 0.01,-0.07 0.05,-0.07 0.22,0 0.2,0.84 1.17,0.84 1.04,0 1.09,-2.02 1.09,-2.75 0,-0.26 -0.01,-0.49 -0.01,-0.73 -0.34,-0.44 -1.15,-1.45 -1.15,-1.99 0,-0.18 0.08,-0.26 0.27,-0.26 0.83,0 0.98,1.69 1.25,2.26 0.16,0.34 0.58,0.84 0.81,1.17 0.66,0.93 1.37,1.92 1.77,2.99 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+</g><path
+     sodipodi:type="arc"
+     style="fill:#000000;stroke:none"
+     id="path6305"
+     sodipodi:cx="110.95094"
+     sodipodi:cy="239.3401"
+     sodipodi:rx="4.916255"
+     sodipodi:ry="4.916255"
+     d="m 115.8672,239.3401 c 0,2.71518 -2.20108,4.91626 -4.91626,4.91626 -2.71517,0 -4.91625,-2.20108 -4.91625,-4.91626 0,-2.71517 2.20108,-4.91625 4.91625,-4.91625 2.71518,0 4.91626,2.20108 4.91626,4.91625 z"
+     transform="matrix(0.49090908,0,0,-0.49090908,-75.212507,457.26249)" /><path
+     inkscape:connector-curvature="0"
+     id="path5172"
+     d="m -70.810267,286.94853 50.2898,53.03368"
+     style="fill:none;stroke:#37c871;stroke-width:0.89999998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:none"
+     sodipodi:nodetypes="cc" /><g
+     ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty"
+     ns0:text="$a+\\lambda$"
+     word-spacing="normal"
+     letter-spacing="normal"
+     font-size-adjust="none"
+     font-stretch="normal"
+     font-weight="normal"
+     font-variant="normal"
+     font-style="normal"
+     stroke-miterlimit="10.433"
+     xml:space="preserve"
+     transform="matrix(0.67555033,0.73731388,-0.73731388,0.67555033,226.21054,-198.71232)"
+     id="g7700"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0">
+<path
+   id="path7702"
+   d="m 184.85,549.13 -0.02,-0.01 -0.01,-0.02 -0.01,-0.01 -0.02,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.02 -0.01,-0.01 -0.01,0 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 0,-0.01 -0.01,0 -0.01,-0.01 -0.01,-0.01 -0.02,-0.02 -0.01,-0.01 -0.01,-0.02 -0.02,-0.01 -0.01,-0.01 -0.01,-0.02 c -0.3,-0.31 -0.43,-0.41 -0.52,-0.41 -0.08,0 -0.14,0.06 -0.14,0.13 0,0.2 0.42,1.9 0.89,3.61 0.03,0.1 0.04,0.12 0.05,0.21 l -0.06,0.03 -0.61,-0.07 -0.03,-0.03 -0.11,-0.48 c -0.08,0.37 -0.37,0.58 -0.8,0.58 l 0.06,-0.22 c 0.34,-0.02 0.56,-0.26 0.56,-0.61 0,-0.83 -0.5,-2 -1.18,-2.74 -0.24,-0.27 -0.58,-0.44 -0.87,-0.44 -0.35,0 -0.58,0.29 -0.58,0.75 0,0.54 0.38,1.56 0.81,2.18 0.4,0.57 0.86,0.89 1.26,0.86 h 0 l -0.06,0.22 c -1.31,0 -2.84,-1.82 -2.84,-3.39 0,-0.69 0.38,-1.1 1.01,-1.1 0.7,0 1.13,0.33 2,1.56 -0.2,-0.78 -0.23,-0.91 -0.23,-1.15 0,-0.28 0.12,-0.4 0.4,-0.4 0.4,0 0.65,0.19 1.38,1.09 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+<polygon
+   id="polygon7704"
+   points="190.58,550.87 188.31,550.87 188.31,550.31 190.58,550.31 190.58,548.04 191.13,548.04 191.13,550.31 193.4,550.31 193.4,550.87 191.13,550.87 191.13,553.11 190.58,553.11 "
+   style="fill:#000000;stroke-width:0" />
+<path
+   id="path7706"
+   d="m 201.85,548.76 0,0.02 c -0.14,0 -0.31,-0.34 -0.73,-0.34 -1.88,0 1.54,6.1 -1.38,6.1 h -0.11 c -0.18,0 -0.6,-0.14 -0.73,-0.26 -0.01,-0.01 0.07,-0.1 0.08,-0.1 0.05,0.04 0.27,0.12 0.47,0.12 0.96,0 0.7,-1.58 0.7,-1.84 0.01,-0.03 0,-0.05 -0.01,-0.09 -0.19,-0.93 -3.13,-3.53 -3.37,-4.33 h 1 c 0,0.1 0.01,0.2 0.03,0.3 0.28,1.28 2.24,3.2 2.24,3.21 h 0 c -0.05,-0.51 -0.95,-3.62 0.67,-3.62 0.44,0 1.13,0.71 1.14,0.83 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+</g><path
+     inkscape:connector-curvature="0"
+     id="path3133"
+     d="m 191.85944,379.81862 0,-185.74019"
+     style="fill:none;stroke:#000000;stroke-width:1.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" /><path
+     style="fill:none;stroke:#000000;stroke-width:1.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     d="m 284.66135,286.76975 -207.026219,0"
+     id="path3135"
+     inkscape:connector-curvature="0" /><g
+     ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty"
+     ns0:text="$iy$"
+     word-spacing="normal"
+     letter-spacing="normal"
+     font-size-adjust="none"
+     font-stretch="normal"
+     font-weight="normal"
+     font-variant="normal"
+     font-style="normal"
+     stroke-miterlimit="10.433"
+     xml:space="preserve"
+     transform="translate(11.16566,-164.19507)"
+     id="g3137"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0">
+<path
+   id="path3139"
+   d="m 182.01,549.17 -0.02,-0.03 -0.02,-0.03 -0.02,-0.02 -0.02,-0.03 -0.02,-0.02 -0.02,-0.03 -0.01,-0.02 -0.02,-0.02 -0.02,-0.02 -0.01,-0.02 -0.01,-0.01 -0.02,-0.02 -0.01,-0.02 -0.01,-0.01 -0.02,-0.02 -0.01,-0.01 -0.01,-0.02 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.02 -0.02,-0.02 -0.01,-0.02 -0.02,-0.02 -0.02,-0.02 -0.02,-0.02 c -0.17,-0.17 -0.32,-0.26 -0.41,-0.26 -0.08,0 -0.15,0.07 -0.15,0.14 0,0.1 0.03,0.25 0.09,0.44 0,0.03 0.03,0.1 0.05,0.18 v 0.02 l 0.01,0.02 0.88,3.2 -0.03,0.02 c -1,-0.19 -1.2,-0.22 -1.59,-0.25 v -0.16 c 0.53,-0.01 0.62,-0.04 0.62,-0.24 0,-0.08 -0.03,-0.24 -0.08,-0.43 l -0.48,-1.76 c -0.16,-0.58 -0.22,-0.89 -0.22,-1.09 0,-0.36 0.16,-0.56 0.46,-0.56 0.45,0 0.82,0.3 1.39,1.13 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+<path
+   id="path3141"
+   d="m 181.93,554.53 -0.03,0 -0.02,0 -0.02,0 -0.03,-0.01 -0.02,0 -0.02,-0.01 -0.03,-0.01 -0.02,-0.01 -0.02,-0.01 -0.02,-0.01 -0.02,-0.01 -0.02,-0.01 -0.01,-0.02 -0.02,-0.01 -0.02,-0.02 -0.01,-0.02 -0.02,-0.02 -0.01,-0.01 -0.02,-0.02 -0.01,-0.03 -0.01,-0.02 -0.01,-0.02 -0.01,-0.02 -0.01,-0.02 -0.01,-0.03 -0.01,-0.02 0,-0.03 -0.01,-0.02 0,-0.03 -0.01,-0.03 0,-0.03 0,-0.02 c 0,-0.32 0.19,-0.53 0.48,-0.53 0.26,0 0.49,0.23 0.49,0.51 0,0.29 -0.23,0.54 -0.5,0.54 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+<path
+   id="path3143"
+   d="m 187.71,551.87 -0.01,0.03 0,0.03 0,0.02 -0.01,0.03 0,0.03 -0.01,0.02 -0.01,0.03 -0.01,0.02 -0.01,0.03 -0.01,0.02 -0.01,0.02 -0.02,0.03 -0.01,0.02 -0.02,0.02 -0.02,0.02 -0.02,0.02 -0.02,0.01 -0.02,0.02 -0.02,0.02 -0.02,0.01 -0.02,0.02 -0.02,0.01 -0.03,0.01 -0.02,0.01 -0.03,0.01 -0.02,0.01 -0.03,0.01 -0.02,0.01 -0.03,0 -0.03,0.01 -0.02,0 -0.03,0 c -0.23,0 -0.39,-0.15 -0.39,-0.37 0,-0.16 0.08,-0.26 0.28,-0.39 0.19,-0.11 0.26,-0.2 0.26,-0.33 0,-0.4 -0.36,-1.17 -1.22,-2.58 l -0.19,1.16 c -0.16,0.88 -0.71,2.51 -0.86,2.51 H 185 l -0.09,-0.01 -0.98,-0.17 -0.31,-0.06 v -0.17 c 0.12,0.03 0.2,0.04 0.31,0.04 0.39,0 0.57,-0.15 0.76,-0.64 0.27,-0.67 0.82,-2.9 0.82,-3.29 0,-0.11 -0.04,-0.23 -0.1,-0.35 -0.08,-0.13 -0.53,-0.72 -0.71,-0.91 -0.23,-0.24 -0.35,-0.32 -0.48,-0.32 -0.07,0 -0.13,0.03 -0.24,0.11 -0.14,0.12 -0.24,0.17 -0.36,0.17 -0.22,0 -0.39,-0.17 -0.39,-0.39 0,-0.26 0.21,-0.44 0.51,-0.44 0.56,0 1.64,1.14 2.66,2.85 0.84,1.37 1.31,2.46 1.31,3.03 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+</g><g
+     ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty"
+     ns0:text="$x$"
+     word-spacing="normal"
+     letter-spacing="normal"
+     font-size-adjust="none"
+     font-stretch="normal"
+     font-weight="normal"
+     font-variant="normal"
+     font-style="normal"
+     stroke-miterlimit="10.433"
+     xml:space="preserve"
+     transform="translate(106.9856,-263.38455)"
+     id="g3149"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0">
+<path
+   id="path3151"
+   d="m 184.55,549.14 -0.02,-0.02 -0.01,-0.01 -0.01,-0.02 -0.02,-0.01 -0.01,-0.02 -0.01,-0.01 -0.02,-0.02 -0.01,-0.01 -0.01,-0.02 -0.01,-0.01 -0.02,-0.02 -0.01,-0.02 -0.01,-0.01 0,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 0,-0.01 -0.01,-0.01 -0.01,-0.01 c -0.23,-0.3 -0.35,-0.4 -0.46,-0.4 -0.15,0 -0.24,0.13 -0.31,0.41 -0.02,0.08 -0.03,0.14 -0.04,0.17 -0.25,1 -0.36,1.46 -0.36,1.61 0.44,0.76 0.8,1.2 0.98,1.2 0.06,0 0.14,-0.03 0.24,-0.08 0.12,-0.07 0.19,-0.09 0.27,-0.09 0.21,0 0.34,0.15 0.34,0.36 0,0.21 -0.16,0.37 -0.4,0.37 -0.44,0 -0.82,-0.36 -1.5,-1.42 l -0.11,0.54 c -0.14,0.68 -0.25,0.88 -0.52,0.88 -0.22,0 -0.56,-0.09 -1.17,-0.29 l -0.11,-0.04 0.05,-0.15 c 0.37,0.09 0.46,0.11 0.55,0.11 0.25,0 0.31,-0.09 0.45,-0.69 l 0.29,-1.22 -0.82,-1.16 c -0.2,-0.3 -0.4,-0.48 -0.5,-0.48 -0.07,0 -0.16,0.03 -0.26,0.09 -0.13,0.07 -0.24,0.1 -0.32,0.1 -0.19,0 -0.34,-0.15 -0.34,-0.35 0,-0.25 0.2,-0.41 0.5,-0.41 0.31,0 0.43,0.09 0.92,0.69 0.27,0.32 0.48,0.59 0.9,1.16 l 0.3,-1.19 c 0.12,-0.5 0.25,-0.66 0.57,-0.66 0.38,0 0.64,0.24 1.22,1.13 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+</g><path
+     sodipodi:nodetypes="csc"
+     inkscape:connector-curvature="0"
+     id="path6153"
+     d="M 105.63976,385.76425 C 90.831438,393.49903 74.103518,397.53408 56.547675,396.79086 42.85145,396.21105 29.847123,392.82749 18.119923,387.09132"
+     style="fill:none;stroke:#4d4d4d;stroke-width:5.11148214;stroke-miterlimit:4;stroke-dasharray:none;marker-start:url(#TriangleInSJ)" /><g
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     id="g6494"
+     transform="matrix(1.4112058,0,0,1.4112058,-225.38166,-401.12824)"
+     xml:space="preserve"
+     stroke-miterlimit="10.433"
+     font-style="normal"
+     font-variant="normal"
+     font-weight="normal"
+     font-stretch="normal"
+     font-size-adjust="none"
+     letter-spacing="normal"
+     word-spacing="normal"
+     ns0:text="$Z = z + \\frac{c^2}{z}$"
+     ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty">
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 186.66,554.22 h -4.84 l -0.46,-1.45 0.19,-0.05 c 0.21,0.44 0.33,0.61 0.52,0.78 0.29,0.24 0.82,0.36 1.56,0.36 h 1.7 l -4.76,-5.98 v -0.14 h 5.02 l 0.54,1.67 -0.19,0.02 c -0.32,-0.63 -0.5,-0.87 -0.84,-1.06 -0.33,-0.2 -0.83,-0.28 -1.65,-0.28 h -1.6 l 4.81,5.99 z"
+   id="path6496" />
+<polygon
+   style="fill:#000000;stroke-width:0"
+   points="190.37,551.57 190.37,551.01 195.46,551.01 195.46,551.57 "
+   id="polygon6498" />
+<polygon
+   style="fill:#000000;stroke-width:0"
+   points="190.37,549.55 190.37,549 195.46,549 195.46,549.55 "
+   id="polygon6500" />
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 200.1,550.81 0.02,0.04 0.02,0.04 0.02,0.05 0.01,0.03 0.02,0.04 0.02,0.03 0.02,0.04 0.02,0.03 0.02,0.03 0.01,0.02 0.02,0.03 0.02,0.02 0.02,0.02 0.02,0.02 0.02,0.02 0.02,0.02 0.03,0.01 0.02,0.01 0.02,0.02 0.03,0.01 0.03,0.01 0.02,0.01 0.03,0 0.03,0.01 0.03,0.01 0.03,0 0.04,0 0.03,0.01 0.04,0 0.04,0 0.04,0 0.04,0 h 1.46 l -3.09,-3.69 0.09,-0.09 c 0.16,0.13 0.29,0.18 0.46,0.18 0.24,0 0.57,-0.13 1.03,-0.42 0.5,-0.31 0.84,-0.44 1.12,-0.44 0.5,0 0.93,0.36 0.93,0.76 0,0.21 -0.14,0.35 -0.34,0.35 -0.2,0 -0.34,-0.13 -0.34,-0.3 0,-0.09 0.03,-0.19 0.09,-0.3 0.03,-0.06 0.05,-0.12 0.05,-0.15 0,-0.09 -0.11,-0.15 -0.27,-0.15 -0.25,0 -0.37,0.08 -0.7,0.5 -0.44,0.56 -0.63,0.69 -1.2,0.82 l 2.88,3.42 v 0.11 h -2.82 l -0.31,-1.15 z"
+   id="path6502" />
+<polygon
+   style="fill:#000000;stroke-width:0"
+   points="209.22,550.57 209.22,552.81 208.67,552.81 208.67,550.57 206.4,550.57 206.4,550.01 208.67,550.01 208.67,547.74 209.22,547.74 209.22,550.01 211.49,550.01 211.49,550.57 "
+   id="polygon6504" />
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 218.67,552.36 -0.13,0.07 c -0.45,-0.43 -0.76,-0.59 -1.17,-0.59 -0.48,0 -0.77,0.31 -0.8,0.83 -0.02,0.62 0.26,1.26 0.71,1.69 0.23,0.22 0.56,0.35 0.89,0.35 0.2,0 0.32,-0.06 0.32,-0.14 0,-0.04 0,-0.08 -0.04,-0.14 -0.07,-0.1 -0.07,-0.14 -0.07,-0.21 0,-0.18 0.13,-0.28 0.33,-0.28 0.23,0 0.41,0.14 0.4,0.33 -0.01,0.35 -0.38,0.59 -0.9,0.59 -1.26,0 -2.4,-1.06 -2.36,-2.19 0.02,-0.69 0.49,-1.09 1.27,-1.09 0.63,0 1.05,0.22 1.55,0.78 z"
+   id="path6506-4" />
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 222.46,555.05 -0.07,0.03 c -0.2,-0.31 -0.27,-0.36 -0.52,-0.36 h -1.31 l 0.92,0.96 c 0.49,0.51 0.7,0.92 0.7,1.35 0,0.54 -0.44,0.96 -1.01,0.96 -0.3,0 -0.59,-0.12 -0.79,-0.33 -0.17,-0.19 -0.26,-0.37 -0.35,-0.75 l 0.12,-0.03 c 0.21,0.53 0.41,0.71 0.79,0.71 0.46,0 0.77,-0.31 0.77,-0.77 0,-0.43 -0.25,-0.93 -0.71,-1.42 l -0.98,-1.03 v -0.07 h 2.14 z"
+   id="path6508" />
+<line
+   style="stroke-width:0.55800003"
+   x1="215.53"
+   y1="550.29999"
+   x2="223.10001"
+   y2="550.29999"
+   id="line6510" />
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 220.56,544.26 0,0.02 0,0.01 0,0.02 0,0.01 -0.01,0.01 0,0.02 -0.01,0.01 0,0.01 -0.01,0.01 0,0.01 -0.01,0.01 -0.01,0.02 -0.01,0.01 -0.01,0.01 0,0 -0.01,0.01 -0.01,0.01 -0.02,0.01 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0.01 -0.02,0 -0.01,0.01 -0.01,0 -0.02,0 -0.01,0.01 -0.02,0 -0.01,0 -0.02,0 -0.02,0 -0.01,0 c -0.17,0 -0.29,-0.09 -0.28,-0.23 0,-0.06 0.04,-0.12 0.09,-0.21 0.02,-0.04 0.03,-0.08 0.04,-0.11 0,-0.06 -0.09,-0.11 -0.22,-0.11 -0.21,0 -0.32,0.07 -0.6,0.37 -0.38,0.41 -0.47,0.5 -0.95,0.6 l 2.26,2.42 -0.01,0.16 h -2.37 l -0.22,-0.85 0.13,-0.03 c 0.16,0.36 0.27,0.43 0.66,0.43 h 1.23 l -2.5,-2.69 0.06,-0.06 c 0.13,0.09 0.26,0.13 0.39,0.13 0.21,0 0.48,-0.11 0.88,-0.32 0.43,-0.23 0.71,-0.32 0.95,-0.32 0.42,0 0.78,0.27 0.76,0.56 z"
+   id="path6512" />
+</g></g>
+</g></svg>

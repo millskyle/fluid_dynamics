@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:ns0="http://www.iki.fi/pav/software/textext/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg3160"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="closed_curve_circulation.svg">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="528.70757"
+     inkscape:cy="773.56126"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="-8"
+     inkscape:window-y="5"
+     inkscape:window-maximized="1" />
+  <defs
+     id="defs3162">
+    <marker
+       inkscape:stockid="TriangleInM"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="TriangleInM"
+       style="overflow:visible">
+      <path
+         id="path4281"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(-0.4)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleInM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleInM-1"
+       style="overflow:visible">
+      <path
+         id="path4281-7"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="scale(-0.4,-0.4)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleInM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker4883"
+       style="overflow:visible">
+      <path
+         id="path4885"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="scale(-0.4,-0.4)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleInM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleInM-2"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4281-4"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="scale(-0.4,-0.4)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleInM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker5138"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5140"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="scale(-0.4,-0.4)" />
+    </marker>
+  </defs>
+  <metadata
+     id="metadata3165">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.61825538px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 410.92717,284.67005 c 5.27983,-12.07747 2.78735,-27.42792 -3.34705,-39.13149"
+       id="path3168"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       sodipodi:nodetypes="cccsaaccsc"
+       inkscape:connector-curvature="0"
+       id="path3189"
+       d="m 407.58012,245.53856 c -4.39574,-8.38644 -10.41482,-18.62314 -17.59752,-27.15075 m 0,0 c -9.63576,-11.43998 -21.36567,-19.80415 -34.07978,-16.49909 -10.39019,2.70095 -6.08044,19.75296 -10.00404,29.32739 -5.57952,13.61518 -20.01527,25.24943 -19.19449,39.84863 0.42737,7.60164 6.22632,14.63512 12.26324,19.60808 m 0,0 c 10.77072,8.87247 24.14236,16.56103 39.45172,15.53839 20.20119,-1.34942 25.00833,-5.37127 32.50792,-21.54116"
+       style="fill:none;stroke:#999999;stroke-width:0.61825538;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:4.9460432, 4.9460432;stroke-dashoffset:0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.61825538;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#TriangleInM);marker-mid:none"
+       d="m 413.09287,249.31511 0.5129,16.35239"
+       id="path3959"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-x="0.79480407"
+       inkscape:transform-center-y="-8.8792028" />
+    <path
+       inkscape:transform-center-y="-1.8595315"
+       inkscape:transform-center-x="-19.561892"
+       inkscape:connector-curvature="0"
+       id="path4769"
+       d="m 450.63275,263.61742 -36.857,1.99414"
+       style="fill:none;stroke:#000000;stroke-width:0.61825538;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#TriangleInM);marker-mid:none" />
+    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty"
+       ns0:text="$\\mathcal C$"
+       word-spacing="normal"
+       letter-spacing="normal"
+       font-size-adjust="none"
+       font-stretch="normal"
+       font-weight="normal"
+       font-variant="normal"
+       font-style="normal"
+       stroke-miterlimit="10.433"
+       xml:space="preserve"
+       transform="matrix(1.4604482,0,0,-1.4604482,110.33112,1035.9935)"
+       id="g4813">
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   id="path4815"
+   d="m 186.63,553.22 -0.01,0.09 -0.01,0.08 -0.01,0.09 -0.02,0.08 -0.03,0.07 -0.03,0.08 -0.03,0.07 -0.04,0.07 -0.05,0.07 -0.05,0.06 -0.05,0.06 -0.06,0.06 -0.06,0.06 -0.06,0.05 -0.07,0.05 -0.06,0.05 -0.08,0.04 -0.07,0.04 -0.07,0.04 -0.08,0.04 -0.08,0.03 -0.08,0.03 -0.08,0.03 -0.08,0.03 -0.08,0.02 -0.08,0.02 -0.08,0.02 -0.09,0.01 -0.08,0.01 -0.08,0.01 -0.08,0 -0.07,0 c -2.24,0 -4.41,-2.03 -4.41,-4.3 0,-1.54 0.87,-2.83 2.53,-2.83 0.9,0 2.81,0.57 2.81,1.7 0,0.29 -0.15,0.66 -0.48,0.68 0.11,-1.06 -0.9,-1.79 -1.89,-1.79 -1.29,0 -1.92,1.17 -1.92,2.32 0,1.85 1.19,3.84 3.23,3.84 0.64,0 1.13,-0.64 1.13,-1.26 0,-0.3 -0.07,-0.63 -0.32,-0.84 0.45,0.04 1.22,0.52 1.22,1.02 z" />
+</g>    <path
+       style="fill:none;stroke:#000000;stroke-width:0.61825538px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 329.82259,280.65065 c -3.34036,-5.29596 -4.40127,-12.05011 -1.14491,-20.24822"
+       id="path3168-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.61825538;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#TriangleInM);marker-mid:none"
+       d="m 326.3639,286.3266 0.52267,-16.37883"
+       id="path3959-0"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-x="-0.51570895"
+       inkscape:transform-center-y="8.7980967" />
+    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="content-4"
+       transform="matrix(0.92715415,0,0,-0.92715415,147.93937,797.00265)"
+       xml:space="preserve"
+       stroke-miterlimit="10.433"
+       font-style="normal"
+       font-variant="normal"
+       font-weight="normal"
+       font-stretch="normal"
+       font-size-adjust="none"
+       letter-spacing="normal"
+       word-spacing="normal"
+       ns0:text="$d\\vec x$"
+       ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty"
+       inkscape:transform-center-x="9.3604817"
+       inkscape:transform-center-y="10.470242">
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 184.86,549.14 -0.03,-0.03 -0.02,-0.03 -0.03,-0.02 -0.02,-0.03 -0.02,-0.02 -0.02,-0.03 -0.03,-0.02 -0.02,-0.03 -0.02,-0.02 -0.02,-0.02 -0.02,-0.02 -0.01,-0.02 -0.02,-0.02 -0.02,-0.02 -0.03,-0.04 -0.04,-0.03 -0.03,-0.04 -0.03,-0.03 -0.02,-0.02 -0.03,-0.03 -0.02,-0.02 -0.03,-0.02 -0.02,-0.02 -0.02,-0.02 -0.02,-0.02 -0.02,-0.01 -0.02,-0.02 -0.02,-0.01 -0.01,-0.01 -0.02,0 -0.02,-0.01 -0.01,-0.01 -0.02,0 -0.01,-0.01 -0.02,0 -0.01,0 -0.02,0 -0.03,-0.01 c -0.1,0 -0.18,0.09 -0.18,0.2 0,0.14 0.32,1.35 0.65,2.45 0.27,0.91 0.48,1.7 0.98,3.69 l -0.05,0.05 c -0.53,-0.11 -0.88,-0.17 -1.52,-0.23 v -0.17 c 0.55,-0.01 0.62,-0.04 0.62,-0.25 0,-0.13 -0.01,-0.19 -0.15,-0.7 l -0.44,-1.63 c -0.08,0.42 -0.26,0.58 -0.65,0.58 l 0.04,-0.23 c 0.3,-0.02 0.45,-0.21 0.45,-0.57 0,-1.51 -1.03,-3.22 -1.95,-3.22 -0.34,0 -0.58,0.27 -0.58,0.66 0,0.83 0.5,1.98 1.16,2.67 0.28,0.29 0.65,0.48 0.92,0.46 h 0 l -0.04,0.23 c -1.29,0 -2.9,-1.87 -2.9,-3.36 0,-0.71 0.4,-1.13 1.04,-1.13 0.68,0 1.12,0.32 1.79,1.31 -0.11,-0.51 -0.13,-0.66 -0.13,-0.89 0,-0.26 0.17,-0.44 0.42,-0.44 0.42,0 0.94,0.41 1.46,1.13 z"
+   id="path4783-8" />
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 190.55,548.28 -0.01,0 -0.02,0 -0.01,0.01 -0.01,0 -0.02,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 0,0.01 -0.01,0.01 -0.01,0 -0.01,0.01 0,0.01 -0.01,0 -0.01,0.01 -0.01,0.01 0,0.01 -0.01,0.01 -0.01,0.01 0,0 -0.01,0.01 0,0.01 -1.48,2.27 1.01,1.25 c 0.19,0.23 0.39,0.34 0.69,0.39 v 0.24 h -1.67 v -0.24 c 0.09,-0.01 0.17,-0.02 0.2,-0.02 0.23,-0.01 0.31,-0.07 0.31,-0.22 0,-0.15 -0.1,-0.32 -0.38,-0.64 -0.06,-0.06 -0.21,-0.24 -0.36,-0.45 -0.06,0.07 -0.1,0.13 -0.13,0.17 -0.31,0.41 -0.57,0.84 -0.57,0.97 0,0.12 0.14,0.18 0.47,0.19 v 0.24 h -2.49 v -0.24 c 0.26,-0.04 0.32,-0.09 0.52,-0.39 l 1.27,-1.96 c -0.29,-0.36 -0.56,-0.69 -0.65,-0.83 -0.56,-0.74 -0.76,-0.91 -1.12,-0.92 v -0.24 h 1.68 v 0.24 c -0.36,0.01 -0.5,0.08 -0.5,0.23 0,0.15 0.26,0.57 0.64,1.03 0.02,0.03 0.09,0.11 0.16,0.2 0.19,-0.29 0.35,-0.54 0.41,-0.63 0.23,-0.33 0.33,-0.52 0.33,-0.64 0,-0.12 -0.14,-0.18 -0.44,-0.19 v -0.24 h 2.39 z"
+   id="path4785-8" />
+</g>    <path
+       inkscape:transform-center-y="-0.17940655"
+       inkscape:transform-center-x="13.436679"
+       inkscape:connector-curvature="0"
+       id="path4924"
+       d="m 299.30168,269.79107 27.53744,0.17142"
+       style="fill:none;stroke:#000000;stroke-width:0.61825538;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#TriangleInM);marker-mid:none" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.61825538px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 385.34644,305.52658 c -10.05431,1.47032 -18.29335,1.29099 -29.81438,-4.04732"
+       id="path3168-4-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.61825538;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#TriangleInM);marker-mid:none"
+       d="m 390.12058,306.4689 -16.38692,-0.0915"
+       id="path3959-0-5"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-x="-8.9021691"
+       inkscape:transform-center-y="-0.21355819" />
+    <path
+       inkscape:transform-center-y="14.973314"
+       inkscape:transform-center-x="-0.22045829"
+       inkscape:connector-curvature="0"
+       id="path4924-1"
+       d="m 373.9289,333.54072 0.12706,-27.53769"
+       style="fill:none;stroke:#000000;stroke-width:0.61825538;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#TriangleInM);marker-mid:none" />
+    <g
+       ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty"
+       ns0:text="$\\vecu$"
+       word-spacing="normal"
+       letter-spacing="normal"
+       font-size-adjust="none"
+       font-stretch="normal"
+       font-weight="normal"
+       font-variant="normal"
+       font-style="normal"
+       stroke-miterlimit="10.433"
+       xml:space="preserve"
+       transform="matrix(1.0491446,0,0,-1.0491446,188.33106,910.51276)"
+       id="g4918-7"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0">
+<path
+   id="path4920-1"
+   d="m 183.41,547.91 0.04,0.01 0.04,0.01 0.04,0.02 0.04,0.01 0.07,0.02 0.07,0.02 0.07,0.02 0.07,0.02 0.07,0.01 0.07,0.02 0.07,0.01 0.04,0.01 0.04,0 0.04,0.01 0.04,0.01 0.04,0 0.05,0.01 0.04,0 0.05,0.01 0.05,0.01 0.05,0 0.05,0.01 0.06,0 0.06,0.01 0.06,0.01 0.61,0.07 v 0.22 c -0.44,0.02 -0.55,0.15 -0.55,0.58 v 3.58 h -2 v -0.24 c 0.49,-0.04 0.61,-0.16 0.61,-0.59 v -2.81 c -0.33,-0.33 -0.53,-0.44 -0.81,-0.44 -0.41,0 -0.56,0.2 -0.56,0.71 v 3.37 h -1.87 v -0.24 c 0.41,-0.08 0.49,-0.17 0.49,-0.59 v -2.5 c 0,-0.88 0.49,-1.39 1.32,-1.39 0.52,0 0.87,0.16 1.44,0.65 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+</g>    <g
+       ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty"
+       ns0:text="$\\vecu$"
+       word-spacing="normal"
+       letter-spacing="normal"
+       font-size-adjust="none"
+       font-stretch="normal"
+       font-weight="normal"
+       font-variant="normal"
+       font-style="normal"
+       stroke-miterlimit="10.433"
+       xml:space="preserve"
+       transform="matrix(1.0491446,0,0,-1.0491446,259.64137,846.5675)"
+       id="g4918-7-7"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0">
+<path
+   id="path4920-1-6"
+   d="m 183.41,547.91 0.04,0.01 0.04,0.01 0.04,0.02 0.04,0.01 0.07,0.02 0.07,0.02 0.07,0.02 0.07,0.02 0.07,0.01 0.07,0.02 0.07,0.01 0.04,0.01 0.04,0 0.04,0.01 0.04,0.01 0.04,0 0.05,0.01 0.04,0 0.05,0.01 0.05,0.01 0.05,0 0.05,0.01 0.06,0 0.06,0.01 0.06,0.01 0.61,0.07 v 0.22 c -0.44,0.02 -0.55,0.15 -0.55,0.58 v 3.58 h -2 v -0.24 c 0.49,-0.04 0.61,-0.16 0.61,-0.59 v -2.81 c -0.33,-0.33 -0.53,-0.44 -0.81,-0.44 -0.41,0 -0.56,0.2 -0.56,0.71 v 3.37 h -1.87 v -0.24 c 0.41,-0.08 0.49,-0.17 0.49,-0.59 v -2.5 c 0,-0.88 0.49,-1.39 1.32,-1.39 0.52,0 0.87,0.16 1.44,0.65 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+</g>    <g
+       ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty"
+       ns0:text="$\\vecu$"
+       word-spacing="normal"
+       letter-spacing="normal"
+       font-size-adjust="none"
+       font-stretch="normal"
+       font-weight="normal"
+       font-variant="normal"
+       font-style="normal"
+       stroke-miterlimit="10.433"
+       xml:space="preserve"
+       transform="matrix(1.0491446,0,0,-1.0491446,108.62597,840.73591)"
+       id="g4918-7-1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:transform-center-x="24.442332"
+       inkscape:transform-center-y="-10.291308">
+<path
+   id="path4920-1-4"
+   d="m 183.41,547.91 0.04,0.01 0.04,0.01 0.04,0.02 0.04,0.01 0.07,0.02 0.07,0.02 0.07,0.02 0.07,0.02 0.07,0.01 0.07,0.02 0.07,0.01 0.04,0.01 0.04,0 0.04,0.01 0.04,0.01 0.04,0 0.05,0.01 0.04,0 0.05,0.01 0.05,0.01 0.05,0 0.05,0.01 0.06,0 0.06,0.01 0.06,0.01 0.61,0.07 v 0.22 c -0.44,0.02 -0.55,0.15 -0.55,0.58 v 3.58 h -2 v -0.24 c 0.49,-0.04 0.61,-0.16 0.61,-0.59 v -2.81 c -0.33,-0.33 -0.53,-0.44 -0.81,-0.44 -0.41,0 -0.56,0.2 -0.56,0.71 v 3.37 h -1.87 v -0.24 c 0.41,-0.08 0.49,-0.17 0.49,-0.59 v -2.5 c 0,-0.88 0.49,-1.39 1.32,-1.39 0.52,0 0.87,0.16 1.44,0.65 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+</g>    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="content-4-2"
+       transform="matrix(0.92715415,0,0,-0.92715415,218.76832,823.13142)"
+       xml:space="preserve"
+       stroke-miterlimit="10.433"
+       font-style="normal"
+       font-variant="normal"
+       font-weight="normal"
+       font-stretch="normal"
+       font-size-adjust="none"
+       letter-spacing="normal"
+       word-spacing="normal"
+       ns0:text="$d\\vec x$"
+       ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty">
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 184.86,549.14 -0.03,-0.03 -0.02,-0.03 -0.03,-0.02 -0.02,-0.03 -0.02,-0.02 -0.02,-0.03 -0.03,-0.02 -0.02,-0.03 -0.02,-0.02 -0.02,-0.02 -0.02,-0.02 -0.01,-0.02 -0.02,-0.02 -0.02,-0.02 -0.03,-0.04 -0.04,-0.03 -0.03,-0.04 -0.03,-0.03 -0.02,-0.02 -0.03,-0.03 -0.02,-0.02 -0.03,-0.02 -0.02,-0.02 -0.02,-0.02 -0.02,-0.02 -0.02,-0.01 -0.02,-0.02 -0.02,-0.01 -0.01,-0.01 -0.02,0 -0.02,-0.01 -0.01,-0.01 -0.02,0 -0.01,-0.01 -0.02,0 -0.01,0 -0.02,0 -0.03,-0.01 c -0.1,0 -0.18,0.09 -0.18,0.2 0,0.14 0.32,1.35 0.65,2.45 0.27,0.91 0.48,1.7 0.98,3.69 l -0.05,0.05 c -0.53,-0.11 -0.88,-0.17 -1.52,-0.23 v -0.17 c 0.55,-0.01 0.62,-0.04 0.62,-0.25 0,-0.13 -0.01,-0.19 -0.15,-0.7 l -0.44,-1.63 c -0.08,0.42 -0.26,0.58 -0.65,0.58 l 0.04,-0.23 c 0.3,-0.02 0.45,-0.21 0.45,-0.57 0,-1.51 -1.03,-3.22 -1.95,-3.22 -0.34,0 -0.58,0.27 -0.58,0.66 0,0.83 0.5,1.98 1.16,2.67 0.28,0.29 0.65,0.48 0.92,0.46 h 0 l -0.04,0.23 c -1.29,0 -2.9,-1.87 -2.9,-3.36 0,-0.71 0.4,-1.13 1.04,-1.13 0.68,0 1.12,0.32 1.79,1.31 -0.11,-0.51 -0.13,-0.66 -0.13,-0.89 0,-0.26 0.17,-0.44 0.42,-0.44 0.42,0 0.94,0.41 1.46,1.13 z"
+   id="path4783-8-3" />
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 190.55,548.28 -0.01,0 -0.02,0 -0.01,0.01 -0.01,0 -0.02,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 0,0.01 -0.01,0.01 -0.01,0 -0.01,0.01 0,0.01 -0.01,0 -0.01,0.01 -0.01,0.01 0,0.01 -0.01,0.01 -0.01,0.01 0,0 -0.01,0.01 0,0.01 -1.48,2.27 1.01,1.25 c 0.19,0.23 0.39,0.34 0.69,0.39 v 0.24 h -1.67 v -0.24 c 0.09,-0.01 0.17,-0.02 0.2,-0.02 0.23,-0.01 0.31,-0.07 0.31,-0.22 0,-0.15 -0.1,-0.32 -0.38,-0.64 -0.06,-0.06 -0.21,-0.24 -0.36,-0.45 -0.06,0.07 -0.1,0.13 -0.13,0.17 -0.31,0.41 -0.57,0.84 -0.57,0.97 0,0.12 0.14,0.18 0.47,0.19 v 0.24 h -2.49 v -0.24 c 0.26,-0.04 0.32,-0.09 0.52,-0.39 l 1.27,-1.96 c -0.29,-0.36 -0.56,-0.69 -0.65,-0.83 -0.56,-0.74 -0.76,-0.91 -1.12,-0.92 v -0.24 h 1.68 v 0.24 c -0.36,0.01 -0.5,0.08 -0.5,0.23 0,0.15 0.26,0.57 0.64,1.03 0.02,0.03 0.09,0.11 0.16,0.2 0.19,-0.29 0.35,-0.54 0.41,-0.63 0.23,-0.33 0.33,-0.52 0.33,-0.64 0,-0.12 -0.14,-0.18 -0.44,-0.19 v -0.24 h 2.39 z"
+   id="path4785-8-2" />
+</g>    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="content-4-21"
+       transform="matrix(0.92715415,0,0,-0.92715415,248.36259,759.16477)"
+       xml:space="preserve"
+       stroke-miterlimit="10.433"
+       font-style="normal"
+       font-variant="normal"
+       font-weight="normal"
+       font-stretch="normal"
+       font-size-adjust="none"
+       letter-spacing="normal"
+       word-spacing="normal"
+       ns0:text="$d\\vec x$"
+       ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty">
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 184.86,549.14 -0.03,-0.03 -0.02,-0.03 -0.03,-0.02 -0.02,-0.03 -0.02,-0.02 -0.02,-0.03 -0.03,-0.02 -0.02,-0.03 -0.02,-0.02 -0.02,-0.02 -0.02,-0.02 -0.01,-0.02 -0.02,-0.02 -0.02,-0.02 -0.03,-0.04 -0.04,-0.03 -0.03,-0.04 -0.03,-0.03 -0.02,-0.02 -0.03,-0.03 -0.02,-0.02 -0.03,-0.02 -0.02,-0.02 -0.02,-0.02 -0.02,-0.02 -0.02,-0.01 -0.02,-0.02 -0.02,-0.01 -0.01,-0.01 -0.02,0 -0.02,-0.01 -0.01,-0.01 -0.02,0 -0.01,-0.01 -0.02,0 -0.01,0 -0.02,0 -0.03,-0.01 c -0.1,0 -0.18,0.09 -0.18,0.2 0,0.14 0.32,1.35 0.65,2.45 0.27,0.91 0.48,1.7 0.98,3.69 l -0.05,0.05 c -0.53,-0.11 -0.88,-0.17 -1.52,-0.23 v -0.17 c 0.55,-0.01 0.62,-0.04 0.62,-0.25 0,-0.13 -0.01,-0.19 -0.15,-0.7 l -0.44,-1.63 c -0.08,0.42 -0.26,0.58 -0.65,0.58 l 0.04,-0.23 c 0.3,-0.02 0.45,-0.21 0.45,-0.57 0,-1.51 -1.03,-3.22 -1.95,-3.22 -0.34,0 -0.58,0.27 -0.58,0.66 0,0.83 0.5,1.98 1.16,2.67 0.28,0.29 0.65,0.48 0.92,0.46 h 0 l -0.04,0.23 c -1.29,0 -2.9,-1.87 -2.9,-3.36 0,-0.71 0.4,-1.13 1.04,-1.13 0.68,0 1.12,0.32 1.79,1.31 -0.11,-0.51 -0.13,-0.66 -0.13,-0.89 0,-0.26 0.17,-0.44 0.42,-0.44 0.42,0 0.94,0.41 1.46,1.13 z"
+   id="path4783-8-6" />
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 190.55,548.28 -0.01,0 -0.02,0 -0.01,0.01 -0.01,0 -0.02,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 0,0.01 -0.01,0.01 -0.01,0 -0.01,0.01 0,0.01 -0.01,0 -0.01,0.01 -0.01,0.01 0,0.01 -0.01,0.01 -0.01,0.01 0,0 -0.01,0.01 0,0.01 -1.48,2.27 1.01,1.25 c 0.19,0.23 0.39,0.34 0.69,0.39 v 0.24 h -1.67 v -0.24 c 0.09,-0.01 0.17,-0.02 0.2,-0.02 0.23,-0.01 0.31,-0.07 0.31,-0.22 0,-0.15 -0.1,-0.32 -0.38,-0.64 -0.06,-0.06 -0.21,-0.24 -0.36,-0.45 -0.06,0.07 -0.1,0.13 -0.13,0.17 -0.31,0.41 -0.57,0.84 -0.57,0.97 0,0.12 0.14,0.18 0.47,0.19 v 0.24 h -2.49 v -0.24 c 0.26,-0.04 0.32,-0.09 0.52,-0.39 l 1.27,-1.96 c -0.29,-0.36 -0.56,-0.69 -0.65,-0.83 -0.56,-0.74 -0.76,-0.91 -1.12,-0.92 v -0.24 h 1.68 v 0.24 c -0.36,0.01 -0.5,0.08 -0.5,0.23 0,0.15 0.26,0.57 0.64,1.03 0.02,0.03 0.09,0.11 0.16,0.2 0.19,-0.29 0.35,-0.54 0.41,-0.63 0.23,-0.33 0.33,-0.52 0.33,-0.64 0,-0.12 -0.14,-0.18 -0.44,-0.19 v -0.24 h 2.39 z"
+   id="path4785-8-8" />
+</g>    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path5274"
+       d="m 605.21288,281.45576 c 5.27983,-12.07747 2.78735,-27.42792 -3.34705,-39.13149"
+       style="fill:none;stroke:#000000;stroke-width:0.61825538px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       style="fill:none;stroke:#999999;stroke-width:0.61825538;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:4.9460432, 4.9460432;stroke-dashoffset:0"
+       d="m 601.86583,242.32427 c -4.39574,-8.38644 -10.41482,-18.62314 -17.59752,-27.15075 m 0,0 c -9.63576,-11.43998 -21.36567,-19.80415 -34.07978,-16.49909 -10.39019,2.70095 -6.08044,19.75296 -10.00404,29.32739 -5.57952,13.61518 -20.01527,25.24943 -19.19449,39.84863 0.42737,7.60164 6.22632,14.63512 12.26324,19.60808 m 0,0 c 10.77072,8.87247 24.14236,16.56103 39.45172,15.53839 20.20119,-1.34942 25.00833,-5.37127 32.50792,-21.54116"
+       id="path5276"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccsaaccsc" />
+    <path
+       inkscape:transform-center-y="-12.444248"
+       inkscape:transform-center-x="0.98152237"
+       inkscape:connector-curvature="0"
+       id="path5278"
+       d="m 607.15146,239.18194 0.71615,23.22352"
+       style="fill:none;stroke:#000000;stroke-width:0.618;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#TriangleInM);marker-mid:none" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.61825538;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#TriangleInM);marker-mid:none"
+       d="m 606.75671,224.95951 1.10829,36.89426"
+       id="path5280"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-x="1.4137073"
+       inkscape:transform-center-y="-19.589313" />
+    <g
+       id="g5282"
+       transform="matrix(1.4604482,0,0,-1.4604482,304.61683,1032.7792)"
+       xml:space="preserve"
+       stroke-miterlimit="10.433"
+       font-style="normal"
+       font-variant="normal"
+       font-weight="normal"
+       font-stretch="normal"
+       font-size-adjust="none"
+       letter-spacing="normal"
+       word-spacing="normal"
+       ns0:text="$\\mathcal C$"
+       ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0">
+<path
+   d="m 186.63,553.22 -0.01,0.09 -0.01,0.08 -0.01,0.09 -0.02,0.08 -0.03,0.07 -0.03,0.08 -0.03,0.07 -0.04,0.07 -0.05,0.07 -0.05,0.06 -0.05,0.06 -0.06,0.06 -0.06,0.06 -0.06,0.05 -0.07,0.05 -0.06,0.05 -0.08,0.04 -0.07,0.04 -0.07,0.04 -0.08,0.04 -0.08,0.03 -0.08,0.03 -0.08,0.03 -0.08,0.03 -0.08,0.02 -0.08,0.02 -0.08,0.02 -0.09,0.01 -0.08,0.01 -0.08,0.01 -0.08,0 -0.07,0 c -2.24,0 -4.41,-2.03 -4.41,-4.3 0,-1.54 0.87,-2.83 2.53,-2.83 0.9,0 2.81,0.57 2.81,1.7 0,0.29 -0.15,0.66 -0.48,0.68 0.11,-1.06 -0.9,-1.79 -1.89,-1.79 -1.29,0 -1.92,1.17 -1.92,2.32 0,1.85 1.19,3.84 3.23,3.84 0.64,0 1.13,-0.64 1.13,-1.26 0,-0.3 -0.07,-0.63 -0.32,-0.84 0.45,0.04 1.22,0.52 1.22,1.02 z"
+   id="path5284"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+</g>    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path5286"
+       d="m 524.1083,277.43636 c -3.34036,-5.29596 -4.40127,-12.05011 -1.14491,-20.24822"
+       style="fill:none;stroke:#000000;stroke-width:0.61825538px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:transform-center-y="8.7877703"
+       inkscape:transform-center-x="1.771804"
+       inkscape:connector-curvature="0"
+       id="path5288"
+       d="m 518.33251,277.7951 3.18773,-16.07413"
+       style="fill:none;stroke:#000000;stroke-width:0.61825538;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#TriangleInM);marker-mid:none" />
+    <g
+       ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty"
+       ns0:text="$d\\vec x$"
+       word-spacing="normal"
+       letter-spacing="normal"
+       font-size-adjust="none"
+       font-stretch="normal"
+       font-weight="normal"
+       font-variant="normal"
+       font-style="normal"
+       stroke-miterlimit="10.433"
+       xml:space="preserve"
+       transform="matrix(0.92715415,0,0,-0.92715415,339.18936,783.25264)"
+       id="g5290"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0">
+<path
+   id="path5292"
+   d="m 184.86,549.14 -0.03,-0.03 -0.02,-0.03 -0.03,-0.02 -0.02,-0.03 -0.02,-0.02 -0.02,-0.03 -0.03,-0.02 -0.02,-0.03 -0.02,-0.02 -0.02,-0.02 -0.02,-0.02 -0.01,-0.02 -0.02,-0.02 -0.02,-0.02 -0.03,-0.04 -0.04,-0.03 -0.03,-0.04 -0.03,-0.03 -0.02,-0.02 -0.03,-0.03 -0.02,-0.02 -0.03,-0.02 -0.02,-0.02 -0.02,-0.02 -0.02,-0.02 -0.02,-0.01 -0.02,-0.02 -0.02,-0.01 -0.01,-0.01 -0.02,0 -0.02,-0.01 -0.01,-0.01 -0.02,0 -0.01,-0.01 -0.02,0 -0.01,0 -0.02,0 -0.03,-0.01 c -0.1,0 -0.18,0.09 -0.18,0.2 0,0.14 0.32,1.35 0.65,2.45 0.27,0.91 0.48,1.7 0.98,3.69 l -0.05,0.05 c -0.53,-0.11 -0.88,-0.17 -1.52,-0.23 v -0.17 c 0.55,-0.01 0.62,-0.04 0.62,-0.25 0,-0.13 -0.01,-0.19 -0.15,-0.7 l -0.44,-1.63 c -0.08,0.42 -0.26,0.58 -0.65,0.58 l 0.04,-0.23 c 0.3,-0.02 0.45,-0.21 0.45,-0.57 0,-1.51 -1.03,-3.22 -1.95,-3.22 -0.34,0 -0.58,0.27 -0.58,0.66 0,0.83 0.5,1.98 1.16,2.67 0.28,0.29 0.65,0.48 0.92,0.46 h 0 l -0.04,0.23 c -1.29,0 -2.9,-1.87 -2.9,-3.36 0,-0.71 0.4,-1.13 1.04,-1.13 0.68,0 1.12,0.32 1.79,1.31 -0.11,-0.51 -0.13,-0.66 -0.13,-0.89 0,-0.26 0.17,-0.44 0.42,-0.44 0.42,0 0.94,0.41 1.46,1.13 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+<path
+   id="path5294"
+   d="m 190.55,548.28 -0.01,0 -0.02,0 -0.01,0.01 -0.01,0 -0.02,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 0,0.01 -0.01,0.01 -0.01,0 -0.01,0.01 0,0.01 -0.01,0 -0.01,0.01 -0.01,0.01 0,0.01 -0.01,0.01 -0.01,0.01 0,0 -0.01,0.01 0,0.01 -1.48,2.27 1.01,1.25 c 0.19,0.23 0.39,0.34 0.69,0.39 v 0.24 h -1.67 v -0.24 c 0.09,-0.01 0.17,-0.02 0.2,-0.02 0.23,-0.01 0.31,-0.07 0.31,-0.22 0,-0.15 -0.1,-0.32 -0.38,-0.64 -0.06,-0.06 -0.21,-0.24 -0.36,-0.45 -0.06,0.07 -0.1,0.13 -0.13,0.17 -0.31,0.41 -0.57,0.84 -0.57,0.97 0,0.12 0.14,0.18 0.47,0.19 v 0.24 h -2.49 v -0.24 c 0.26,-0.04 0.32,-0.09 0.52,-0.39 l 1.27,-1.96 c -0.29,-0.36 -0.56,-0.69 -0.65,-0.83 -0.56,-0.74 -0.76,-0.91 -1.12,-0.92 v -0.24 h 1.68 v 0.24 c -0.36,0.01 -0.5,0.08 -0.5,0.23 0,0.15 0.26,0.57 0.64,1.03 0.02,0.03 0.09,0.11 0.16,0.2 0.19,-0.29 0.35,-0.54 0.41,-0.63 0.23,-0.33 0.33,-0.52 0.33,-0.64 0,-0.12 -0.14,-0.18 -0.44,-0.19 v -0.24 h 2.39 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+</g>    <path
+       style="fill:none;stroke:#000000;stroke-width:0.61825538;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#TriangleInM);marker-mid:none"
+       d="m 516.28114,289.75247 4.79989,-27.11644"
+       id="path5296"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-x="2.6266213"
+       inkscape:transform-center-y="14.801965" />
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path5298"
+       d="m 579.63215,302.31229 c -10.05431,1.47032 -18.29335,1.29099 -29.81438,-4.04732"
+       style="fill:none;stroke:#000000;stroke-width:0.61825538px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:transform-center-y="-0.20148199"
+       inkscape:transform-center-x="-13.020418"
+       inkscape:connector-curvature="0"
+       id="path5300"
+       d="M 592.39393,303.2544 568.0767,303.1678"
+       style="fill:none;stroke:#000000;stroke-width:0.618;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#TriangleInM);marker-mid:none" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.618;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#TriangleInM);marker-mid:none"
+       d="m 611.69529,303.34238 -42.35235,-0.11967"
+       id="path5302"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-x="-22.815869"
+       inkscape:transform-center-y="-0.20695914" />
+    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="g5304"
+       transform="matrix(1.0491446,0,0,-1.0491446,407.99685,886.96915)"
+       xml:space="preserve"
+       stroke-miterlimit="10.433"
+       font-style="normal"
+       font-variant="normal"
+       font-weight="normal"
+       font-stretch="normal"
+       font-size-adjust="none"
+       letter-spacing="normal"
+       word-spacing="normal"
+       ns0:text="$\\vecu$"
+       ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty">
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 183.41,547.91 0.04,0.01 0.04,0.01 0.04,0.02 0.04,0.01 0.07,0.02 0.07,0.02 0.07,0.02 0.07,0.02 0.07,0.01 0.07,0.02 0.07,0.01 0.04,0.01 0.04,0 0.04,0.01 0.04,0.01 0.04,0 0.05,0.01 0.04,0 0.05,0.01 0.05,0.01 0.05,0 0.05,0.01 0.06,0 0.06,0.01 0.06,0.01 0.61,0.07 v 0.22 c -0.44,0.02 -0.55,0.15 -0.55,0.58 v 3.58 h -2 v -0.24 c 0.49,-0.04 0.61,-0.16 0.61,-0.59 v -2.81 c -0.33,-0.33 -0.53,-0.44 -0.81,-0.44 -0.41,0 -0.56,0.2 -0.56,0.71 v 3.37 h -1.87 v -0.24 c 0.41,-0.08 0.49,-0.17 0.49,-0.59 v -2.5 c 0,-0.88 0.49,-1.39 1.32,-1.39 0.52,0 0.87,0.16 1.44,0.65 z"
+   id="path5306" />
+</g>    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="g5308"
+       transform="matrix(1.0491446,0,0,-1.0491446,421.09713,803.57846)"
+       xml:space="preserve"
+       stroke-miterlimit="10.433"
+       font-style="normal"
+       font-variant="normal"
+       font-weight="normal"
+       font-stretch="normal"
+       font-size-adjust="none"
+       letter-spacing="normal"
+       word-spacing="normal"
+       ns0:text="$\\vecu$"
+       ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty">
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 183.41,547.91 0.04,0.01 0.04,0.01 0.04,0.02 0.04,0.01 0.07,0.02 0.07,0.02 0.07,0.02 0.07,0.02 0.07,0.01 0.07,0.02 0.07,0.01 0.04,0.01 0.04,0 0.04,0.01 0.04,0.01 0.04,0 0.05,0.01 0.04,0 0.05,0.01 0.05,0.01 0.05,0 0.05,0.01 0.06,0 0.06,0.01 0.06,0.01 0.61,0.07 v 0.22 c -0.44,0.02 -0.55,0.15 -0.55,0.58 v 3.58 h -2 v -0.24 c 0.49,-0.04 0.61,-0.16 0.61,-0.59 v -2.81 c -0.33,-0.33 -0.53,-0.44 -0.81,-0.44 -0.41,0 -0.56,0.2 -0.56,0.71 v 3.37 h -1.87 v -0.24 c 0.41,-0.08 0.49,-0.17 0.49,-0.59 v -2.5 c 0,-0.88 0.49,-1.39 1.32,-1.39 0.52,0 0.87,0.16 1.44,0.65 z"
+   id="path5310" />
+</g>    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="g5312"
+       transform="matrix(1.0491446,0,0,-1.0491446,323.09025,872.70019)"
+       xml:space="preserve"
+       stroke-miterlimit="10.433"
+       font-style="normal"
+       font-variant="normal"
+       font-weight="normal"
+       font-stretch="normal"
+       font-size-adjust="none"
+       letter-spacing="normal"
+       word-spacing="normal"
+       ns0:text="$\\vecu$"
+       ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty">
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 183.41,547.91 0.04,0.01 0.04,0.01 0.04,0.02 0.04,0.01 0.07,0.02 0.07,0.02 0.07,0.02 0.07,0.02 0.07,0.01 0.07,0.02 0.07,0.01 0.04,0.01 0.04,0 0.04,0.01 0.04,0.01 0.04,0 0.05,0.01 0.04,0 0.05,0.01 0.05,0.01 0.05,0 0.05,0.01 0.06,0 0.06,0.01 0.06,0.01 0.61,0.07 v 0.22 c -0.44,0.02 -0.55,0.15 -0.55,0.58 v 3.58 h -2 v -0.24 c 0.49,-0.04 0.61,-0.16 0.61,-0.59 v -2.81 c -0.33,-0.33 -0.53,-0.44 -0.81,-0.44 -0.41,0 -0.56,0.2 -0.56,0.71 v 3.37 h -1.87 v -0.24 c 0.41,-0.08 0.49,-0.17 0.49,-0.59 v -2.5 c 0,-0.88 0.49,-1.39 1.32,-1.39 0.52,0 0.87,0.16 1.44,0.65 z"
+   id="path5314" />
+</g>    <g
+       ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty"
+       ns0:text="$d\\vec x$"
+       word-spacing="normal"
+       letter-spacing="normal"
+       font-size-adjust="none"
+       font-stretch="normal"
+       font-weight="normal"
+       font-variant="normal"
+       font-style="normal"
+       stroke-miterlimit="10.433"
+       xml:space="preserve"
+       transform="matrix(0.92715415,0,0,-0.92715415,409.8218,821.95538)"
+       id="g5316"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0">
+<path
+   id="path5318"
+   d="m 184.86,549.14 -0.03,-0.03 -0.02,-0.03 -0.03,-0.02 -0.02,-0.03 -0.02,-0.02 -0.02,-0.03 -0.03,-0.02 -0.02,-0.03 -0.02,-0.02 -0.02,-0.02 -0.02,-0.02 -0.01,-0.02 -0.02,-0.02 -0.02,-0.02 -0.03,-0.04 -0.04,-0.03 -0.03,-0.04 -0.03,-0.03 -0.02,-0.02 -0.03,-0.03 -0.02,-0.02 -0.03,-0.02 -0.02,-0.02 -0.02,-0.02 -0.02,-0.02 -0.02,-0.01 -0.02,-0.02 -0.02,-0.01 -0.01,-0.01 -0.02,0 -0.02,-0.01 -0.01,-0.01 -0.02,0 -0.01,-0.01 -0.02,0 -0.01,0 -0.02,0 -0.03,-0.01 c -0.1,0 -0.18,0.09 -0.18,0.2 0,0.14 0.32,1.35 0.65,2.45 0.27,0.91 0.48,1.7 0.98,3.69 l -0.05,0.05 c -0.53,-0.11 -0.88,-0.17 -1.52,-0.23 v -0.17 c 0.55,-0.01 0.62,-0.04 0.62,-0.25 0,-0.13 -0.01,-0.19 -0.15,-0.7 l -0.44,-1.63 c -0.08,0.42 -0.26,0.58 -0.65,0.58 l 0.04,-0.23 c 0.3,-0.02 0.45,-0.21 0.45,-0.57 0,-1.51 -1.03,-3.22 -1.95,-3.22 -0.34,0 -0.58,0.27 -0.58,0.66 0,0.83 0.5,1.98 1.16,2.67 0.28,0.29 0.65,0.48 0.92,0.46 h 0 l -0.04,0.23 c -1.29,0 -2.9,-1.87 -2.9,-3.36 0,-0.71 0.4,-1.13 1.04,-1.13 0.68,0 1.12,0.32 1.79,1.31 -0.11,-0.51 -0.13,-0.66 -0.13,-0.89 0,-0.26 0.17,-0.44 0.42,-0.44 0.42,0 0.94,0.41 1.46,1.13 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+<path
+   id="path5320"
+   d="m 190.55,548.28 -0.01,0 -0.02,0 -0.01,0.01 -0.01,0 -0.02,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 0,0.01 -0.01,0.01 -0.01,0 -0.01,0.01 0,0.01 -0.01,0 -0.01,0.01 -0.01,0.01 0,0.01 -0.01,0.01 -0.01,0.01 0,0 -0.01,0.01 0,0.01 -1.48,2.27 1.01,1.25 c 0.19,0.23 0.39,0.34 0.69,0.39 v 0.24 h -1.67 v -0.24 c 0.09,-0.01 0.17,-0.02 0.2,-0.02 0.23,-0.01 0.31,-0.07 0.31,-0.22 0,-0.15 -0.1,-0.32 -0.38,-0.64 -0.06,-0.06 -0.21,-0.24 -0.36,-0.45 -0.06,0.07 -0.1,0.13 -0.13,0.17 -0.31,0.41 -0.57,0.84 -0.57,0.97 0,0.12 0.14,0.18 0.47,0.19 v 0.24 h -2.49 v -0.24 c 0.26,-0.04 0.32,-0.09 0.52,-0.39 l 1.27,-1.96 c -0.29,-0.36 -0.56,-0.69 -0.65,-0.83 -0.56,-0.74 -0.76,-0.91 -1.12,-0.92 v -0.24 h 1.68 v 0.24 c -0.36,0.01 -0.5,0.08 -0.5,0.23 0,0.15 0.26,0.57 0.64,1.03 0.02,0.03 0.09,0.11 0.16,0.2 0.19,-0.29 0.35,-0.54 0.41,-0.63 0.23,-0.33 0.33,-0.52 0.33,-0.64 0,-0.12 -0.14,-0.18 -0.44,-0.19 v -0.24 h 2.39 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+</g>    <g
+       ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty"
+       ns0:text="$d\\vec x$"
+       word-spacing="normal"
+       letter-spacing="normal"
+       font-size-adjust="none"
+       font-stretch="normal"
+       font-weight="normal"
+       font-variant="normal"
+       font-style="normal"
+       stroke-miterlimit="10.433"
+       xml:space="preserve"
+       transform="matrix(0.92715415,0,0,-0.92715415,442.14322,759.99109)"
+       id="g5322"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0">
+<path
+   id="path5324"
+   d="m 184.86,549.14 -0.03,-0.03 -0.02,-0.03 -0.03,-0.02 -0.02,-0.03 -0.02,-0.02 -0.02,-0.03 -0.03,-0.02 -0.02,-0.03 -0.02,-0.02 -0.02,-0.02 -0.02,-0.02 -0.01,-0.02 -0.02,-0.02 -0.02,-0.02 -0.03,-0.04 -0.04,-0.03 -0.03,-0.04 -0.03,-0.03 -0.02,-0.02 -0.03,-0.03 -0.02,-0.02 -0.03,-0.02 -0.02,-0.02 -0.02,-0.02 -0.02,-0.02 -0.02,-0.01 -0.02,-0.02 -0.02,-0.01 -0.01,-0.01 -0.02,0 -0.02,-0.01 -0.01,-0.01 -0.02,0 -0.01,-0.01 -0.02,0 -0.01,0 -0.02,0 -0.03,-0.01 c -0.1,0 -0.18,0.09 -0.18,0.2 0,0.14 0.32,1.35 0.65,2.45 0.27,0.91 0.48,1.7 0.98,3.69 l -0.05,0.05 c -0.53,-0.11 -0.88,-0.17 -1.52,-0.23 v -0.17 c 0.55,-0.01 0.62,-0.04 0.62,-0.25 0,-0.13 -0.01,-0.19 -0.15,-0.7 l -0.44,-1.63 c -0.08,0.42 -0.26,0.58 -0.65,0.58 l 0.04,-0.23 c 0.3,-0.02 0.45,-0.21 0.45,-0.57 0,-1.51 -1.03,-3.22 -1.95,-3.22 -0.34,0 -0.58,0.27 -0.58,0.66 0,0.83 0.5,1.98 1.16,2.67 0.28,0.29 0.65,0.48 0.92,0.46 h 0 l -0.04,0.23 c -1.29,0 -2.9,-1.87 -2.9,-3.36 0,-0.71 0.4,-1.13 1.04,-1.13 0.68,0 1.12,0.32 1.79,1.31 -0.11,-0.51 -0.13,-0.66 -0.13,-0.89 0,-0.26 0.17,-0.44 0.42,-0.44 0.42,0 0.94,0.41 1.46,1.13 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+<path
+   id="path5326"
+   d="m 190.55,548.28 -0.01,0 -0.02,0 -0.01,0.01 -0.01,0 -0.02,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0 0,0.01 -0.01,0.01 -0.01,0 -0.01,0.01 0,0.01 -0.01,0 -0.01,0.01 -0.01,0.01 0,0.01 -0.01,0.01 -0.01,0.01 0,0 -0.01,0.01 0,0.01 -1.48,2.27 1.01,1.25 c 0.19,0.23 0.39,0.34 0.69,0.39 v 0.24 h -1.67 v -0.24 c 0.09,-0.01 0.17,-0.02 0.2,-0.02 0.23,-0.01 0.31,-0.07 0.31,-0.22 0,-0.15 -0.1,-0.32 -0.38,-0.64 -0.06,-0.06 -0.21,-0.24 -0.36,-0.45 -0.06,0.07 -0.1,0.13 -0.13,0.17 -0.31,0.41 -0.57,0.84 -0.57,0.97 0,0.12 0.14,0.18 0.47,0.19 v 0.24 h -2.49 v -0.24 c 0.26,-0.04 0.32,-0.09 0.52,-0.39 l 1.27,-1.96 c -0.29,-0.36 -0.56,-0.69 -0.65,-0.83 -0.56,-0.74 -0.76,-0.91 -1.12,-0.92 v -0.24 h 1.68 v 0.24 c -0.36,0.01 -0.5,0.08 -0.5,0.23 0,0.15 0.26,0.57 0.64,1.03 0.02,0.03 0.09,0.11 0.16,0.2 0.19,-0.29 0.35,-0.54 0.41,-0.63 0.23,-0.33 0.33,-0.52 0.33,-0.64 0,-0.12 -0.14,-0.18 -0.44,-0.19 v -0.24 h 2.39 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+</g>    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="content"
+       transform="matrix(1,0,0,-1,163.18429,901.41992)"
+       xml:space="preserve"
+       stroke-miterlimit="10.433"
+       font-style="normal"
+       font-variant="normal"
+       font-weight="normal"
+       font-stretch="normal"
+       font-size-adjust="none"
+       letter-spacing="normal"
+       word-spacing="normal"
+       ns0:text="minimum $\\Gamma$"
+       ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty">
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 180.19,551.99 0.01,0 0.01,0.01 0.01,0 0.02,0 0.01,0 0.01,0.01 0.02,0 0.02,0 0.02,0.01 0.02,0 0.02,0 0.01,0 0.02,0.01 0.02,0 0.02,0 0.02,0 0.02,0 0.02,0 0.02,0 c 0.26,0 0.35,-0.16 0.35,-0.63 v -2.52 c 0,-0.54 -0.14,-0.68 -0.7,-0.69 v -0.15 h 2.21 v 0.15 c -0.53,0.02 -0.68,0.13 -0.68,0.51 v 2.8 c 0,0.02 0.08,0.12 0.15,0.19 0.25,0.23 0.68,0.4 1.03,0.4 0.43,0 0.65,-0.35 0.65,-1.04 v -2.16 c 0,-0.55 -0.11,-0.66 -0.67,-0.7 v -0.15 h 2.22 v 0.15 c -0.56,0.01 -0.71,0.17 -0.71,0.79 v 2.5 c 0.3,0.43 0.63,0.61 1.08,0.61 0.57,0 0.75,-0.27 0.75,-1.09 v -2.1 c 0,-0.56 -0.08,-0.64 -0.66,-0.71 v -0.15 h 2.18 v 0.15 l -0.26,0.02 c -0.3,0.02 -0.43,0.19 -0.43,0.58 v 2.05 c 0,1.17 -0.38,1.77 -1.15,1.77 -0.58,0 -1.08,-0.26 -1.62,-0.84 -0.18,0.57 -0.52,0.84 -1.06,0.84 -0.43,0 -0.71,-0.14 -1.54,-0.77 v 0.75 l -0.07,0.02 c -0.51,-0.19 -0.84,-0.3 -1.39,-0.45 z"
+   id="path5398" />
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 189.49,552.61 -1.54,-0.55 v -0.15 l 0.08,0.01 c 0.12,0.02 0.25,0.03 0.34,0.03 0.24,0 0.33,-0.16 0.33,-0.6 v -2.3 c 0,-0.71 -0.1,-0.82 -0.79,-0.86 v -0.15 h 2.36 v 0.15 c -0.66,0.05 -0.74,0.15 -0.74,0.86 v 3.53 z"
+   id="path5400" />
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 189.02,554.82 -0.02,0 -0.03,0 -0.02,0 -0.02,-0.01 -0.03,0 -0.02,-0.01 -0.02,-0.01 -0.03,-0.01 -0.02,-0.01 -0.02,-0.01 -0.02,-0.01 -0.02,-0.02 -0.02,-0.01 -0.02,-0.01 -0.02,-0.02 -0.02,-0.02 -0.01,-0.01 -0.02,-0.02 -0.01,-0.02 -0.02,-0.02 -0.01,-0.02 -0.01,-0.02 -0.01,-0.03 -0.01,-0.02 -0.01,-0.02 -0.01,-0.02 -0.01,-0.03 0,-0.02 -0.01,-0.03 0,-0.02 0,-0.03 0,-0.02 c 0,-0.28 0.22,-0.51 0.49,-0.51 0.29,0 0.52,0.22 0.52,0.51 0,0.27 -0.23,0.5 -0.52,0.5 z"
+   id="path5402" />
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 190.68,551.99 0.01,0 0,0.01 0.01,0 0,0 0.01,0 0.01,0.01 0,0 0.01,0 0.01,0 0.01,0 0,0 0.01,0.01 0.02,0 0.02,0 0.01,0 0.02,0.01 0.02,0 0.02,0 0.02,0 0.02,0 0.02,0 0.02,0 c 0.28,0 0.37,-0.15 0.37,-0.63 v -2.47 c 0,-0.57 -0.11,-0.7 -0.62,-0.74 v -0.15 h 2.11 v 0.15 c -0.51,0.04 -0.66,0.15 -0.66,0.51 v 2.79 c 0.48,0.45 0.7,0.57 1.03,0.57 0.48,0 0.72,-0.31 0.72,-0.96 v -2.08 c 0,-0.62 -0.13,-0.79 -0.62,-0.83 v -0.15 h 2.07 v 0.15 c -0.49,0.05 -0.61,0.16 -0.61,0.65 v 2.28 c 0,0.93 -0.44,1.49 -1.17,1.49 -0.46,0 -0.77,-0.17 -1.45,-0.81 v 0.79 l -0.07,0.02 c -0.48,-0.18 -0.82,-0.29 -1.37,-0.45 z"
+   id="path5404" />
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 197.24,552.61 -1.54,-0.55 v -0.15 l 0.08,0.01 c 0.12,0.02 0.25,0.03 0.34,0.03 0.24,0 0.33,-0.16 0.33,-0.6 v -2.3 c 0,-0.71 -0.1,-0.82 -0.79,-0.86 v -0.15 h 2.36 v 0.15 c -0.66,0.05 -0.74,0.15 -0.74,0.86 v 3.53 z"
+   id="path5406" />
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 196.77,554.82 -0.02,0 -0.02,0 -0.03,0 -0.02,-0.01 -0.03,0 -0.02,-0.01 -0.02,-0.01 -0.03,-0.01 -0.02,-0.01 -0.02,-0.01 -0.02,-0.01 -0.02,-0.02 -0.02,-0.01 -0.02,-0.01 -0.02,-0.02 -0.01,-0.02 -0.02,-0.01 -0.02,-0.02 -0.01,-0.02 -0.02,-0.02 -0.01,-0.02 -0.01,-0.02 -0.01,-0.03 -0.01,-0.02 -0.01,-0.02 -0.01,-0.02 -0.01,-0.03 0,-0.02 -0.01,-0.03 0,-0.02 0,-0.03 0,-0.02 c 0,-0.28 0.22,-0.51 0.49,-0.51 0.29,0 0.52,0.22 0.52,0.51 0,0.27 -0.23,0.5 -0.52,0.5 z"
+   id="path5408" />
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 198.46,551.99 0.01,0 0.01,0.01 0.02,0 0.01,0 0.01,0 0.01,0.01 0.02,0 0.02,0 0.02,0.01 0.02,0 0.02,0 0.02,0 0.01,0.01 0.02,0 0.02,0 0.02,0 0.02,0 0.02,0 0.02,0 c 0.26,0 0.35,-0.16 0.35,-0.63 v -2.52 c 0,-0.54 -0.14,-0.68 -0.7,-0.69 v -0.15 h 2.21 v 0.15 c -0.53,0.02 -0.68,0.13 -0.68,0.51 v 2.8 c 0,0.02 0.08,0.12 0.15,0.19 0.25,0.23 0.68,0.4 1.03,0.4 0.43,0 0.65,-0.35 0.65,-1.04 v -2.16 c 0,-0.55 -0.11,-0.66 -0.67,-0.7 v -0.15 h 2.23 v 0.15 c -0.57,0.01 -0.72,0.17 -0.72,0.79 v 2.5 c 0.3,0.43 0.63,0.61 1.08,0.61 0.57,0 0.75,-0.27 0.75,-1.09 v -2.1 c 0,-0.56 -0.08,-0.64 -0.66,-0.71 v -0.15 h 2.18 v 0.15 l -0.26,0.02 c -0.29,0.02 -0.43,0.19 -0.43,0.58 v 2.05 c 0,1.17 -0.38,1.77 -1.15,1.77 -0.58,0 -1.08,-0.26 -1.62,-0.84 -0.18,0.57 -0.52,0.84 -1.06,0.84 -0.43,0 -0.71,-0.14 -1.54,-0.77 v 0.75 l -0.07,0.02 c -0.5,-0.19 -0.84,-0.3 -1.39,-0.45 z"
+   id="path5410" />
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 210.79,548.53 h -0.05 c -0.46,0 -0.57,0.11 -0.57,0.57 v 3.41 h -1.57 v -0.17 c 0.62,-0.03 0.74,-0.13 0.74,-0.63 v -2.33 c 0,-0.28 -0.05,-0.42 -0.19,-0.53 -0.27,-0.22 -0.58,-0.34 -0.88,-0.34 -0.39,0 -0.71,0.34 -0.71,0.76 v 3.24 h -1.45 v -0.14 c 0.48,-0.03 0.62,-0.18 0.62,-0.64 v -2.5 c 0,-0.79 0.48,-1.29 1.2,-1.29 0.37,0 0.76,0.16 1.03,0.42 l 0.42,0.43 v -0.82 l 0.05,-0.02 c 0.49,0.2 0.85,0.31 1.36,0.45 z"
+   id="path5412" />
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 211.19,551.99 0.01,0 0.02,0.01 0.01,0 0.01,0 0.01,0 0.01,0.01 0.02,0 0.02,0 0.02,0.01 0.02,0 0.02,0 0.02,0 0.02,0.01 0.01,0 0.02,0 0.02,0 0.02,0 0.02,0 0.02,0 c 0.26,0 0.35,-0.16 0.35,-0.63 v -2.52 c 0,-0.54 -0.14,-0.68 -0.7,-0.69 v -0.15 h 2.21 v 0.15 c -0.53,0.02 -0.67,0.13 -0.67,0.51 v 2.8 c 0,0.02 0.07,0.12 0.14,0.19 0.25,0.23 0.68,0.4 1.03,0.4 0.44,0 0.66,-0.35 0.66,-1.04 v -2.16 c 0,-0.55 -0.11,-0.66 -0.68,-0.7 v -0.15 h 2.23 v 0.15 c -0.57,0.01 -0.72,0.17 -0.72,0.79 v 2.5 c 0.3,0.43 0.63,0.61 1.09,0.61 0.56,0 0.74,-0.27 0.74,-1.09 v -2.1 c 0,-0.56 -0.08,-0.64 -0.65,-0.71 v -0.15 h 2.17 v 0.15 l -0.25,0.02 c -0.3,0.02 -0.43,0.19 -0.43,0.58 v 2.05 c 0,1.17 -0.39,1.77 -1.16,1.77 -0.57,0 -1.08,-0.26 -1.62,-0.84 -0.18,0.57 -0.52,0.84 -1.05,0.84 -0.44,0 -0.72,-0.14 -1.55,-0.77 v 0.75 l -0.06,0.02 c -0.51,-0.19 -0.85,-0.3 -1.4,-0.45 z"
+   id="path5414" />
+<path
+   style="fill:#000000;stroke-width:0"
+   inkscape:connector-curvature="0"
+   d="m 226.88,553.19 -0.03,1.42 h -5.29 v -0.19 c 0.7,-0.04 0.87,-0.17 0.87,-0.89 v -4.3 c 0,-0.75 -0.08,-0.96 -0.87,-1 v -0.19 h 2.79 v 0.19 c -0.71,0.03 -0.9,0.17 -0.9,0.89 v 4.78 c 0,0.26 0.04,0.34 0.31,0.34 h 1.36 c 0.9,0 1.34,-0.04 1.51,-1.05 z"
+   id="path5416" />
+</g>    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       ns0:preamble="D:\\Users\\Kyle\\Dropbox\\1. Fluid Dynamics\\Notes\\fluiddynamics.sty"
+       ns0:text="maximum $\\Gamma$"
+       word-spacing="normal"
+       letter-spacing="normal"
+       font-size-adjust="none"
+       font-stretch="normal"
+       font-weight="normal"
+       font-variant="normal"
+       font-style="normal"
+       stroke-miterlimit="10.433"
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,365.18429,901.41992)"
+       id="g5598">
+<path
+   id="path5600"
+   d="m 180.19,551.99 0.01,0 0.01,0.01 0.01,0 0.02,0 0.01,0 0.01,0.01 0.02,0 0.02,0 0.02,0.01 0.02,0 0.02,0 0.01,0 0.02,0.01 0.02,0 0.02,0 0.02,0 0.02,0 0.02,0 0.02,0 c 0.26,0 0.35,-0.16 0.35,-0.63 v -2.52 c 0,-0.54 -0.14,-0.68 -0.7,-0.69 v -0.15 h 2.21 v 0.15 c -0.53,0.02 -0.68,0.13 -0.68,0.51 v 2.8 c 0,0.02 0.08,0.12 0.15,0.19 0.25,0.23 0.68,0.4 1.03,0.4 0.43,0 0.65,-0.35 0.65,-1.04 v -2.16 c 0,-0.55 -0.11,-0.66 -0.67,-0.7 v -0.15 h 2.22 v 0.15 c -0.56,0.01 -0.71,0.17 -0.71,0.79 v 2.5 c 0.3,0.43 0.63,0.61 1.08,0.61 0.57,0 0.75,-0.27 0.75,-1.09 v -2.1 c 0,-0.56 -0.08,-0.64 -0.66,-0.71 v -0.15 h 2.18 v 0.15 l -0.26,0.02 c -0.3,0.02 -0.43,0.19 -0.43,0.58 v 2.05 c 0,1.17 -0.38,1.77 -1.15,1.77 -0.58,0 -1.08,-0.26 -1.62,-0.84 -0.18,0.57 -0.52,0.84 -1.06,0.84 -0.43,0 -0.71,-0.14 -1.54,-0.77 v 0.75 l -0.07,0.02 c -0.51,-0.19 -0.84,-0.3 -1.39,-0.45 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+<path
+   id="path5602"
+   d="m 192.15,548.69 -0.02,-0.01 -0.01,-0.01 -0.02,-0.01 -0.01,-0.02 -0.02,-0.01 -0.01,-0.01 -0.02,-0.01 -0.01,-0.01 -0.01,0 -0.02,-0.01 -0.01,-0.01 -0.02,-0.01 -0.01,0 -0.01,-0.01 -0.01,-0.01 -0.02,0 -0.01,-0.01 -0.01,0 -0.02,-0.01 -0.01,0 -0.01,-0.01 -0.02,0 -0.01,0 -0.01,-0.01 -0.03,0 -0.02,0 -0.03,-0.01 -0.03,0 c -0.23,0 -0.3,0.14 -0.3,0.58 v 1.94 c 0,0.51 -0.05,0.8 -0.2,1.04 -0.22,0.36 -0.64,0.55 -1.23,0.55 -0.94,0 -1.67,-0.49 -1.67,-1.12 0,-0.22 0.2,-0.42 0.43,-0.42 0.24,0 0.44,0.2 0.44,0.41 0,0.04 -0.01,0.09 -0.02,0.16 -0.02,0.09 -0.03,0.17 -0.03,0.24 0,0.27 0.32,0.49 0.72,0.49 0.49,0 0.76,-0.29 0.76,-0.83 v -0.6 -0.24 -1.44 c 0,-0.31 -0.05,-0.4 -0.26,-0.52 -0.24,-0.14 -0.52,-0.23 -0.73,-0.23 -0.35,0 -0.63,0.34 -0.63,0.77 v 0.04 c 0,0.59 0.41,0.94 1.62,1.38 v 0.24 c -1.54,-0.62 -1.71,-0.7 -2.13,-1.08 -0.22,-0.19 -0.36,-0.53 -0.36,-0.86 0,-0.62 0.44,-1.06 1.04,-1.06 0.44,0 0.85,0.21 1.46,0.72 0.05,-0.51 0.23,-0.72 0.63,-0.72 0.34,0 0.55,0.12 0.9,0.49 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+<path
+   id="path5604"
+   d="m 194.94,548.04 h 2 v 0.15 c -0.31,0 -0.51,0.15 -0.82,0.59 l -1.27,1.95 0.83,1.19 c 0.19,0.27 0.48,0.43 0.8,0.44 v 0.15 h -1.57 v -0.15 c 0.3,-0.02 0.4,-0.08 0.4,-0.22 0,-0.12 -0.12,-0.34 -0.37,-0.65 -0.05,-0.06 -0.17,-0.23 -0.3,-0.43 l -0.14,0.2 c -0.28,0.41 -0.46,0.75 -0.46,0.88 0,0.14 0.13,0.21 0.43,0.22 v 0.15 h -2.06 v -0.15 h 0.09 c 0.3,0 0.46,-0.13 0.77,-0.6 l 0.93,-1.43 -1.13,-1.64 c -0.3,-0.41 -0.4,-0.47 -0.73,-0.5 v -0.15 h 1.45 v 0.15 c -0.28,0 -0.4,0.05 -0.4,0.17 0,0.06 0.07,0.21 0.2,0.41 l 0.78,1.22 0.91,-1.39 c 0.04,-0.06 0.06,-0.12 0.06,-0.18 0,-0.17 -0.07,-0.21 -0.4,-0.23 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+<path
+   id="path5606"
+   d="m 198.9,552.61 -1.55,-0.55 v -0.15 l 0.08,0.01 c 0.12,0.02 0.25,0.03 0.34,0.03 0.24,0 0.33,-0.16 0.33,-0.6 v -2.3 c 0,-0.71 -0.1,-0.82 -0.78,-0.86 v -0.15 h 2.35 v 0.15 c -0.65,0.05 -0.73,0.15 -0.73,0.86 v 3.53 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+<path
+   id="path5608"
+   d="m 198.43,554.82 -0.03,0 -0.02,0 -0.03,0 -0.02,-0.01 -0.02,0 -0.03,-0.01 -0.02,-0.01 -0.02,-0.01 -0.02,-0.01 -0.03,-0.01 -0.02,-0.01 -0.02,-0.02 -0.02,-0.01 -0.01,-0.01 -0.02,-0.02 -0.02,-0.02 -0.02,-0.01 -0.01,-0.02 -0.02,-0.02 -0.01,-0.02 -0.01,-0.02 -0.02,-0.02 -0.01,-0.03 -0.01,-0.02 -0.01,-0.02 -0.01,-0.02 0,-0.03 -0.01,-0.02 0,-0.03 -0.01,-0.02 0,-0.03 0,-0.02 c 0,-0.28 0.22,-0.51 0.5,-0.51 0.29,0 0.52,0.22 0.52,0.51 0,0.27 -0.23,0.5 -0.52,0.5 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+<path
+   id="path5610"
+   d="m 200.11,551.99 0.02,0 0.01,0.01 0.01,0 0.01,0 0.01,0 0.01,0.01 0.02,0 0.02,0 0.02,0.01 0.02,0 0.02,0 0.02,0 0.02,0.01 0.02,0 0.02,0 0.01,0 0.02,0 0.02,0 0.02,0 c 0.26,0 0.35,-0.16 0.35,-0.63 v -2.52 c 0,-0.54 -0.14,-0.68 -0.7,-0.69 v -0.15 h 2.21 v 0.15 c -0.52,0.02 -0.67,0.13 -0.67,0.51 v 2.8 c 0,0.02 0.08,0.12 0.15,0.19 0.24,0.23 0.67,0.4 1.02,0.4 0.44,0 0.66,-0.35 0.66,-1.04 v -2.16 c 0,-0.55 -0.11,-0.66 -0.68,-0.7 v -0.15 H 205 v 0.15 c -0.57,0.01 -0.72,0.17 -0.72,0.79 v 2.5 c 0.3,0.43 0.63,0.61 1.09,0.61 0.56,0 0.74,-0.27 0.74,-1.09 v -2.1 c 0,-0.56 -0.08,-0.64 -0.65,-0.71 v -0.15 h 2.18 v 0.15 l -0.26,0.02 c -0.3,0.02 -0.43,0.19 -0.43,0.58 v 2.05 c 0,1.17 -0.39,1.77 -1.16,1.77 -0.57,0 -1.08,-0.26 -1.62,-0.84 -0.18,0.57 -0.51,0.84 -1.05,0.84 -0.44,0 -0.72,-0.14 -1.54,-0.77 v 0.75 l -0.07,0.02 c -0.51,-0.19 -0.85,-0.3 -1.4,-0.45 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+<path
+   id="path5612"
+   d="m 212.44,548.53 h -0.05 c -0.46,0 -0.57,0.11 -0.57,0.57 v 3.41 h -1.57 v -0.17 c 0.62,-0.03 0.74,-0.13 0.74,-0.63 v -2.33 c 0,-0.28 -0.05,-0.42 -0.19,-0.53 -0.27,-0.22 -0.58,-0.34 -0.87,-0.34 -0.39,0 -0.71,0.34 -0.71,0.76 v 3.24 h -1.45 v -0.14 c 0.47,-0.03 0.61,-0.18 0.61,-0.64 v -2.5 c 0,-0.79 0.48,-1.29 1.21,-1.29 0.36,0 0.75,0.16 1.02,0.42 l 0.43,0.43 v -0.82 l 0.04,-0.02 c 0.5,0.2 0.85,0.31 1.36,0.45 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+<path
+   id="path5614"
+   d="m 212.85,551.99 0.01,0 0.01,0.01 0.01,0 0.01,0 0.01,0 0.01,0.01 0.03,0 0.02,0 0.02,0.01 0.01,0 0.02,0 0.02,0 0.02,0.01 0.02,0 0.02,0 0.02,0 0.02,0 0.01,0 0.02,0 c 0.26,0 0.35,-0.16 0.35,-0.63 v -2.52 c 0,-0.54 -0.14,-0.68 -0.69,-0.69 v -0.15 h 2.2 v 0.15 c -0.52,0.02 -0.67,0.13 -0.67,0.51 v 2.8 c 0,0.02 0.08,0.12 0.15,0.19 0.25,0.23 0.68,0.4 1.02,0.4 0.44,0 0.66,-0.35 0.66,-1.04 v -2.16 c 0,-0.55 -0.11,-0.66 -0.68,-0.7 v -0.15 h 2.23 v 0.15 c -0.57,0.01 -0.72,0.17 -0.72,0.79 v 2.5 c 0.3,0.43 0.63,0.61 1.09,0.61 0.57,0 0.75,-0.27 0.75,-1.09 v -2.1 c 0,-0.56 -0.08,-0.64 -0.66,-0.71 v -0.15 h 2.18 v 0.15 l -0.26,0.02 c -0.3,0.02 -0.43,0.19 -0.43,0.58 v 2.05 c 0,1.17 -0.39,1.77 -1.15,1.77 -0.58,0 -1.09,-0.26 -1.62,-0.84 -0.18,0.57 -0.52,0.84 -1.06,0.84 -0.44,0 -0.72,-0.14 -1.54,-0.77 v 0.75 l -0.07,0.02 c -0.51,-0.19 -0.85,-0.3 -1.39,-0.45 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+<path
+   id="path5616"
+   d="m 228.53,553.19 -0.03,1.42 h -5.28 v -0.19 c 0.69,-0.04 0.86,-0.17 0.86,-0.89 v -4.3 c 0,-0.75 -0.08,-0.96 -0.86,-1 v -0.19 H 226 v 0.19 c -0.7,0.03 -0.9,0.17 -0.9,0.89 v 4.78 c 0,0.26 0.05,0.34 0.32,0.34 h 1.35 c 0.91,0 1.34,-0.04 1.51,-1.05 z"
+   inkscape:connector-curvature="0"
+   style="fill:#000000;stroke-width:0" />
+</g>  </g>
+</svg>
