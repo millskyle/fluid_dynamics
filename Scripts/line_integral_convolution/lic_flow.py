@@ -1,48 +1,39 @@
 #!/usr/bin/python
 import sympy, math
+import numexpr as ne
 from sympy.abc import x, y
+from sympy.utilities.lambdify import lambdify
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib
 import lic_internal
 import sympy.mpmath as mpmath
 import pylab as plt
 import scipy.ndimage
+from scipy import stats
 from matplotlib.colors import LinearSegmentedColormap
+from matplotlib.colors import Normalize
+from colormap_adjust import cmap_center_point_adjust
 #======================
 #--- Configuration ---#
 #======================
-show_streamfunction = False # #Display the function that's going to be plotted in a "popup"
-output_file_name = "Temp"     #Name the file
-xlim=(-2,2.0)                   #Bounds on the display x-axis
-ylim=(-2, 2.0)                   #Bounds on the display y-axis
-is_complex_potential = True  #True if the functions given are w. False if they're Psi
-arrow_size=2
-size=1400
-res = 1.0
-cubic = 4
-thickness_factor =1.0            #Streamline thickness
-constant_thickness = False        #False if thickness based on velocity (sometimes causes error).
-kernel_density = 100 #"Smearing Strength"
-branch_cuts=True
+xlim                 =     (-3,3.0)                   #Bounds on the display x-axis
+ylim                 =     (-3, 3.0)                   #Bounds on the display y-axis
+size                 =     1400
+grain_size           =     2
+kernel_density       =     200 #"Smearing Strength"
+is_complex_potential =     True  #True if the functions given are w. False if they're Psi
+branch_cuts          =     True
+show_streamfunction  =     False # #Display the function that's going to be plotted in a "popup"
 
+#Function to plot:
+w_psi = " U*((z+ll)*exp(-i*aa) + ((a+ll)**2 / (z+ll))*exp(i*aa)) - (i*gg/(2*pi))*ln(z+ll) "
 
-#List of implicit functions to plot
-function_list = [
-" U*((z+ll)*exp(-i*aa) + ((a+ll)**2 / (z+ll))*exp(i*aa)) - (i*gg/(2*pi))*ln(z+ll)   ",
-#"z**2 - 2*0.2*z",
-]
+def mapping(z): #mapping: `return z` results in no mapping
+   #Joukowski Transformation (piecewise because of branch cut on negative real axis)
+   z = (sympy.Piecewise((1./2.*z+sympy.sqrt(1/4.*z**2-a**2),sympy.re(z)>0),(1./2.*z-sympy.sqrt(1/4.*z**2-a**2),sympy.re(z)<=0),(1./2.*z+sympy.sqrt(1/4.*z**2-a**2),True)) )
+   return z
 
-
-def mapping(z):
-
-#   return z
-   return  (sympy.Piecewise(
-     (1./2.*z + sympy.sqrt( 1/4.*z**2 - a**2), sympy.re(z) > 0),
-     (1./2.*z + -sympy.sqrt(1/4.*z**2 - a**2), sympy.re(z) <=0),
-     (1./2.*z + sympy.sqrt( 1/4.*z**2 - a**2), True) )
-   )
-   #return z
-        #mapping, `return z' will result in no mapping.
 
 #======================
 #---   Constants   ---#
@@ -51,12 +42,12 @@ def mapping(z):
 pi = math.pi
 U = 1.0
 d = 0.7
-aa = -pi/7
+aa = -pi/10
 a = 1.0
 A = 1.0
 l = 1.0
 ll = 0.15
-n=3
+n = 3
 c = 0.25
 S=1.0
 gg = -4*pi*U*a*math.sin(aa)
@@ -79,16 +70,10 @@ def sqrt(x):
 def frac(x,y):
    return float(x) / float(y)
 
-#Calculate the base density dynamically based on the field of view
-#density=sqrt(width*height)/3 : just a formula that gives decent results, nothing physical
-density = math.sqrt(float(abs(xlim[0] - xlim[1])) * float(abs(ylim[0]-ylim[1]))) / 3.0
 x0, x1 = xlim
 y0, y1 = ylim
 
-scale = 3.0
-colors=['k','r','g','b']
-
-def stream_function(function): #takes a string as a function and converts it to symbols.
+def stream_function(function): #takes a string.
    #takes a function string and returns a symbolic function. 
    # r is defined symbolically as sqrt(x**2+y**2)
    r = sympy.sqrt(x**2 + y**2)
@@ -105,81 +90,93 @@ def stream_function(function): #takes a string as a function and converts it to 
    return eval(function)
 
 def velocity_field(psi): #takes a symbolic function and returns two lambda functions
-#to evaluate the derivatives in both the x and y directions.
-    if show_streamfunction:
-        sympy.preview(psi)
+#to evaluate the derivatives in both x and y.
     global w
     if is_complex_potential:
        print "Complex potential, w(z) given"
        #define u, v symbolically as the imaginary part of the derivatives
-       u = sympy.lambdify((x, y), sympy.im(psi.diff(y)), 'numpy')
-       v = sympy.lambdify((x, y), -sympy.im(psi.diff(x)), 'numpy')
+       u = lambdify((x, y), sympy.im(psi.diff(y)), modules='numexpr')
+       v = lambdify((x, y), -sympy.im(psi.diff(x)), modules='numexpr')
     else:
        #define u,v as the derivatives 
        print "Stream function, psi given"
        u = sympy.lambdify((x, y), psi.diff(y), 'numpy')
        v = sympy.lambdify((x, y), -psi.diff(x), 'numpy')
-    if (branch_cuts):
-       return np.vectorize(u, cache=True), np.vectorize(v, cache=True)
+    if (branch_cuts): # If it's indicated that there are branch cuts in the mapping,
+                      # then we need to return vectorized numpy functions to evaluate
+                      # everything numerically, instead of symbolically 
+                      # This of course results in a SIGNIFICANT time increase
+                      #   (I don't know how to handle more than the primitive root
+                      #   (symbolically in Sympy
+ #      npu = sympy.lambdify((x,y),u(x,y))
+ #      npv = sympy.lambdify((x,y), v(x,y))
+       return u,v
     else:
+       # If there are no branch cuts, then return the symbolic lambda functions)
        return u,v
 
-COUNTER=0
 def plot_streamlines(u, v, xlim=(-1, 1), ylim=(-1, 1)):
     global COUNTER
-    COUNTER+=1
-    #define a grid on which to calculate
-    Y,X = np.ogrid[y0 - 0.25 * abs(y0):y1 + 0.25 * abs(y1):res*size*1j,
-                   x0 - 0.25 * abs(x0):x1 + 0.25 * abs(x1):res*size*1j]
+    #define a grid on which to calculate everything
+    Y,X = np.mgrid[y0 - 0.25 * abs(y0):y1 + 0.25 * abs(y1):size*1j,
+                   x0 - 0.25 * abs(x0):x1 + 0.25 * abs(x1):size*1j]
+    print "Differentiating"
     uu = u(X, Y) #Evaluate the horizontal derivative at each grid point.
     vv = v(X, Y) #Evaluate the vertical derivative at each grid point.
 
     print "Plotting..."
-    ax_thick = 0.75 * (abs(xlim[0]) + abs(xlim[1]))
+    #color map for the convolution plot
     cmap = LinearSegmentedColormap.from_list('name', ['black','white','black','white'])
-    dpi=size
-    plt.axis('off')
+    #define the kernel (just a vector of numbers)
     kernel = np.arange(kernel_density).astype(np.float32)
 
-    squ = np.reshape(uu, (int(res*size),int(res*size))).astype(np.float32)
-    sqv = np.reshape(vv, (int(res*size),int(res*size))).astype(np.float32)
+    #reshape the velocities to fill in grid
+    squ = np.reshape(uu, (int(size),int(size))).astype(np.float32)
+    sqv = np.reshape(vv, (int(size),int(size))).astype(np.float32)
+    #stack the velocities element-wise so we have a 2-tuple at each grid point.
+    vectors = np.dstack((squ,sqv)).astype(np.float32)
+    #generate the background noise.
+    texture = np.random.rand(size/grain_size,size/grain_size).astype(np.float32)
+    #resize the background noise to the resolution of the image by nearest neighbor interpolation (in order to provide support for larger grain size)
+    texture = scipy.ndimage.zoom(texture, grain_size, order=1)
 
-    vectors=np.dstack((squ,sqv)).astype(np.float32)
-    texture = np.random.rand(size/cubic,size/cubic).astype(np.float32)
-    texture = scipy.ndimage.zoom(texture, cubic, order=1)
-
+    #Do the Line Integral Convolution.
     image = lic_internal.line_integral_convolution(vectors, texture, kernel)
 
+    plt.axis('off')
     plt.figimage(image,cmap=cmap)
+    #calculate the velocities (ie: norm of velocity vector)
     velocity = np.linalg.norm(vectors, axis=2)
-#    np.putmask(velocity, velocity>=5*np.mean(velocity), 5*np.mean(velocity))
-#    np.putmask(velocity, velocity<=0.1*np.mean(velocity), 0.1*np.mean(velocity))
+    #Cap the velocities at 10x the mean velocity (to prevent singularities from
+    #skewing the color map
+#    np.putmask(velocity, velocity>10*np.mean(velocity), 10*np.mean(velocity))
 
+    #sqrt the velocities, to make the differences less drastic.
     velocity = np.sqrt(velocity)
 
-    theCM = plt.cm.get_cmap('Blues')
+    theCM = plt.cm.get_cmap('bwr')
     theCM._init()
-#    alphas = np.linspace(0,1.0,theCM.N)
-#    alphas[:10] = 0
-#    print theCM.N
-#    print np.shape(theCM._lut)
-#    theCM._lut[:-3,-1] = alphas
 
-    plt.figimage(velocity, cmap=theCM, alpha=0.5)
+    oldcm = matplotlib.cm.bwr
+    scm = cmap_center_point_adjust(oldcm, (np.min(velocity),np.max(velocity)), U)
+
+
+    #plot the heat map
+    dpi=300
+    imm = plt.figimage(velocity, cmap=scm, alpha=0.7)
+    plt.colorbar(imm)
     plt.gcf().set_size_inches((size/float(dpi),size/float(dpi)))
     plt.savefig("flow-image.png",dpi=dpi)
 
+def validate():
+   global grain_size
+   grain_size = int(grain_size)
 
 def addPlot(function):
-   print "Setting up stream function"
+   validate()
    psi = stream_function(function)
-   print "Calculations..."
    u, v = velocity_field(psi)
-
-   print "Differentiating/Evaluating..."
    plot_streamlines(u, v, xlim, ylim)
 
-
-for w in function_list:
-   addPlot(w)
+addPlot(w_psi)
 
