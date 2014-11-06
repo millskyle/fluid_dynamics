@@ -1,6 +1,5 @@
 #!/usr/bin/python
 import sympy, math
-import numexpr as ne
 from sympy.abc import x, y
 from sympy.utilities.lambdify import lambdify
 import numpy as np
@@ -19,7 +18,7 @@ from colormap_adjust import cmap_center_point_adjust
 #======================
 xlim                 =     (-3,3.0)                   #Bounds on the display x-axis
 ylim                 =     (-3, 3.0)                   #Bounds on the display y-axis
-size                 =     1400
+size                 =     700
 grain_size           =     2
 kernel_density       =     200 #"Smearing Strength"
 is_complex_potential =     True  #True if the functions given are w. False if they're Psi
@@ -95,8 +94,8 @@ def velocity_field(psi): #takes a symbolic function and returns two lambda funct
     if is_complex_potential:
        print "Complex potential, w(z) given"
        #define u, v symbolically as the imaginary part of the derivatives
-       u = lambdify((x, y), sympy.im(psi.diff(y)), modules='numexpr')
-       v = lambdify((x, y), -sympy.im(psi.diff(x)), modules='numexpr')
+       u = lambdify((x, y), sympy.im(psi.diff(y)), modules='numpy')
+       v = lambdify((x, y), -sympy.im(psi.diff(x)), modules='numpy')
     else:
        #define u,v as the derivatives 
        print "Stream function, psi given"
@@ -108,9 +107,7 @@ def velocity_field(psi): #takes a symbolic function and returns two lambda funct
                       # This of course results in a SIGNIFICANT time increase
                       #   (I don't know how to handle more than the primitive root
                       #   (symbolically in Sympy
- #      npu = sympy.lambdify((x,y),u(x,y))
- #      npv = sympy.lambdify((x,y), v(x,y))
-       return u,v
+       return np.vectorize(u),np.vectorize(v)
     else:
        # If there are no branch cuts, then return the symbolic lambda functions)
        return u,v
@@ -158,12 +155,12 @@ def plot_streamlines(u, v, xlim=(-1, 1), ylim=(-1, 1)):
     theCM._init()
 
     oldcm = matplotlib.cm.bwr
-    scm = cmap_center_point_adjust(oldcm, (np.min(velocity),np.max(velocity)), U)
+    scm = cmap_center_point_adjust(oldcm, (np.min(velocity),np.max(velocity)), math.sqrt(U))
 
 
     #plot the heat map
     dpi=300
-    imm = plt.figimage(velocity, cmap=scm, alpha=0.7)
+    imm = plt.figimage(velocity, cmap=scm, alpha=0.5)
     plt.colorbar(imm)
     plt.gcf().set_size_inches((size/float(dpi),size/float(dpi)))
     plt.savefig("flow-image.png",dpi=dpi)
