@@ -17,9 +17,9 @@ xlim=(-2,2.0)                   #Bounds on the display x-axis
 ylim=(-2, 2.0)                   #Bounds on the display y-axis
 is_complex_potential = True  #True if the functions given are w. False if they're Psi
 arrow_size=2
-size=100
+size=1400
 res = 1.0
-cubic = 2
+cubic = 4
 thickness_factor =1.0            #Streamline thickness
 constant_thickness = False        #False if thickness based on velocity (sometimes causes error).
 kernel_density = 100 #"Smearing Strength"
@@ -28,17 +28,18 @@ branch_cuts=True
 
 #List of implicit functions to plot
 function_list = [
-" U*(z*exp(-i*aa) + (a**2 / z)*exp(i*aa)) - (i*gg/(2*pi))*ln(z)   ",
+" U*((z+ll)*exp(-i*aa) + ((a+ll)**2 / (z+ll))*exp(i*aa)) - (i*gg/(2*pi))*ln(z+ll)   ",
 #"z**2 - 2*0.2*z",
 ]
 
 
 def mapping(z):
+
 #   return z
    return  (sympy.Piecewise(
-     (1./2.*z + sympy.sqrt( 1/4.*z**2 - c**2), sympy.re(z) > 0),
-     (1./2.*z + -sympy.sqrt(1/4.*z**2 - c**2), sympy.re(z) <=0),
-     (1./2.*z + sympy.sqrt( 1/4.*z**2 - c**2), True) )
+     (1./2.*z + sympy.sqrt( 1/4.*z**2 - a**2), sympy.re(z) > 0),
+     (1./2.*z + -sympy.sqrt(1/4.*z**2 - a**2), sympy.re(z) <=0),
+     (1./2.*z + sympy.sqrt( 1/4.*z**2 - a**2), True) )
    )
    #return z
         #mapping, `return z' will result in no mapping.
@@ -48,15 +49,15 @@ def mapping(z):
 #======================
 #Define any constants which are used in the equations above
 pi = math.pi
-U = 2.0
+U = 1.0
 d = 0.7
 aa = -pi/7
 a = 1.0
 A = 1.0
 l = 1.0
-ll = 0.25
+ll = 0.15
 n=3
-c = 0.5
+c = 0.25
 S=1.0
 gg = -4*pi*U*a*math.sin(aa)
 
@@ -100,7 +101,7 @@ def stream_function(function): #takes a string as a function and converts it to 
    #define z as x+iy
    z = x + i*y
    #Run z through the mapping, allow piecewise (beta)
-   z = mapping(z+1)
+   z = mapping(z)
    return eval(function)
 
 def velocity_field(psi): #takes a symbolic function and returns two lambda functions
@@ -119,7 +120,7 @@ def velocity_field(psi): #takes a symbolic function and returns two lambda funct
        u = sympy.lambdify((x, y), psi.diff(y), 'numpy')
        v = sympy.lambdify((x, y), -psi.diff(x), 'numpy')
     if (branch_cuts):
-       return np.vectorize(u), np.vectorize(v)
+       return np.vectorize(u, cache=True), np.vectorize(v, cache=True)
     else:
        return u,v
 
