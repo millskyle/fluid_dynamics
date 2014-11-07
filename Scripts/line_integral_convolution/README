@@ -1,0 +1,13 @@
+1. First, install lic_internal python module by following readme in setup/ directory
+
+2. In order to run lic_flow.py, you need dependencies:
+
+   python-sympy
+   python-numpy
+   python-matplotlib
+   python-scipy
+
+3. Edit config.py  with desired configuration (function to plot, etc.)
+4. Run lic_flow.py.  If you denoted that branch cuts may be present this could take a long time, depending on resolution (2000x2000 resolution takes about 10 minutes on my computer)
+5. Enjoy your beautiful image
+
