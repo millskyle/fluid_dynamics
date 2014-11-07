@@ -1,5 +1,6 @@
 To install, do
 
+   sudo apt-get install cython
    python setup.py build
    sudo python setup.py install
 

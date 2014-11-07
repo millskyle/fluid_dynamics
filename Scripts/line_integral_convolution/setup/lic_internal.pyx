@@ -2,7 +2,6 @@
 import numpy as np
 cimport numpy as np
 
-print "iMPORTED"
 
 cdef void _advance(float vx, float vy,
         int* x, int* y, float*fx, float*fy, int w, int h):

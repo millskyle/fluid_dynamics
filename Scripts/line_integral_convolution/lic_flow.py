@@ -13,43 +13,9 @@ from scipy import stats
 from matplotlib.colors import LinearSegmentedColormap
 from matplotlib.colors import Normalize
 from colormap_adjust import cmap_center_point_adjust
-#======================
-#--- Configuration ---#
-#======================
-xlim                 =     (-3,3.0)                   #Bounds on the display x-axis
-ylim                 =     (-3, 3.0)                   #Bounds on the display y-axis
-size                 =     2000
-grain_size           =     2
-kernel_density       =     200 #"Smearing Strength"
-is_complex_potential =     True  #True if the functions given are w. False if they're Psi
-branch_cuts          =     True
-show_streamfunction  =     False # #Display the function that's going to be plotted in a "popup"
 
-#Function to plot:
-w_psi = " U*((z+ll)*exp(-i*aa) + ((a+ll)**2 / (z+ll))*exp(i*aa)) - (i*gg/(2*pi))*ln(z+ll) "
+from config import *
 
-def mapping(z): #mapping: `return z` results in no mapping
-   #Joukowski Transformation (piecewise because of branch cut on negative real axis)
-   z = (sympy.Piecewise((1./2.*z+sympy.sqrt(1/4.*z**2-a**2),sympy.re(z)>0),(1./2.*z-sympy.sqrt(1/4.*z**2-a**2),sympy.re(z)<=0),(1./2.*z+sympy.sqrt(1/4.*z**2-a**2),True)) )
-   return z
-
-
-#======================
-#---   Constants   ---#
-#======================
-#Define any constants which are used in the equations above
-pi = math.pi
-U = 1.0
-d = 0.7
-aa = -pi/10
-a = 1.0
-A = 1.0
-l = 1.0
-ll = 0.15
-n = 3
-c = 0.25
-S=1.0
-gg = -4*pi*U*a*math.sin(aa)
 
 #Map commonly used functions to the sympy equivalent
 def exp(x):
@@ -157,7 +123,8 @@ def plot_streamlines(u, v, xlim=(-1, 1), ylim=(-1, 1)):
     theCM = plt.cm.get_cmap('bwr')
     theCM._init()
 
-    oldcm = matplotlib.cm.bwr
+    #oldcm = matplotlib.cm.bwr
+    oldcm = matplotlib.cm.Spectral_r
 
     v_at_infty = math.sqrt(u(1e9,1e9)**2 + v(1e9,1e9)**2)
 
