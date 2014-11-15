@@ -144,6 +144,10 @@ def plot_streamlines(u, v, xlim=(-1, 1), ylim=(-1, 1)):
 
     scm = cmap_center_point_adjust(oldcm, (np.min(velocity),np.max(velocity)), v_at_infty)
 
+    if flip_h:
+       velocity = np.fliplr(velocity)
+    if flip_v:
+       velocity = np.flipud(velocity)
 
     #plot the heat map
     dpi=300

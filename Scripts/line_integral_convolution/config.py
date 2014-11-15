@@ -4,15 +4,15 @@ import sympy
 #--- Configuration ---#
 #======================
 #Bounds on the display x axis
-xlim=[0,4]
+xlim=[0,3]
 #Bounds on the display y-axis
-ylim=[0,4]      #Bounds on the display y-axis
+ylim=[0,3]      #Bounds on the display y-axis
 #Size of the grid on which to evaluate (and pixel size of final image)
 size=2500
 #Pixel size of the random noise ( n x n ). size/grain_size must be integer.
 grain_size=2
 #Smearing strength (over how many pixels do we smear one pixel?)
-kernel_density=200
+kernel_density=120
 #if w_psi below is a complex potential, this should be true. If it's a stream function, false
 is_complex_potential = True  #True if the functions given are w. False if they're Psi
 velocity_components = True  #True if you're wishing to provide u(x,y) and v(x,y) explicitly below
@@ -22,7 +22,7 @@ branch_cuts = True
 
 #Should the final image be flipped horizontally/vertically?
 flip_h = False
-flip_v = False
+flip_v = True
 
 
 
