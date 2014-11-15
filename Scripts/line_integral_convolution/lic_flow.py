@@ -16,6 +16,13 @@ from colormap_adjust import cmap_center_point_adjust
 
 from config import *
 
+#div by zero errors if one limit is set at 0.  Make sure that it's not.
+if (xlim[1]==0): xlim[1]=-0.000001
+if (ylim[1]==0): ylim[1]=-0.000001
+if (xlim[0]==0): xlim[0]=-0.000001
+if (ylim[0]==0): ylim[0]=-0.000001
+
+
 
 #Map commonly used functions to the sympy equivalent
 def exp(x):
@@ -87,7 +94,7 @@ def plot_streamlines(u, v, xlim=(-1, 1), ylim=(-1, 1)):
     #define a grid on which to calculate everything
     Y,X = np.ogrid[y0 - 0.25 * abs(y0):y1 + 0.25 * abs(y1):size*1j,
                    x0 - 0.25 * abs(x0):x1 + 0.25 * abs(x1):size*1j]
-    print "Differentiating"
+    print "Evaluating the velocity at each grid point..."
 
     uu = u(X,Y) #Evaluate the horizontal derivative at each grid point.
     vv = v(X,Y) #Evaluate the vertical derivative at each grid point.
@@ -108,6 +115,7 @@ def plot_streamlines(u, v, xlim=(-1, 1), ylim=(-1, 1)):
     #resize the background noise to the resolution of the image by nearest neighbor interpolation (in order to provide support for larger grain size)
     texture = scipy.ndimage.zoom(texture, grain_size, order=1)
 
+    print "  Integrating for LIC plot (if this takes too long, try decreasing the kernel_density)"
     #Do the Line Integral Convolution.
     image = lic_internal.line_integral_convolution(vectors, texture, kernel)
 

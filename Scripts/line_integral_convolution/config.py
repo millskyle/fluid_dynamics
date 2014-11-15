@@ -4,9 +4,9 @@ import sympy
 #--- Configuration ---#
 #======================
 #Bounds on the display x axis
-xlim=(-3,3)
+xlim=[0,4]
 #Bounds on the display y-axis
-ylim=(-3, 3)      #Bounds on the display y-axis
+ylim=[0,4]      #Bounds on the display y-axis
 #Size of the grid on which to evaluate (and pixel size of final image)
 size=2500
 #Pixel size of the random noise ( n x n ). size/grain_size must be integer.
@@ -26,8 +26,8 @@ flip_v = False
 
 
 
-x_velocity = " y+x-x**3 "    #u(x,y)
-y_velocity = " -y "   #v(x,y)
+x_velocity = " x*(3-x-y)  "    #u(x,y)
+y_velocity = " y*(2-x-y)  "   #v(x,y)
 #Function to plot:
 w_psi = " U*((z+ll)*exp(-i*aa) + ((a+ll)**2 / (z+ll))*exp(i*aa)) - (i*gg/(2*pi))*ln(z+ll) "
 
