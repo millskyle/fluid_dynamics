@@ -15,7 +15,7 @@ grain_size=2
 kernel_density=200
 #if w_psi below is a complex potential, this should be true. If it's a stream function, false
 is_complex_potential = True  #True if the functions given are w. False if they're Psi
-velocity_components = True
+velocity_components = True  #True if you're wishing to provide u(x,y) and v(x,y) explicitly below
 #Do we need to be careful of branch cuts (nth roots in the function/mapping?)
 #   (this slows computation immensely, so only turn on if sure
 branch_cuts = True
