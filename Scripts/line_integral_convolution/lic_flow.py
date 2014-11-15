@@ -56,27 +56,31 @@ def stream_function(function): #takes a string.
 
 def velocity_field(psi): #takes a symbolic function and returns two lambda functions
 #to evaluate the derivatives in both x and y.
-    global w
-    if is_complex_potential:
-       print "Complex potential, w(z) given"
-       #define u, v symbolically as the imaginary part of the derivatives
-       u = lambdify((x, y), sympy.im(psi.diff(y)), modules='numpy')
-       v = lambdify((x, y), -sympy.im(psi.diff(x)), modules='numpy')
-    else:
-       #define u,v as the derivatives 
-       print "Stream function, psi given"
-       u = sympy.lambdify((x, y), psi.diff(y), 'numpy')
-       v = sympy.lambdify((x, y), -psi.diff(x), 'numpy')
-    if (branch_cuts): # If it's indicated that there are branch cuts in the mapping,
+   global w
+   if velocity_components:
+      u = lambdify((x,y), eval(x_velocity), modules='numpy')
+      v = lambdify((x,y), eval(y_velocity), modules='numpy')
+   else:
+      if is_complex_potential:
+         print "Complex potential, w(z) given"
+         #define u, v symbolically as the imaginary part of the derivatives
+         u = lambdify((x, y), sympy.im(psi.diff(y)), modules='numpy')
+         v = lambdify((x, y), -sympy.im(psi.diff(x)), modules='numpy')
+      else:
+         #define u,v as the derivatives 
+         print "Stream function, psi given"
+         u = sympy.lambdify((x, y), psi.diff(y), 'numpy')
+         v = sympy.lambdify((x, y), -psi.diff(x), 'numpy')
+   if (branch_cuts): # If it's indicated that there are branch cuts in the mapping,
                       # then we need to return vectorized numpy functions to evaluate
                       # everything numerically, instead of symbolically 
                       # This of course results in a SIGNIFICANT time increase
                       #   (I don't know how to handle more than the primitive root
                       #   (symbolically in Sympy
-       return np.vectorize(u),np.vectorize(v)
-    else:
+      return np.vectorize(u),np.vectorize(v)
+   else:
        # If there are no branch cuts, then return the symbolic lambda functions (MUCH faster)
-       return u,v
+      return u,v
 
 def plot_streamlines(u, v, xlim=(-1, 1), ylim=(-1, 1)):
     global COUNTER
@@ -107,6 +111,10 @@ def plot_streamlines(u, v, xlim=(-1, 1), ylim=(-1, 1)):
     #Do the Line Integral Convolution.
     image = lic_internal.line_integral_convolution(vectors, texture, kernel)
 
+    if flip_h:
+       image = np.fliplr(image)
+    if flip_v:
+       image = np.flipud(image)
     plt.axis('off')
     plt.figimage(image,cmap=cmap)
     #calculate the velocities (ie: norm of velocity vector)
@@ -133,6 +141,8 @@ def plot_streamlines(u, v, xlim=(-1, 1), ylim=(-1, 1)):
     dpi=300
     imm = plt.figimage(velocity, cmap=scm, alpha=0.5)
     plt.gcf().set_size_inches((size/float(dpi),size/float(dpi)))
+    
+    
     plt.savefig("flow-image.png",dpi=dpi)
 
 def validate():
