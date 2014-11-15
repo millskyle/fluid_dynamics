@@ -73,7 +73,7 @@ def velocity_field(psi): #takes a symbolic function and returns two lambda funct
                       # This of course results in a SIGNIFICANT time increase
                       #   (I don't know how to handle more than the primitive root
                       #   (symbolically in Sympy
-       return u,v
+       return np.vectorize(u),np.vectorize(v)
     else:
        # If there are no branch cuts, then return the symbolic lambda functions (MUCH faster)
        return u,v
@@ -85,8 +85,6 @@ def plot_streamlines(u, v, xlim=(-1, 1), ylim=(-1, 1)):
                    x0 - 0.25 * abs(x0):x1 + 0.25 * abs(x1):size*1j]
     print "Differentiating"
 
-    u = np.vectorize(u, otypes=[np.float])
-    v = np.vectorize(v, otypes=[np.float])
     uu = u(X,Y) #Evaluate the horizontal derivative at each grid point.
     vv = v(X,Y) #Evaluate the vertical derivative at each grid point.
 
