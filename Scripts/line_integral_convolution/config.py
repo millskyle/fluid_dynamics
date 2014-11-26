@@ -1,18 +1,20 @@
 import math
 import sympy
+import sys
+
 #======================
 #--- Configuration ---#
 #======================
 #Bounds on the display x axis
-xlim=[0,3]
+xlim=[-2,2]
 #Bounds on the display y-axis
-ylim=[0,3]      #Bounds on the display y-axis
+ylim=[-2,2]      #Bounds on the display y-axis
 #Size of the grid on which to evaluate (and pixel size of final image)
-size=2500
+size=750
 #Pixel size of the random noise ( n x n ). size/grain_size must be integer.
-grain_size=2
+grain_size=1
 #Smearing strength (over how many pixels do we smear one pixel?)
-kernel_density=120
+kernel_density=150
 #if w_psi below is a complex potential, this should be true. If it's a stream function, false
 is_complex_potential = True  #True if the functions given are w. False if they're Psi
 velocity_components = True  #True if you're wishing to provide u(x,y) and v(x,y) explicitly below
@@ -26,8 +28,8 @@ flip_v = True
 
 
 
-x_velocity = " x*(3-x-y)  "    #u(x,y)
-y_velocity = " y*(2-x-y)  "   #v(x,y)
+x_velocity = " mu - x**2  "    #u(x,y)
+y_velocity = " -y  "   #v(x,y)
 #Function to plot:
 w_psi = " U*((z+ll)*exp(-i*aa) + ((a+ll)**2 / (z+ll))*exp(i*aa)) - (i*gg/(2*pi))*ln(z+ll) "
 

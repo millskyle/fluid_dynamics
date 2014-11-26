@@ -14,15 +14,22 @@ from matplotlib.colors import LinearSegmentedColormap
 from matplotlib.colors import Normalize
 from colormap_adjust import cmap_center_point_adjust
 
+from sys import argv
+
 from config import *
+
+mu = float(argv[1])
+
+if len(argv) > 1:
+   name=argv[1]
+else:
+   name=""
 
 #div by zero errors if one limit is set at 0.  Make sure that it's not.
 if (xlim[1]==0): xlim[1]=-0.000001
 if (ylim[1]==0): ylim[1]=-0.000001
 if (xlim[0]==0): xlim[0]=-0.000001
 if (ylim[0]==0): ylim[0]=-0.000001
-
-
 
 #Map commonly used functions to the sympy equivalent
 def exp(x):
@@ -153,9 +160,7 @@ def plot_streamlines(u, v, xlim=(-1, 1), ylim=(-1, 1)):
     dpi=300
     imm = plt.figimage(velocity, cmap=scm, alpha=0.5)
     plt.gcf().set_size_inches((size/float(dpi),size/float(dpi)))
-    
-    
-    plt.savefig("flow-image.png",dpi=dpi)
+    plt.savefig("flow-image{0}.png".format(name),dpi=dpi)
 
 def validate():
    global grain_size
