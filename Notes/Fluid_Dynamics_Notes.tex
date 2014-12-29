@@ -1397,7 +1397,7 @@ The cotangent is just the tangent flipped across the \xaxis and phase shifted by
 \unnumeq{u-iv = -\frac{i\Gamma}{2a}\cot\left(\frac{\pi}{2} + \frac{i\pi b}{a} \right) = \frac{i\Gamma}{2a}\tan\left(\frac{i\pi b}{a}\right).}
 Knowing that $\tan(ix) = -i\tanh(x)$ makes this
 \unnumeq{u-iv = -\frac{\Gamma}{2a}\tanh\left(\frac{\pi b}{a}\right)}
-where the right side is purely real.  Therefore the fluid at the point $z=\frac{1}{2}a+ib$ is traveling horizontally to the left at speed 
+where the right side is purely real.  Therefore the fluid at the point $z=\frac{1}{2}a+ib$ is travelling horizontally to the left at speed 
 \unnumeq{u=\frac{\Gamma}{2a}\tanh\left(\frac{\pi b}{a}\right).}
 This means that the vortex at this location is, itself swept to the left at this speed, and since all vortexes move at the same speed, the entire vortex street moves to the left at this speed.\\
 
@@ -1989,7 +1989,7 @@ so $C_2 = Ph^2 / 2\mu\rho$ and our full solution is
 u(y) &=  -\frac{P}{2\mu\rho}y^2 +\frac{Ph^2 }{ 2\mu\rho} \\
 &=  \frac{P}{2\mu\rho}\left(h^2 - y^2\right)
 \end{align*}
-\Figure{fig/ass6/A6_Q1_a_plot.eps} shows a two-dimensional plot of this flow.  The fluid is as expected, traveling the fastest at the midpoint between the boundaries and is not moving at the boundary, consistent with the no slip condition.\\
+\Figure{fig/ass6/A6_Q1_a_plot.eps} shows a two-dimensional plot of this flow.  The fluid is as expected, travelling the fastest at the midpoint between the boundaries and is not moving at the boundary, consistent with the no slip condition.\\
 
 \textbf{b) } Similar to part a, the fluid flow is symmetrical in $\theta$ and $z$; its velocity is fully in the $z$-direction, thus $u_\theta = u_r = 0$, and $u_z$ should depend only on $r$. Jumping directly into the Navier-Stokes equation, \Equation{2390572309485720394652038746598347623094875} expands to
 
@@ -2382,7 +2382,7 @@ We can neglect all but the first term, since all subsequent terms will be produc
 
 \subsection{Sinusoidal waves in deep water}
 
-Recall that the differential equation  we're trying to solve is Laplace's equation, \Equation{laplacesequationforwaves}.  The problem is that we really have two unknown functions: $\phi$ and $\eta$.  We can't obtain both, so we must make an assumption; we'll assume that our  wave is a traveling sinusoidal wave of the form
+Recall that the differential equation  we're trying to solve is Laplace's equation, \Equation{laplacesequationforwaves}.  The problem is that we really have two unknown functions: $\phi$ and $\eta$.  We can't obtain both, so we must make an assumption; we'll assume that our  wave is a travelling sinusoidal wave of the form
 \numeq{\eta(x,t) = A\cos\kxwt}{travellingwaveeta}
 where $A$ is the amplitude in units of length, $k$ is the wave number, in units of inverse distance, and $\omega$ is the angular frequency, in units of inverse time.  Differentiating \Equation{travellingwaveeta} with respect to t gives
 \unnumeq{\pp{\eta}{t} = -A\omega\sin\kxwt} so we know from our first boundary condition, (\Equation{kinematicconditionlinearisedagain}) that
@@ -2442,23 +2442,47 @@ The free surface velocities scale proportionally with $A\omega$, the amplitude a
 
 \subsection{Wave packets}
 
-In the previous section, we assumed that a wave was perfectly sinusoidal, but that's not very realistic for many disturbances.  It might be a good approximation for waves in deep water in the middle of the ocean, but if we throw a rock into a pond, the resulting disturbance is definitely not going to be a perfect sine function.  We need to talk about a more generalized form of \Equation{travellingwaveeta}.  For this, we'll invoke the concept of a Fourier Series: \textit{any periodic function $f(x)$ can be written as a function of sines and cosines:}
+In the previous section, we assumed that a wave was perfectly sinusoidal, but that's not very realistic for many disturbances.  It might be a good approximation for waves in deep water in the middle of the ocean, but if we throw a rock into a pond, the resulting disturbance is definitely not going to be a perfect sine function.  We need to talk about a more generalized form of \Equation{travellingwaveeta}.  Our goal of this section will be to build up a mathematical representation of a generic disturbance that isn't limited to being a perfect sinusoidal function.  For this, the concept of a Fourier Series will come in handy: \textit{Any periodic function $f(x)$ can be written as a function of sines and cosines:}
 \numeq{ f(x) = \frac{a_0}{2} + \sum\limits_{n=1}^{\infty} \left[ a_n\cos(nx) + b_n\sin(nx) \right].}{23423412664684674643341}
-The Fourier series, rather than encoding information as a function of $x$, really encodes the information in the coefficients $a_n$ and $b_n$.  We can also write the function a bit more concisely as
-\numeq{f(x) = \sum\limits_{n=-\infty}^{\infty} c_n e^{inx}.}{423947019237401928364701982763409813}
+The Fourier series, rather than encoding information as a function of $x$, really encodes the information in the real-valued coefficients $a_n$ and $b_n$.  We can also write the function a bit more concisely as
+\numeq{f(x) = \sum\limits_{n=-\infty}^{\infty} c_n e^{inx}}{423947019237401928364701982763409813}
+where $c_n$ are complex-valued coefficients.  It is usually much easier to work with exponentials than it is sines and cosines, even with complex numbers,  so we will elect to work with the latter form.
 
 
 
 
-\Example{289736419283469182364}{Consider two sinusoidal waves added together:
+\Example{289736419283469182364}{We'll begin with an idealized example which will demonstrate just one way that a more complicated wave can constructed.  Consider two sinusoidal waves added together:
 \unnumeq{\eta{x,t} = A\cos(k_1 x - \omega_1 t) + A\cos(k_2 x - \omega_2 t) }
 In order to make this turn out pretty, let's say that $k_1\approx k_2$ and $\omega_1\approx\omega_2$ such that $k_1 = k-\Delta k$, $k_2 = k+\Delta k$, $\omega_1 = \omega - \Delta\omega$ and $\omega_2 = \omega + \Delta\omega$, where $k$ and $\omega$ are the average values of each quantity.  What does the wave look like?
 }{We're going to play around a bit with this equation and see what we come up with.  Plugging in the quantities in terms of $k$ and $\omega$ gives
 \unnumeq{\eta(x,t) = A\cos\left[(k-\Delta k)x - (\omega-\Delta\omega)t\right]   + A\cos\left[(k+\Delta k)x - (\omega+\Delta\omega)t\right]. }
 Now expanding using the identity $\cos(a-b) = \cos a \cos b + \sin a\sin b$, and then exploiting the evenness of cosine and the oddness of sine, this reduces to
 \numeq{\eta(x,t) = 2A\cos(\Delta k x - \Delta\omega t)\cos(kx-wt).}{9023874109238740192634091236740912}
-The second cosine term in \Equation{9023874109238740192634091236740912} corresponds to the normal traveling wave which we've worked with already. The first cosine out front, however is something we haven't seen before. It acts as an envelope for the traveling wave sandwiching the normal traveling wave within the boundary of the first cosine function.  The amplitude is \textit{modulated}.  The idea to take away from this is that when you add two cosine waves together, you get a much more complicated wave. The concept of amplitude modulation is central to the Fourier techniques that we'll now proceed with.
+The second cosine term in \Equation{9023874109238740192634091236740912} corresponds to the normal travelling wave which we've worked with already. The first cosine out front, however is something we haven't seen before. It acts as an envelope for the travelling wave sandwiching the normal travelling wave within the boundary of the first cosine function, shown in \Figure{ch6_wave_packet}.  The amplitude is \textit{modulated}.  The idea to take away from this is that when you add two cosine waves together, you get a much more complicated wave. The concept of amplitude modulation is central to the Fourier techniques that we'll now proceed with.
 }
+\inkscapeimage{ch6_wave_packet}{0.5}
+
+A Fourier series can be used to model very complicated behaviour. If we keep adding more and more terms (summing over more and more values of $n$), we can model more and more complicated systems, but the Fourier series has one major drawback: any function that we construct will be necessarily periodic since it will be built out of periodic functions.  A one-time impulsive shock, like a rock being thrown into a pond, is definitely not a periodic disturbance and using only a Fourier series is not sufficient.  Rather than build a wave, we want to build a wave \textit{packet}.  To do this, instead of using a sum of sines and cosines, we'll use a Fourier integral and write our function $f(x)$ as
+\numeq{f(x) = \frac{1}{2\pi}\int_{-\infty}^\infty e^{-i\omega x}d\omega \int_{-\infty}^\infty f(t)e^{i\omega t}dt. }{FourierIntegralWaves}
+We'll break this up into two separate functions: first we'll  define
+\unnumeq{g(\omega) = \frac{1}{\sqrt{2\pi}}\int^\infty_{-\infty}f(t)e^{i\omega t} dt}
+leaving
+\unnumeq{f(x) = \frac{1}{\sqrt{2\pi}} \int^\infty_{-\infty}  g(\omega)e^{-i\omega x}d\omega }
+
+
+The best way to demonstrate this is through a generic example:
+
+\Example{FourierIntegralExample}{Consider the finite sine wave
+\unnumeq{
+f(x) = \left\{
+     \begin{array}{cr}
+       \sin(\omega_0 x), & |x| < n\pi/\omega_0 \\
+       0 & \mathrm{otherwise}
+     \end{array}
+     \right.
+}
+
+}{wew}
 
 
 
