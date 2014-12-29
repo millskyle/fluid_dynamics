@@ -1902,12 +1902,12 @@ We have three terms here with the order of the derivatives coinciding with power
 \unnumeq{r^2 (\alpha)(\alpha-1)r^{\alpha - 2} + r(\alpha)r^{\alpha - 1} - r^\alpha = 0}
 or
 \unnumeq{\alpha(\alpha - 1)r^\alpha + \alpha r^\alpha - r^\alpha = 0.} Dividing by $r^\alpha$ gives a quadratic equivalent to
-\unnumeq{(\alpha + 1)(\alpha - 1) = 0.}  Thus there are two suitable values for $\alpha$: $\alpha=\pm 1$ and we must consider a linear combination of both as the general solution:
+\unnumeq{(\alpha + 1)(\alpha - 1) = 0.}  Thus there are two suitable values for $\alpha$ ($\alpha=\pm 1$) and we must consider a linear combination of both as the general solution:
 \numeq{u_\theta(r) = Ar + \frac{B}{r} .}{512893746192834702394857209384198267}  In order to find the coefficients $A$ and $B$, we must use boundary conditions.  Our boundary conditions are given simply by the speed of the fluid at both radius $r_1$ and $r_2$, that is
 \unnumeq{u_\theta(r_1) = \Omega_1r_1 \qquad\and\qquad u_\theta(r_2) = \Omega_2r_2.}  Simply plugging these into \Equation{512893746192834702394857209384198267} one at a time and solving for $A$ and $B$ (through a bit of algebra), gives the coefficients 
 \unnumeq{A = \frac{\Omega_2r_2^2 - \Omega_1r_1^2}{r_2^2 - r_1^2}\qquad\and\qquad B  = \frac{(\Omega_1 - \Omega_2)r_1^2r_2^2}{r_2^2 - r_1^2 } , } thus the final solution is
 
-\numeq{u_\theta (r) =  \frac{\Omega_2r_2^2 - \Omega_1r_1^2 }{r_2^2 - r_1^2}r +  \frac{(\Omega_1 - \Omega_2)r_1^2r_2^2}{r\left(r_2^2 - r_1^2\right) }.}{r8971236498793457630987}
+\numeq{u_\theta (r) =  \frac{\Omega_2r_2^2 - \Omega_1r_1^2 }{r_2^2 - r_1^2}r +  \frac{(\Omega_1 - \Omega_2)r_1^2r_2^2}{r\left(r_2^2 - r_1^2\right) }}{r8971236498793457630987}
 
 
 
@@ -2344,7 +2344,7 @@ Our goal is to solve this differential equation.  Now we need a way to represent
 \subsection{Boundary conditions}
 What actually happens above, below and at the free surface.  We must look at boundary conditions.  The first comes from an obvious statement: \textit{fluid particles on the surface stay on the surface}.  We will define a function
 \unnumeq{F(x,y,t) = y-\eta(x,t)} as the distance from any point within the fluid to the free surface.  Obviously $F$ is a constant for elements on the free surface, and in fact, it's zero, so
-\unnumeq{\frac{DF}{Dt} = 0} which means that
+\unnumeq{\frac{Df}{Dt} = 0} which means that
 \unnumeq{\pp{F}{t} + \left(\vec u \dot \Nabla\right)F = 0.} Now,
 \unnumeq{\pp{F}{t} = \pp{}{t}\left(y-\eta(x,t)\right) = -\pp{\eta}{t}} and
 \unnumeq{\left(\vec u\dot\grad\right)F = -u\pp{\eta}{x} + v\pp{F}{y} = -u\pp{\eta}{x} + v .}
@@ -2369,7 +2369,7 @@ The boundary conditions we obtained are non-linear making the analysis of waves 
 by neglecting the $u(\lpp{\eta}{t})$ term since it is a product of two small quantities. We can take our linearization a bit further by writing \Equation{kinematicconditionlinearized} as
 \unnumeq{v(x,\eta,t)  =  \pp{\eta(x,t)}{t}\qquad (\mathrm{on}\ y=\eta(x,t))}
 and writing out the first few terms of the Taylor expansion around $\eta = 0$ (we expand around $\eta=0$ since we're assuming that $\eta$, the shape of the surface, is almost $0$ for small amplitudes).  Thus
-\unnumeq{v(x,\eta,t) \approx v(x,0,t) + \cancelto{\eta=0}{\eta\pp{v(x,0,t)}{t} + ...}}
+\unnumeq{v(x,\eta,t) \approx v(x,0,t) + \xcancel{\eta\pp{v(x,0,t)}{t} + ...}}
 We can neglect all but the first term, since all subsequent terms will be products of small quantities.  This gives the result
 \unnumeq{v(x,0,t) = \pp{\eta}{t} \qualification{on}{y=\eta = 0}} and since $v = \lpp{\phi}{y}$, our new boundary condition is
 \numeq{\pp{\phi}{y} = \pp{\eta}{t}\qualification{on}{y=0}.}{kinematicconditionlinearisedagain}  Similarly, the pressure condition, \Equation{pressurecondition} becomes
@@ -2388,12 +2388,12 @@ where $A$ is the amplitude in units of length, $k$ is the wave number, in units 
 \unnumeq{\pp{\eta}{t} = -A\omega\sin\kxwt} so we know from our first boundary condition, (\Equation{kinematicconditionlinearisedagain}) that
 \unnumeq{\pp{\phi}{y} =\pp{\eta}{t}=  -A\omega\sin\kxwt} so integrating this with respect to $y$ gives us the general form of $\phi$:
 \numeq{\phi = f(y)\sin\kxwt}{23908457623095429034576210934567290834651098246}
-where $f(y)$ is a specific (and unknown) function of $y$.  Now that we ``know'' $\phi$, let's plug it into Laplace's equation (\Equation{laplacesequationforwaves}):
+where $f(y)$ is a specific function of $y$.  Now that we ``know'' $\phi$, let's plug it into Laplace's equation:
 \begin{align*}
 \ppt{}{x}\left(   f(y)\sin\kxwt \right)  + \ppt{}{y}\left( f(y)\sin\kxwt\right)&=0\\
 -k^2f(y)\sin\kxwt + f''(y)\sin\kxwt &= 0.
 \end{align*}
-Therefore, dividing by $\sin(kx-\omega t)$, $f(y)$ is given by the differential equation
+Therefore $f(y)$ is given by the differential equation
 \unnumeq{f'' - k^2f = 0}
 for which the solution is
 \unnumeq{f(y) = Ce^{ky} + De^{-ky}.}
@@ -2402,15 +2402,13 @@ Since we have infinitely deep water, we can immediately kill the second term as 
 
 Now we'll look back to the boundary condition (\Equation{kinematicconditionlinearisedagain}).  Taking both derivatives  gives
 \unnumeq{kC\e{ky}\sin\kxwt  = \omega A\sin\kxwt} but the boundary condition is only true at $y=0$ so, setting $y=0$ leads us to
-\numeq{C=\frac{\omega A}{k}.}{3209387450293864520394572093847520}
+\numeq{c=\frac{\omega A}{k}.}{3209387450293864520394572093847520}
 Now we will use our second boundary condition, (\Equation{pressureconditionlinearized}) to obtain
 \unnumeq{-\omega\frac{\omega A}{k}\e{ky}\cos\kxwt+gA\cos\kxwt = 0}
-which is also only true when $y=0$, so
+which is only true when $y=0$, so
 \numeq{\omega \equiv\omega (k)=  \sqrt{gk}.}{dispersionrelationdeepwater}
-This is an important relationship; we call it the \textbf{dispersion relation}.  The dispersion relation tells us the relationship between the frequency of the waves and the wavenumber.  We know the wave \textit{speed} is given by $c=\lambda f = \omega / k$ and since the wavenumber tells us the wavelength of the wave, this means that the speed of the wave is going to be dependent on its wavelength and frequency.  This is a big deal; water waves travel at different speeds depending on their wavelength. We can solve for the speed of the wave:
-\numeq{c = \frac{\omega}{k}  = \frac{\sqrt{gk}}{k} = \sqrt{\frac{g\lambda}{2\pi}},}{29387520394512341235413246039098704599877655437854675} thus larger wavelength waves travel faster than shorter wavelength waves. This is, of course completely different than electromagnetic and sound waves, which travel at the same speed no matter the wavelength.  You've actually likely seen this effect in real life.  If you throw a large rock into a lake, the large wavelength waves will reach your feet first, and the slower moving, small wavelength waves will reach you later.\\
-
-
+This is known as the \textbf{dispersion relation}.  The dispersion relation tells us the relationship between the frequency of the waves and the wavenumber, and since the wavenumber tells us the wavelength, the dispersion relation is the relationship between the wavelength of the wave and the frequency of the wave.  We know the wave \textit{speed} is given by $c=\lambda f = \omega / k$.  This means that the speed of the wave is going to be dependent on its wavelength and frequency.  Water waves travel at different speeds depending on their wavelength. We can solve for the speed of the wave:
+\numeq{c = \frac{\omega}{k}  = \frac{\sqrt{gk}}{k} = \sqrt{\frac{g\lambda}{2\pi}},}{29387520394512341235413246039098704599877655437854675} thus larger wavelength waves travel faster than shorter wavelength waves.\\
 
 Assembling everything gives us the full velocity potential
 \numeq{\phi(x,y,t) = \frac{A\omega}{k}\e{ky}\sin\kxwt.}{09234572309458231029384619827501234982175}
@@ -2421,42 +2419,22 @@ But how does a single fluid element under the surface move?  The velocity of the
 \pp{y}{t} &= v = \pp{\phi}{y} = A\omega\e{ky}\sin\kxwt
 \end{align*}
 
-Assuming the fluid element is, on average, at point $(x_0, y_0)$, we can integrate (with respect to time) the above relationship to obtain the path of the element:
+Assuming the fluid element is, on average, at point $(x_0, y_0)$, we can integrate the above relationship to obtain the path of the element:
 \begin{align*}
 x(t) & = -A\e{ky_0}\sin\left(kx_0 - \omega t\right) - x_0 \\
 y(t) & = A\e{ky_0}\cos\left(kx_0 - \omega t\right) - y_0 \\
 \end{align*}
 
-These parametric curves are plotted in \Figure{ch6_fluid_element_path}.  A single fluid element follows a circular path, centered around its mean position $(x_0,y_0)$. The motion decays as depth increases. (Animation: \url{www.youtube.com/watch?v=7yPTa8qi5X8})
+These parametric curves are plotted in \Figure{fig/ch6/fluid_element_parametrization.eps}.  A single fluid element follows a circular path, centered around its mean position $(x_0,y_0)$. The motion decays as depth increases.
 
-%\insertfigure{ch6/fluid_element_parametrization.eps}{0.65}
-\inkscapeimage{ch6_fluid_element_path}{0.55}
+\insertfigure{fig/ch6/fluid_element_parametrization.eps}{0.65}
 
 
 \subsection{Meaning of small amplitude}
-In the analysis of small amplitude waves we dropped terms where two small numbers were multiplied -- terms that were ``quadratic in smallness''.  But what constitutes ``\textit{small}''?  We dropped $u(\lpp{\eta}{x})$ because it was  negligible compared to $v$.  Using the velocity potential that we found (\Equation{09234572309458231029384619827501234982175}), we can say that
-\unnumeq{\abs{u}=\abs{\pp{\phi}{x}}\sim A\omega\qquad\and\qquad \abs{v} = \abs{\pp{\phi}{x}} \sim A\omega. }
+In the analysis of small amplitude waves we dropped terms where two small numbers were multiplied -- terms that were ``quadratic in smallness''. We dropped $u(\lpp{\eta}{x})$ because it was  negligible compared to $v$.  Using the velocity potential that we found (\Equation{09234572309458231029384619827501234982175}), we can say that
+\unnumeq{\abs{u}=\abs{\pp{\phi}{x}}\sim A\omega\qquad\and\qquad \abs{v} = \abs{\pp{\phi}{x}} \sim A\omega }
 
-The free surface velocities scale proportionally with $A\omega$, the amplitude and the frequency (of course, we're dropping the sines and cosines here--they are of course always between -1 and 1 anyway). We've just discovered that $\omega = \sqrt{gk} = \sqrt{2\pi g/\lambda}$ so the frequency is inversely proportional to the wavelength. The quantity \lpp{\eta}{x} is the slope of the free surface, which is obviously connected to the amplitude (larger amplitude clearly requires larger slope), so all of these are connected.  What we're really saying when we say ``small amplitude'' is that the free surface displacement -- the amplitude --  is small compared to the wavelength.  Thus the small amplitude approximation for deep water is applicable if $A\ll\lambda$.
-
-
-\subsection{Wave packets}
-
-In the previous section, we assumed that a wave was perfectly sinusoidal, but that's not very realistic for many disturbances.  It might be a good approximation for waves in deep water in the middle of the ocean, but if we throw a rock into a pond, the resulting disturbance is not going to be a perfect sine function.  We need to talk about a more generalized form of \Equation{travellingwaveeta}.  For this, we'll invoke the concept of a Fourier Series: \textit{any periodic function $f(x)$ can be written as a function of sines and cosines:}
-\numeq{ f(x) = \frac{a_0}{2} + \sum\limits_{n=1}^{\infty} \left[ a_n\cos(nx) + b_n\sin(nx) \right]     }{23423412341}
-
-
-
-
-\Example{SurfaceWaveSpeedStorm}{Surface waves generated by a mid-Atlantic storm arrive at the Nova Scotian coast with a period of 15 seconds.  A day later, the period has dropped to 12.5 seconds.  How far away did the storm occur?}{this}
-
-
-
-
-
-
-
-
+so what we're really saying when we say ``small amplitude'' is really that the free surface displacement -- the amplitude --  is small compared to the wavelength.  Thus the small amplitude approximation for deep water is applicable if $A\ll\lambda$.
 
 
 
@@ -3009,6 +2987,9 @@ Combining all of this information,
 
 
 
+
+\unnumeq{\qquad \Nabla \cross \vec B = \mu_0\left(\vec J + \epsilon_0\pp{\vec E}{t} \right),\quad    \Nabla \cross \vec E = - \pp{\vec B}{t}  }
+\unnumeq{ \Nabla \dot \vec E = \frac{\rho}{\epsilon_0},\quad\Phi = \oint \vec E \dot \mathrm{d}\vec A   }
 
 
 
