@@ -2437,13 +2437,33 @@ These parametric curves are plotted in \Figure{ch6_fluid_element_path}.  A singl
 In the analysis of small amplitude waves we dropped terms where two small numbers were multiplied -- terms that were ``quadratic in smallness''.  But what constitutes ``\textit{small}''?  We dropped $u(\lpp{\eta}{x})$ because it was  negligible compared to $v$.  Using the velocity potential that we found (\Equation{09234572309458231029384619827501234982175}), we can say that
 \unnumeq{\abs{u}=\abs{\pp{\phi}{x}}\sim A\omega\qquad\and\qquad \abs{v} = \abs{\pp{\phi}{x}} \sim A\omega. }
 
-The free surface velocities scale proportionally with $A\omega$, the amplitude and the frequency (of course, we're dropping the sines and cosines here--they are of course always between -1 and 1 anyway). We've just discovered that $\omega = \sqrt{gk} = \sqrt{2\pi g/\lambda}$ so the frequency is inversely proportional to the wavelength. The quantity \lpp{\eta}{x} is the slope of the free surface, which is obviously connected to the amplitude (larger amplitude clearly requires larger slope), so all of these are connected.  What we're really saying when we say ``small amplitude'' is that the free surface displacement -- the amplitude --  is small compared to the wavelength.  Thus the small amplitude approximation for deep water is applicable if $A\ll\lambda$.
+The free surface velocities scale proportionally with $A\omega$, the amplitude and the frequency (of course, we're dropping the sines and cosines here--they are of course always between -1 and 1 anyway). We've just discovered that $\omega = \sqrt{gk} = \sqrt{2\pi g/\lambda}$ so clearly the frequency is inversely proportional to the wavelength. The quantity \lpp{\eta}{x} is the slope of the free surface, which is obviously connected to the amplitude (larger amplitude clearly requires larger slope), so all of these are inherently connected.  What we're really saying when we say ``small amplitude'' is that the free surface displacement -- the amplitude --  is small compared to the wavelength.  Thus the small amplitude approximation for deep water is applicable if $A\ll\lambda$, essentially, the wave is much ``longer'' than it is ``tall''.
 
 
 \subsection{Wave packets}
 
-In the previous section, we assumed that a wave was perfectly sinusoidal, but that's not very realistic for many disturbances.  It might be a good approximation for waves in deep water in the middle of the ocean, but if we throw a rock into a pond, the resulting disturbance is not going to be a perfect sine function.  We need to talk about a more generalized form of \Equation{travellingwaveeta}.  For this, we'll invoke the concept of a Fourier Series: \textit{any periodic function $f(x)$ can be written as a function of sines and cosines:}
-\numeq{ f(x) = \frac{a_0}{2} + \sum\limits_{n=1}^{\infty} \left[ a_n\cos(nx) + b_n\sin(nx) \right]     }{23423412341}
+In the previous section, we assumed that a wave was perfectly sinusoidal, but that's not very realistic for many disturbances.  It might be a good approximation for waves in deep water in the middle of the ocean, but if we throw a rock into a pond, the resulting disturbance is definitely not going to be a perfect sine function.  We need to talk about a more generalized form of \Equation{travellingwaveeta}.  For this, we'll invoke the concept of a Fourier Series: \textit{any periodic function $f(x)$ can be written as a function of sines and cosines:}
+\numeq{ f(x) = \frac{a_0}{2} + \sum\limits_{n=1}^{\infty} \left[ a_n\cos(nx) + b_n\sin(nx) \right].}{23423412664684674643341}
+The Fourier series, rather than encoding information as a function of $x$, really encodes the information in the coefficients $a_n$ and $b_n$.  We can also write the function a bit more concisely as
+\numeq{f(x) = \sum\limits_{n=-\infty}^{\infty} c_n e^{inx}.}{423947019237401928364701982763409813}
+
+
+
+
+\Example{289736419283469182364}{Consider two sinusoidal waves added together:
+\unnumeq{\eta{x,t} = A\cos(k_1 x - \omega_1 t) + A\cos(k_2 x - \omega_2 t) }
+In order to make this turn out pretty, let's say that $k_1\approx k_2$ and $\omega_1\approx\omega_2$ such that $k_1 = k-\Delta k$, $k_2 = k+\Delta k$, $\omega_1 = \omega - \Delta\omega$ and $\omega_2 = \omega + \Delta\omega$, where $k$ and $\omega$ are the average values of each quantity.  What does the wave look like?
+}{We're going to play around a bit with this equation and see what we come up with.  Plugging in the quantities in terms of $k$ and $\omega$ gives
+\unnumeq{\eta(x,t) = A\cos\left[(k-\Delta k)x - (\omega-\Delta\omega)t\right]   + A\cos\left[(k+\Delta k)x - (\omega+\Delta\omega)t\right]. }
+Now expanding using the identity $\cos(a-b) = \cos a \cos b + \sin a\sin b$, and then exploiting the evenness of cosine and the oddness of sine, this reduces to
+\numeq{\eta(x,t) = 2A\cos(\Delta k x - \Delta\omega t)\cos(kx-wt).}{9023874109238740192634091236740912}
+The second cosine term in \Equation{9023874109238740192634091236740912} corresponds to the normal traveling wave which we've worked with already. The first cosine out front, however is something we haven't seen before. It acts as an envelope for the traveling wave sandwiching the normal traveling wave within the boundary of the first cosine function.  The amplitude is \textit{modulated}.  The idea to take away from this is that when you add two cosine waves together, you get a much more complicated wave. The concept of amplitude modulation is central to the Fourier techniques that we'll now proceed with.
+}
+
+
+
+
+
 
 
 
