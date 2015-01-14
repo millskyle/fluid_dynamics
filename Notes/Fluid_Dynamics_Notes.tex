@@ -30,9 +30,9 @@
 
 %Add the cover:
 
-%%%\AddToShipoutPictureBG*{%
-%%%  \AtPageLowerLeft{\includegraphics[width=\paperwidth,height=\paperheight]{extras/cover_compressed.pdf}}
-%%%  }
+\AddToShipoutPictureBG*{%
+  \AtPageLowerLeft{\includegraphics[width=\paperwidth,height=\paperheight]{extras/cover_compressed.pdf}}
+  }
 
 
 %MY CUSTOM NU
@@ -53,9 +53,10 @@
 \newcounter{problem}[chapter]
 \newcounter{temporary}
 
-
-
-
+\vspace*{10em}
+These notes were prepared for the 2014 Fluid Dynamics course at the University of Ontario Institute of Technology taught by Dr. Joseph MacMillan.  Effort has been taken to ensure the accuracy of these notes, however there are bound to be mistakes. If you notice any errors, please email \url{kyle.mills@uoit.net} with the page number and the error.
+\vfill
+\clearpage
 
 
 \newpage
@@ -63,12 +64,12 @@
 \newpage
 \chapter{Introduction}
 \section{What is a fluid?}
-Before we begin our study of fluid dynamics we should look at what defines a substance as a fluid.  The simple answer is ``something that flows''.  While this may not seem satisfactory, it is true; almost anything that flows can be modeled by the equations and principles of fluid dynamics.  Examples are plentiful, the obvious choices being air and water, but even metals (when heated enough), electricity (electrons \textit{flow} through wires) and traffic flow can be modeled as fluids.
+Before we begin our study of fluid dynamics we should look at what defines a substance as a fluid.  The simple answer is ``something that flows''.  While this may not seem satisfactory, it is true; almost anything that flows can be modeled by the equations and principles of fluid dynamics.  Examples are plentiful, the obvious choices being air and water, but even metals (when heated enough), electricity (electrons \textit{flow} through wires) and traffic flow can be modeled as fluids and follow at least some of the principles which we will develop.
 
 
 \section{Describing fluid flow}
 
-The main goal of fluid dynamics is to determine the way in which a fluid moves.  In order to accomplish this, we need a function which describes the velocity of the fluid at every point in space and time:
+The main goal of fluid dynamics is to determine the way in which a fluid moves: the dynamics of fluid flow.  In order to accomplish this, we need a function which describes the velocity of the fluid at every point in space and time:
 \numeq{\vec u \equiv \vec u (\vec x, t)}{1velocitydefinition}
 where $\vec x$ is a spatial vector, made up of three components. \Equation{1velocitydefinition} can also be written, perhaps more clearly as 
 \numeq{\vec u \equiv \vec u (x,y,z,t) = [u,v,w].}{1velocityexplicit}
@@ -104,7 +105,7 @@ Therefore the streamlines are given by
 \section{The total derivative and acceleration}
 Let $f(x,y,z,t)$ be some quantity of interest.  It could be the a component of the velocity of the fluid, the density of the fluid or some other quantity.  If we're looking at one point in space $(x,y,z)$, then $\partial f / \partial t$ gives the rate of change of $f$ \textit{at that position}.  We don't want to be limited to one specific position; we'd rather ``move with the fluid'' and know how $f$ changes as we go along with the flow.  Rather than taking the partial derivative with respect to time, we should take the \textit{total derivative}.  The total derivative of $f$ is given by
 \numeq{\frac{Df}{Dt} = \dd{}{t} \left[ f\left( x(t), y(t), z(t), t\right)\right]. }{totalderivative1}
-Invoking the chain rule expands the total derivative to
+Invoking the chain rule, we can expand the total derivative to
 \numeq{\frac{Df}{Dt} = \pp{f}{x}\pp{x}{t} + \pp{f}{y}\pp{y}{t} + \pp{f}{z}\pp{z}{t} + \pp{f}{t}.}{totalderivative2}
 Looking back to \Equation{1velocityexplicit}, we can see that $\partial x / \partial t = u,\  \partial y / \partial t = v$ and $\partial z / \partial t = w$.  The total derivative is then
 \numeq{\frac{Df}{Dt} = u\pp{f}{x} + v\pp{f}{y} + w\pp{f}{z} + \pp{f}{t}.}{totalderivative3}
