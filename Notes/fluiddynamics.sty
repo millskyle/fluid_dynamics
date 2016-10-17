@@ -4,14 +4,165 @@
 \ProvidesPackage{fluiddynamics}
 
 
+
+\renewcommand{\vec}[1]{\ensuremath{\mathbf{#1}}}
+
+
+
+\newcommand{\updateHistory}{\immediate\write18{date ''+\%Y-\%m-\%d  \%H:\%M:\%S.\%N >> compile_history.log''}}
+
+
+\newcommand{\timesnewroman}{\usepackage{newtxtext,newtxmath}}
+
+
+\newcommand{\vect}[1]{\boldsymbol{#1}}
+\newcommand{\Ang}{\si{\angstrom}\xspace}
+
+
+\renewcommand{\d}{\mathrm{\d}}
+
+\newcommand{\sub}[1]{_{\mathrm{#1}}}
+
+\newcommand{\degrees}{\ensuremath{^\circ}\xspace}
+\newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
+\newcommand{\U}[1]{\ensuremath{\, \mathrm{#1}}\xspace}
+
+
+\newcommand{\varHead}[2]{\ensuremath{#1, \unit{#2}}}
+\newcommand{\vH}[2]{\ensuremath{#1, \unit{#2}}}
+\newcommand{\vh}[2]{\ensuremath{#1, \unit{#2}}}
+\newcommand{\vhtxt}[3]{#1, \ensuremath{#2   \unit{\left(#3\right)}}}
+
+
+\newcommand{\hlink}[2]{\hyperref[#1]{#2 \ref*{#1}}}
+
+\newcommand{\insertfigure}[2]{
+\begin{figure}[h]
+\centering
+	\makebox[\textwidth][c]{\includegraphics[width=#2\textwidth]{#1}}
+\caption{}
+\label{#1}
+\end{figure}
+}
+
+\newcommand{\insertfigurecaption}[3]{
+\begin{figure}[h]
+\centering
+	\makebox[\textwidth][c]{\includegraphics[width=#2\textwidth]{#1}}
+\caption{#3}
+\label{#1}
+\end{figure}
+}
+
+
+
+
+
+\newcommand{\inserttwofigure}[7]{
+   \begin{figure}[h]
+      \centering
+         \begin{subfigure}{0.46\textwidth}
+            \centering
+            \includegraphics[width=#2\textwidth]{#1}
+            \caption{}
+            \label{#1}
+         \end{subfigure}
+         \begin{subfigure}{0.46\textwidth}
+            \centering
+            \includegraphics[width=#5\textwidth]{#4}
+            \caption{}
+            \label{#4}
+         \end{subfigure}
+
+        \caption{(a) #3   (b) #6} 
+   \end{figure}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newcommand{\imagec}[3]{
+\begin{figure}[H]
+\centering
+	\framebox{\includegraphics[width=\textwidth]{#1}}
+	\caption{#3}
+\label{fig:#2}
+\end{figure}
+}
+
+\newcommand{\img}[4]{
+\begin{figure}[H]
+\centering
+	\framebox{\includegraphics[width=#4\textwidth]{#1}}
+	\caption{#3}
+\label{fig:#2}
+\end{figure}
+}
+
+\newcommand{\E}[1]{\ensuremath{\times 10^{#1}}}
+
+\newcommand{\sfrac}[2]{\ensuremath{^{#1}/_{#2}}}
+
+\newcommand{\tab}{\hspace{2em}}
+\newcommand{\sectionzero}{\setcounter{section}{-1}}
+
+
+\newcommand{\authorCAP}[2]{#1 \textsc{#2}}
+
+\newcommand{\kyletitlepage}[4]{
+\clearpage
+	\thispagestyle{empty}
+	\begin{center}	
+	\small{University of Ontario Institute of Technology}
+	\end{center}
+	\begin{center}
+	\huge{#1}
+	\end{center}
+	\begin{center}
+		\large{#2}
+	\end{center}
+	\vfill
+	\begin{center}
+	\large{#4}
+	\end{center}
+	\begin{center}
+		\small{#3}
+	\end{center}
+\newpage
+}
+
+
+\newcommand{\ohm}{\ensuremath{\Omega}\xspace}
+
+
+
+
+
+
+
 \usepackage{amsmath}
-\usepackage{kyle}
+%\usepackage{kyle}
 \usepackage[total={6in,9in},top=0.75in, includefoot]{geometry}
 %\usepackage[total={6in,9in},top=0.75in, left=1.25in, right=1.25in, includefoot]{geometry} %Even L/R Margins
 \usepackage{newtxtext,newtxmath}
 \usepackage{enumerate,letltxmacro}
 \usepackage{ntheorem}
 \usepackage{graphicx}
+\usepackage{hyperref}
+
 \usepackage[toc,page]{appendix}
 \usepackage{framed}
 \usepackage{caption}
@@ -34,6 +185,21 @@
 \usepackage{lipsum}
 \usepackage{framed}
 \newcommand{\Equations}[2]{Eqs. \ref{#1} \& \ref{#2}}
+
+
+%easy references
+	\newcommand{\Figure}[1]{Figure~\ref{#1}}
+	\newcommand{\Table}[1]{Table~\ref{#1}}
+	\newcommand{\Equation}[1]{Eq. \!\ref{#1}}
+	
+\newcommand{\dd}[2]{\frac{\mathrm{d} #1}{\mathrm{d} #2}}
+\newcommand{\ddt}[2]{\frac{d^2 #1}{d #2 ^2}}
+\newcommand{\pp}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\ppt}[2]{\frac{\partial^2 #1}{\partial #2^2}}
+\newcommand{\dpp}[3]{\frac{\partial^2 #1}{\partial #2 \partial #3}}
+\newcommand{\lpp}[2]{\ensuremath{\partial #1 / \partial #2}} %inline partial derivative
+
+\newcommand{\kxwt}{\left(kx-\omega t\right)}
 
 
 \newcommand{\inkscapeimage}[2]{
@@ -89,7 +255,7 @@
 
 \newcommand{\abs}[1]{\left|#1\right|}
 
-\renewcommand{\e}[1]{e^{#1}}
+\newcommand{\e}[1]{e^{#1}}
 \renewcommand{\l}{\lambda}
 
 
@@ -110,19 +276,6 @@
 
 \renewcommand{\Re}[1]{\mathrm{Re}\left(#1\right)}
 \renewcommand{\Im}[1]{\mathrm{Im}\left(#1\right)}
-
-
-
-
-
-%\newcommand{\insertfigure44}[2]{
-%\begin{figure}[H]
-%\centering
-%	\makebox[\textwidth][c]{\includegraphics[width=#2\textwidth]{#1}}
-%\caption{}
-%\label{#1}
-%\end{figure}
-%}
 
 
 
@@ -154,7 +307,7 @@
 		\includegraphics[width=\textwidth]{#2}
 		\caption{}
 		\label{#2}
-	\end{subfigure}
+	\end{subfigure}\url
 	\quad
 	\begin{subfigure}[b]{#1\textwidth}
 		\includegraphics[width=\textwidth]{#3}
@@ -274,8 +427,7 @@
 \newcommand{\thetahat}{\ensuremath{\boldsymbol{\hat{\theta}}}\xspace}
 
 \newcommand{\Nabla}{\resizebox{0.85em}{0.65em}{\ensuremath{\nabla}}}
-%\newcommand{\Nu}{\resizebox{.75em}{0.5em}{\ensuremath{\nu}}}
-%\renewcommand*\nu{\includegraphics[width=0.5em]{custom_symbols/nu.eps}}
+
 
 \renewcommand{\div}{\Nabla \cdot}
 \newcommand{\curl}[1]{\Nabla \cross #1}
@@ -284,15 +436,6 @@
 \newcommand{\vecu}{\vec u\xspace}
 
 
-
-%\renewcommand*{\nu}{%
-%  \text{% change size in subscripts or superscripts
-%    \includegraphics[
-%      height=1.5ex,% adjust to suit
-%      valign=M,% center vertically
-%      raise=\fontdimen22\textfont2,% but raise it to the formula axis
-%    ]{custom_symbols/nu.eps}}
-%}
 
 
 \theoremstyle{break}
@@ -351,6 +494,8 @@ skipbelow=0.75\baselineskip,%
 
 	\vspace{1em}
 }
+
+
 
 \newcommand{\startAssignment}{}
 \newcommand{\stopAssignment}{}
@@ -442,6 +587,18 @@ skipbelow=0.75\baselineskip,%
 \newcommand{\substar}{_{\!_\star}}
 
 \newcommand{\del}{\Nabla}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
